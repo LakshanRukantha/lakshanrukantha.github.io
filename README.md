@@ -2,7 +2,7 @@
 
 ### lakshanrukantha.github.io
 
-==> Click <a href="https://lakshanrukantha.github.io" target="_blank">here</a> to browse it.
+==> Click <a href="https://lakshanrukantha.github.io">here</a> to browse it.
 
 Last edit on 30/10/2021
 
