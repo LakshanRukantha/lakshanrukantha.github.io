@@ -329,7 +329,7 @@ fieldset {
   font-size: 18px;
 }
 
-#hire-btn ,#about-btn{
+#hire-btn ,#about-btn, .cvDown{
   position: relative;
   margin: 0px auto;
   display: flex;
@@ -359,7 +359,7 @@ fieldset {
   cursor: pointer;
   transition: 0.5s background-color;
 }
-#hire-btn:hover, #about-btn:hover{
+#hire-btn:hover, #about-btn:hover, .cvDown:hover{
   text-shadow: 0px 0px 5px #fb0098;
   box-shadow: 
   0px 0px 5px #fb0098,
@@ -901,6 +901,10 @@ fieldset {
   background-color: #12121290;
   border-radius: 8px;
   padding-bottom: 20px;
+}
+.cv{
+  height: 100px;
+  margin-bottom: 20px;
 }
 @keyframes c-animate{
   0%{
