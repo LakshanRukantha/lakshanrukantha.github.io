@@ -1026,18 +1026,20 @@ fieldset {
   }
   10%{
     opacity: 100%;
-    max-height: 100%;
     padding: 8px;
+    max-height: 100%;
     pointer-events: all;
   }
-  90%{
-    max-height: 100%;
+  99%{
     opacity: 100%;
     padding: 8px;
+    font-size: 15px;
+    max-height: 100%;
     pointer-events: all;
   }
   100%{
     opacity: 0%;
+    font-size: 0px;
     max-height: 0px;
     padding: 0px;
     pointer-events: none;
