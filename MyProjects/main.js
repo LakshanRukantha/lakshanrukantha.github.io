@@ -134,6 +134,7 @@ function darwEverything() {
   canvasContext.fill();
   canvasContext.font = "20px arial";
   drawNet();
+  console.log("Lakshan");
   canvasContext.fillStyle = "white";
   canvasContext.font = "20px MuseoModerno";
   canvasContext.fillText(player1Score, 250, 100);
