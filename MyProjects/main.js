@@ -106,7 +106,7 @@ function moveEverything() {
 
 function drawNet() {
   for (var i = 0; i < canvas.height; i += 35) {
-    colorRect(canvas.width / 2 - 1, i, 2, 20, "grey");
+    colorRect(canvas.width / 2 - 1, i, 2, 20, "#ffffff80");
   }
 }
 
@@ -115,13 +115,15 @@ function darwEverything() {
   if (showingWinScreen) {
     if (player1Score >= WinningScore) {
       canvasContext.fillStyle = "white";
-      canvasContext.fillText("You Won!", 620, 360);
+      canvasContext.font = "40px Nosifer";
+      canvasContext.fillText("You Won!", 510, 360);
     } else if (player2Score >= WinningScore) {
       canvasContext.fillStyle = "white";
-      canvasContext.fillText("Computer Won!", 590, 360);
+      canvasContext.font = "40px Nosifer";
+      canvasContext.fillText("Computer Won!", 425, 360);
     }
-    canvasContext.font = "20px arial";
-    canvasContext.fillText("Click To Continue", 580, 600);
+    canvasContext.font = "40px Fredoka One";
+    canvasContext.fillText("Click To Continue", 480, 600);
     return;
   }
   colorRect(0, paddle1Y, 8, paddleHeight, "white");
@@ -130,11 +132,10 @@ function darwEverything() {
   canvasContext.beginPath();
   canvasContext.arc(ballX, ballY, 10, 0, Math.PI * 2, true);
   canvasContext.fill();
-
-  canvasContext.fillStyle = "aqua";
   canvasContext.font = "20px arial";
   drawNet();
   canvasContext.fillStyle = "white";
+  canvasContext.font = "20px MuseoModerno";
   canvasContext.fillText(player1Score, 250, 100);
   canvasContext.fillText(player2Score, canvas.width - 250, 100);
 }
