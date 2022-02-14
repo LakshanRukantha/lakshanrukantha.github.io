@@ -882,11 +882,11 @@ fieldset {
   width: 50%;
 }
 .skill-p{
+  float: right;
   display: inline-block;
   position: relative;
   width: 10%;
   color: white;
-  float: right;
   clear: left;
   margin-bottom: 10px;
 }
