@@ -114,14 +114,15 @@ function darwEverything() {
   colorRect(0, 0, canvas.width, canvas.height, "black");
   if (showingWinScreen) {
     if (player1Score >= WinningScore) {
-      canvasContext.fillStyle = "white";
+      canvasContext.fillStyle = "#75FF33";
       canvasContext.font = "40px Nosifer";
       canvasContext.fillText("You Won!", 510, 360);
     } else if (player2Score >= WinningScore) {
-      canvasContext.fillStyle = "white";
+      canvasContext.fillStyle = "#FF5733";
       canvasContext.font = "40px Nosifer";
       canvasContext.fillText("Computer Won!", 425, 360);
     }
+    canvasContext.fillStyle = "#3375FF";
     canvasContext.font = "40px Fredoka One";
     canvasContext.fillText("Click To Continue", 480, 600);
     return;
