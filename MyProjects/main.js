@@ -138,8 +138,8 @@ function darwEverything() {
   console.log("Lakshan");
   canvasContext.fillStyle = "white";
   canvasContext.font = "20px MuseoModerno";
-  canvasContext.fillText(player1Score, 250, 100);
-  canvasContext.fillText(player2Score, canvas.width - 250, 100);
+  canvasContext.fillText("You : " + player1Score, 250, 100);
+  canvasContext.fillText("Computer : " + player2Score, canvas.width - 250, 100);
 }
 function colorRect(leftX, topY, width, height, drawColor) {
   canvasContext.fillStyle = drawColor;
