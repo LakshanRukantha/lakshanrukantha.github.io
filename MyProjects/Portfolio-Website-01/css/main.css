@@ -165,7 +165,7 @@ h6 {
 
 #intro .btn {
   min-width: 160px;
-  display: flexbox;
+  margin-bottom: 30px;
 }
 
 #intro p {
@@ -173,10 +173,17 @@ h6 {
 }
 
 #intro a {
-  display: inline-block;
-  text-align: center;
-  margin-right: 30px;
-  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: center;
+  text-align: left;
+  margin: auto;
+}
+.my-name {
+  font-weight: 750;
 }
 
 #intro a img {
@@ -190,9 +197,10 @@ h6 {
 #intro .scroll {
   text-align: left;
   display: block;
+  clear: both;
   color: #6e6e6e;
   padding: 20px 0px;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 #intro .img img {
@@ -546,7 +554,6 @@ footer .copyright p a:hover {
   h1 {
     font-size: 3rem;
   }
-
   .section-title::before {
     content: "";
     width: 2px;
@@ -756,16 +763,18 @@ footer .copyright p a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 30px;
   }
   #intro .text {
     width: 45%;
   }
+  .my-name {
+    font-weight: 750;
+  }
   #intro .img {
     margin-bottom: 0px;
     margin-top: 50px;
-    margin-left: 150px;
-    width: 100%;
+    margin-left: 120px;
+    width: 60%;
   }
   #intro h1 {
     position: relative;
