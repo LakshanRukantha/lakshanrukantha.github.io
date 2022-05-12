@@ -43,6 +43,7 @@ textarea:focus {
 }
 
 .btn-success {
+  margin-top: -17px !important;
   background-color: #68d372;
   border-color: #68d372;
   border-radius: 0px;
@@ -90,6 +91,7 @@ h6 {
   z-index: 20;
   margin: 0 auto;
   padding: 30px 0;
+  height: 80px;
   background-color: #222222;
 }
 
@@ -121,6 +123,8 @@ h6 {
 }
 
 .navbar .btn {
+  position: relative;
+  float: right;
   color: white;
   width: 150px;
 }
@@ -131,6 +135,7 @@ h6 {
 
 .navbar .navbar-toggler {
   color: white !important;
+  margin-top: -5px !important;
   margin-left: auto;
 }
 
@@ -731,6 +736,7 @@ footer .copyright p a:hover {
   .navbar .btn {
     color: white;
     position: absolute;
+    margin-right: 10px;
     right: 20px;
     top: 35px;
     margin: 0px;
@@ -743,6 +749,7 @@ footer .copyright p a:hover {
 
   .navbar .navbar-toggler {
     color: white !important;
+    margin-right: -110px;
     margin-left: auto;
   }
 
@@ -765,6 +772,7 @@ footer .copyright p a:hover {
     display: flex;
   }
   #intro .text {
+    margin-top: -20px;
     width: 45%;
   }
   .my-name {
@@ -772,7 +780,7 @@ footer .copyright p a:hover {
   }
   #intro .img {
     margin-bottom: 0px;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 120px;
     width: 60%;
   }
@@ -877,7 +885,7 @@ footer .copyright p a:hover {
     padding-top: 100px;
   }
   #contact .img {
-    margin-top: 125px;
+    margin-top: 120px;
   }
   #contact .contacts {
     text-align: left;
