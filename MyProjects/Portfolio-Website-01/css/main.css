@@ -42,8 +42,12 @@ textarea:focus {
   box-shadow: none !important;
 }
 
-.btn-success {
+.cv-download {
   margin-top: -17px !important;
+  margin-right: 85px !important;
+}
+
+.btn-success {
   background-color: #68d372;
   border-color: #68d372;
   border-radius: 0px;
@@ -864,6 +868,10 @@ footer .copyright p a:hover {
 }
 
 @media (min-width: 1200px) {
+  .navbar-nav {
+    padding-left: 20% !important;
+  }
+
   h1 {
     font-size: 4.4rem;
   }
