@@ -43,7 +43,7 @@ textarea:focus {
 }
 
 .cv-download {
-  margin-top: -17px !important;
+  margin-top: -15px !important;
   margin-right: 85px !important;
 }
 
@@ -95,7 +95,7 @@ h6 {
   z-index: 20;
   margin: 0 auto;
   padding: 30px 0;
-  height: 80px;
+  height: 85px;
   background-color: #222222;
 }
 
