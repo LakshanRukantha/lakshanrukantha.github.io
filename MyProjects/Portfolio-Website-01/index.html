@@ -30,6 +30,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="https://use.typekit.net/rrg4put.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
@@ -80,7 +81,12 @@
       <!-- Intro -->
       <section id="intro">
         <div class="container">
-          <div class="text">
+          <div
+            class="text"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <h1>
               Hi, I am<br />
               <span class="green my-name">Lakshan,</span><br />
@@ -111,7 +117,14 @@
               />Scroll down</a
             >
           </div>
-          <div class="img"><img src="img/photo-intro.jpg" alt="" /></div>
+          <div
+            class="img"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            <img src="img/photo-intro.jpg" alt="" />
+          </div>
         </div>
       </section>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 318">
@@ -123,7 +136,12 @@
       </svg>
       <!-- About me -->
       <section id="about">
-        <div class="about container">
+        <div
+          class="about container"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
           <h6 class="section-title">About me</h6>
           <div class="about-wrapper">
             <div class="left">
@@ -153,7 +171,12 @@
       </section>
       <!-- My bio -->
       <section id="bio">
-        <div class="bio container">
+        <div
+          class="bio container"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
           <div class="img">
             <img src="img/photo-bio.jpg" alt="" />
           </div>
@@ -180,7 +203,12 @@
       </svg>
       <!-- Skills -->
       <section id="skills" class="text-center">
-        <div class="container">
+        <div
+          class="container"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
           <h6 class="section-title">Skills</h6>
           <h1>My skill <span class="green">level</span></h1>
           <div class="skills-progress">
@@ -232,7 +260,12 @@
       </svg>
       <!-- Experience -->
       <section id="experience" class="text-center">
-        <div class="container">
+        <div
+          class="container"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
           <h6 class="section-title">My previous jobs</h6>
           <h1>My <span class="green">experience</span></h1>
           <div class="jobs">
@@ -288,7 +321,12 @@
       </svg>
       <!-- Contact -->
       <section id="contact" class="text-center">
-        <div class="container">
+        <div
+          class="container"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
           <h6 class="section-title">Contact</h6>
           <h1>Call or write <span class="green">anytime</span></h1>
           <div class="row">
@@ -328,7 +366,12 @@
             <div class="img col-md-5 col-lg-4">
               <img class="contact-img" src="img/photo-contact.jpg" alt="" />
             </div>
-            <div class="contacts img col-xl-8">
+            <div
+              class="contacts img col-xl-8"
+              data-aos="zoom-in"
+              data-aos-duration="5000"
+              data-aos-delay="400"
+            >
               <div class="social-media">
                 <p>Social Media</p>
                 <a href="" class="me-2 text-reset"
@@ -378,6 +421,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
@@ -385,5 +429,8 @@
       target="_blank"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -857,6 +857,10 @@ footer .copyright p a:hover {
   #skills .section-title::before {
     height: 150px;
   }
+  #contact {
+    padding-bottom: 0px;
+    padding-top: 30px;
+  }
   .contacts {
     max-width: 750px;
     margin: 0 auto;
@@ -890,7 +894,7 @@ footer .copyright p a:hover {
   }
   #contact {
     padding-bottom: 0px;
-    padding-top: 100px;
+    padding-top: 40px;
   }
   #contact .img {
     margin-top: 120px;
@@ -912,7 +916,7 @@ footer .copyright p a:hover {
   }
   .contact-img {
     display: flex;
-    margin-top: -50px;
+    margin-top: -80px;
   }
 }
 /*# sourceMappingURL=main.css.map */
