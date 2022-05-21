@@ -169,7 +169,16 @@ h6 {
   margin-top: -40px;
 }
 .typing-text{
- 
+  color: #ffffff;
+  position: relative;
+  display: inline;
+  font-size: 4.3rem;
+}
+.typing{
+  position: relative;
+  width: 100%;
+  top: -20px;
+  height: 150px;
 }
 #intro h1 {
   color: white;
@@ -185,7 +194,8 @@ h6 {
 }
 
 #intro p {
-  margin: 30px 0px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 #intro a {
@@ -221,6 +231,7 @@ h6 {
 
 #intro .img img {
   width: 100%;
+  position: relative;
 }
 
 #about {
@@ -832,7 +843,7 @@ footer .copyright p a:hover {
   #intro h1 {
     position: relative;
   }
-  #intro h1::before {
+  #intro .my-name::before {
     content: "";
     width: 122px;
     height: 2px;

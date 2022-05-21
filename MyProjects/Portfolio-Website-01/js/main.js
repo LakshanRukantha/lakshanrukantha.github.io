@@ -12,7 +12,7 @@ var options = {
   strings: ['Front-End Developer', 'UI/UX Designer', 'Sound Designer', 'Photographer'],
   typeSpeed: 50,
   loop: true,
-  backSpeed: 30
+  backSpeed: 30,
 };
 
 var typed = new Typed('.typing-text', options);
