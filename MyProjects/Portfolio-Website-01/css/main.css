@@ -181,7 +181,11 @@ h6 {
 #intro h1 {
   color: white;
 }
-
+.intro-animation {
+  animation: rubberBand;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
 #intro h1 .my-name {
   font-size: 1.8em;
 }
