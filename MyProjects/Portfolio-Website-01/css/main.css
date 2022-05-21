@@ -172,13 +172,11 @@ h6 {
   color: #ffffff;
   position: relative;
   display: inline;
-  font-size: 4.3rem;
 }
 .typing{
   position: relative;
   width: 100%;
-  top: -20px;
-  height: 150px;
+  top: -10px;
 }
 #intro h1 {
   color: white;
@@ -194,7 +192,7 @@ h6 {
 }
 
 #intro p {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -235,7 +233,9 @@ h6 {
 }
 
 #about {
-  padding-top: 60px;
+  padding-top: 50px;
+  top: -60px;
+  position: relative;
 }
 
 #about .left,
@@ -612,8 +612,14 @@ footer .copyright p a:hover {
 }
 
 @media (min-width: 768px) {
-  h1 {
+  h1, .typing-text {
     font-size: 3rem;
+  }
+  .typing{
+    position: relative;
+    width: 100%;
+    top: -10px;
+    height: 50px;
   }
   .section-title::before {
     content: "";
@@ -629,6 +635,10 @@ footer .copyright p a:hover {
   }
   #intro .container {
     padding: 0px 40px;
+  }
+  #intro p {
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
   #intro .img {
     width: 100%;
@@ -816,8 +826,14 @@ footer .copyright p a:hover {
     box-shadow: none;
     outline: none;
   }
-  h1 {
+  h1, .typing-text {
     font-size: 4rem;
+  }
+  .typing{
+    position: relative;
+    width: 100%;
+    top: -20px;
+    height: 120px;
   }
   #intro {
     padding-bottom: 0;
@@ -842,6 +858,10 @@ footer .copyright p a:hover {
   }
   #intro h1 {
     position: relative;
+  }
+  #intro p {
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
   #intro .my-name::before {
     content: "";
@@ -927,8 +947,17 @@ footer .copyright p a:hover {
   .navbar-nav {
     padding-left: 20% !important;
   }
-
-  h1 {
+  #intro p {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .typing{
+    position: relative;
+    width: 100%;
+    top: -20px;
+    height: 150px;
+  }
+  h1, .typing-text {
     font-size: 4.4rem;
   }
   .about-wrapper .left {
