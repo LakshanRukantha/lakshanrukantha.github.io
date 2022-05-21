@@ -168,12 +168,12 @@ h6 {
 #intro .text {
   margin-top: -40px;
 }
-.typing-text{
+.typing-text {
   color: #ffffff;
   position: relative;
   display: inline;
 }
-.typing{
+.typing {
   position: relative;
   width: 100%;
   top: -10px;
@@ -612,10 +612,11 @@ footer .copyright p a:hover {
 }
 
 @media (min-width: 768px) {
-  h1, .typing-text {
+  h1,
+  .typing-text {
     font-size: 3rem;
   }
-  .typing{
+  .typing {
     position: relative;
     width: 100%;
     top: -10px;
@@ -826,10 +827,11 @@ footer .copyright p a:hover {
     box-shadow: none;
     outline: none;
   }
-  h1, .typing-text {
+  h1,
+  .typing-text {
     font-size: 4rem;
   }
-  .typing{
+  .typing {
     position: relative;
     width: 100%;
     top: -20px;
@@ -954,13 +956,14 @@ footer .copyright p a:hover {
     margin-top: 40px;
     margin-bottom: 20px;
   }
-  .typing{
+  .typing {
     position: relative;
     width: 100%;
     top: -20px;
     height: 150px;
   }
-  h1, .typing-text {
+  h1,
+  .typing-text {
     font-size: 4.4rem;
   }
   #about .section-title::before {
