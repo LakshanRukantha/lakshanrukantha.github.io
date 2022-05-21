@@ -645,7 +645,7 @@ footer .copyright p a:hover {
     margin: 0 auto;
   }
   #about .section-title::before {
-    width: 50px;
+    width: 100px;
     height: 2px;
     top: 35px;
     left: -40px;
@@ -874,10 +874,12 @@ footer .copyright p a:hover {
     left: -140px;
   }
   #about .section-title::before {
-    width: 50px;
+    width: 100px;
     height: 2px;
+    position: absolute;
     top: 35px;
-    left: -40px;
+    float: left;
+    left: -5%;
   }
   .about-wrapper {
     display: -webkit-box;
@@ -886,10 +888,11 @@ footer .copyright p a:hover {
     gap: 80px;
   }
   .about-wrapper .left {
-    width: 30%;
+    width: 50%;
+    margin-left: 40px !important;
   }
   .about-wrapper .right {
-    width: 70%;
+    width: 50%;
     position: relative;
   }
   .about-wrapper .right::before {
@@ -900,7 +903,7 @@ footer .copyright p a:hover {
     background-color: #68d372;
     position: absolute;
     top: 150px;
-    left: 0;
+    left: -50px !important;
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
   }
@@ -960,18 +963,26 @@ footer .copyright p a:hover {
   h1, .typing-text {
     font-size: 4.4rem;
   }
+  #about .section-title::before {
+    width: 120px;
+    height: 2px;
+    position: absolute;
+    top: 35px;
+    left: -100px;
+  }
   .about-wrapper .left {
     width: 50%;
+    padding-left: 0px !important;
   }
   .about-wrapper .left h2 {
     font-size: 3rem;
   }
   .about-wrapper .right {
-    width: 48%;
-    padding-left: 0 !important;
+    width: 50%;
+    padding-left: 50px !important;
   }
   .about-wrapper .right::before {
-    left: -90px;
+    left: -40px;
   }
   #contact {
     padding-bottom: 0px;
