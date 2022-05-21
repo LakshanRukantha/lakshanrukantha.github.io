@@ -9,7 +9,7 @@ window.addEventListener("scroll", () => {
 });
 
 var options = {
-  strings: ['Front-End Developer', 'UI/UX Designer', 'Sound Designer'],
+  strings: ['Front-End Developer', 'UI/UX Designer', 'Sound Designer', 'Photographer'],
   typeSpeed: 50,
   loop: true,
   backSpeed: 30,

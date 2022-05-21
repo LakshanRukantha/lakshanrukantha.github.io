@@ -634,6 +634,9 @@ footer .copyright p a:hover {
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
   }
+  #bio .section-title::before {
+    display: none;
+  }
   #intro .container {
     padding: 0px 40px;
   }
