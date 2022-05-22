@@ -16,3 +16,10 @@ var options = {
 };
 
 var typed = new Typed('.typing-text', options);
+
+const navLinks = document.querySelectorAll('.nav-card-item')
+const menuToggle = document.getElementById('navbarNav')
+const bsCollapse = new bootstrap.Collapse(menuToggle)
+navLinks.forEach((l) => {
+    l.addEventListener('click', () => { bsCollapse.toggle() })
+})
