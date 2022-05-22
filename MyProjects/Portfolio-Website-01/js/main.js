@@ -22,13 +22,6 @@ var options = {
 
 var typed = new Typed(".typing-text", options);
 
-function navClick() {
-  const navLinks = document.querySelectorAll(".nav-card-item");
-  const menuToggle = document.getElementById("navbarNav");
-  const bsCollapse = new bootstrap.Collapse(menuToggle);
-  navLinks.forEach((l) => {
-    l.addEventListener("click", () => {
-      bsCollapse.toggle();
-    });
-  });
-}
+$(".js-scroll-trigger").click(function () {
+  $(".navbar-collapse").collapse("hide");
+});
