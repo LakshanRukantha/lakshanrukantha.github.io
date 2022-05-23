@@ -97,7 +97,7 @@ h6 {
   margin: 0 auto;
   padding: 30px 0;
   height: 85px;
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.8);
   background-color: #222222;
 }
 .navbar-toggler {
@@ -252,6 +252,7 @@ h6 {
   color: #6e6e6e;
 }
 .intro-p-url:hover {
+  cursor: pointer;
   color: #68d372 !important;
   text-decoration: underline;
   animation: rubberBand;
