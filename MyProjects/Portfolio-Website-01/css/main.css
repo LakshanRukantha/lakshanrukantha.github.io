@@ -661,6 +661,9 @@ footer .copyright p a {
 footer .copyright p a:hover {
   color: #68d372;
 }
+#heart-icon {
+  color: red;
+}
 .to-top {
   position: fixed;
   display: inline-block;
