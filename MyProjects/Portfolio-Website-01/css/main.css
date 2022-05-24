@@ -174,7 +174,7 @@ h6 {
   color: white !important;
 }
 .collapse-bg {
-  background-image: url("../img/collapse-bg.svg");
+  background-image: url("../img/collapse-bg.png");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
