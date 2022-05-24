@@ -188,6 +188,12 @@ h6 {
   background: linear-gradient(145deg, #1f1f1f80, #24242480);
   box-shadow: 10px 10px 30px #1d1d1d50, -10px -10px 30px #27272750;
 }
+.js-scroll-trigger {
+  animation: rubberBand;
+  animation-delay: 0.2s;
+  animation-duration: 1s;
+}
+
 .section-title {
   color: #68d372;
   font-weight: bold;
@@ -315,6 +321,7 @@ h6 {
   width: 100%;
   position: relative;
   border-radius: 4px;
+  cursor: grab;
 }
 
 #about {
@@ -350,6 +357,7 @@ h6 {
   position: relative;
   height: 425px;
   width: auto;
+  cursor: grab;
   background-image: url("../img/photo-bio.jpg");
   background-repeat: no-repeat;
   box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px;
@@ -961,7 +969,16 @@ footer .copyright p a:hover {
   .navbar li .nav-link:hover {
     color: #68d372 !important;
   }
-
+  .js-scroll-trigger:hover {
+    background-color: #68d37210 !important;
+    border-radius: 4px;
+  }
+  .js-scroll-trigger:active {
+    transform: scale(95%);
+    animation-delay: 0s !important;
+    animation: none !important;
+    animation-duration: 1s !important;
+  }
   .navbar li .active {
     color: #68d372;
   }
