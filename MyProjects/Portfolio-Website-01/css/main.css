@@ -351,6 +351,7 @@ h6 {
 
 #bio .img img {
   width: 100%;
+  border-radius: 8px;
 }
 
 #bio .text {
