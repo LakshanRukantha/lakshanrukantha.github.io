@@ -341,7 +341,7 @@ h6 {
 }
 
 #bio .bio {
-  padding: 0;
+  padding: 50px 0px;
 }
 #bio .img {
   padding: 0 50px;
@@ -720,7 +720,7 @@ footer .copyright p a:hover {
   }
   #bio .img .bio-img {
     position: relative;
-    height: 350px;
+    height: 280px;
     width: auto;
     background-image: url("../img/photo-bio.jpg");
     background-repeat: no-repeat;
@@ -773,7 +773,7 @@ footer .copyright p a:hover {
     position: relative;
     height: 425px;
     width: 80%;
-    margin: 0 auto;
+    margin: 0px auto;
     background-color: red;
     background-image: url("../img/photo-bio.jpg");
     background-repeat: no-repeat;
