@@ -343,14 +343,19 @@ h6 {
 #bio .bio {
   padding: 0;
 }
-
 #bio .img {
-  padding: 0px 50px;
-  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  padding: 0 50px;
 }
-
-#bio .img img {
-  width: 100%;
+#bio .img .bio-img {
+  position: relative;
+  height: 425px;
+  width: auto;
+  background-image: url("../img/photo-bio.jpg");
+  background-repeat: no-repeat;
+  box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
   border-radius: 8px;
 }
 
@@ -711,6 +716,18 @@ footer .copyright p a:hover {
     align-items: center;
     justify-content: center;
   }
+  #bio .img .bio-img {
+    position: relative;
+    height: 350px;
+    width: auto;
+    background-image: url("../img/photo-bio.jpg");
+    background-repeat: no-repeat;
+    box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    border-radius: 8px;
+  }
 }
 @media (min-width: 768px) {
   h1,
@@ -748,6 +765,20 @@ footer .copyright p a:hover {
   #intro .img {
     width: 100%;
     margin: 0 auto;
+  }
+  #bio .img .bio-img {
+    position: relative;
+    height: 425px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: red;
+    background-image: url("../img/photo-bio.jpg");
+    background-repeat: no-repeat;
+    box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    border-radius: 8px;
   }
   #about .section-title::before {
     width: 100px;
@@ -792,7 +823,7 @@ footer .copyright p a:hover {
   #bio .text {
     padding-left: 50px;
   }
-  #bio .img {
+  #bio .img .bio-img {
     margin-top: 30px;
     z-index: 5 !important;
   }
@@ -1054,6 +1085,17 @@ footer .copyright p a:hover {
   .bio .img {
     width: 50%;
     margin-bottom: 50px;
+  }
+  #bio .img .bio-img {
+    position: relative;
+    height: 480px;
+    width: auto;
+    background-image: url("../img/photo-bio.jpg");
+    background-repeat: no-repeat;
+    box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px;
+    background-size: cover;
+    background-position-y: center;
+    border-radius: 8px;
   }
   .bio .text {
     z-index: 5;
