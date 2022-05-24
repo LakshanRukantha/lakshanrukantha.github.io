@@ -41,7 +41,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body id="to-top">
+  <body onContextMenu="return false;" id="to-top">
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">LR</a>
@@ -135,7 +135,7 @@
             >
           </div>
           <div class="img">
-            <img src="img/photo-intro.jpg" alt="" />
+            <img onContextMenu="return false;" class="intro-img" src="img/photo-intro.jpg" alt="intro-image"/>
           </div>
         </div>
       </section>
@@ -612,6 +612,7 @@
       </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/tilt.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"

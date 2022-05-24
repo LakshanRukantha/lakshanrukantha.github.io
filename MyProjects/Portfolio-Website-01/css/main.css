@@ -358,7 +358,9 @@ h6 {
   background-position-x: center;
   border-radius: 8px;
 }
-
+.js-tilt-glare {
+  border-radius: 8px;
+}
 #bio .text {
   padding: 40px;
 }
@@ -764,6 +766,7 @@ footer .copyright p a:hover {
   }
   #intro .img {
     width: 100%;
+    height: fit-content;
     margin: 0 auto;
   }
   #bio .img .bio-img {
