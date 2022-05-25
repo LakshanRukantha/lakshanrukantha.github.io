@@ -148,7 +148,7 @@ h6 {
 }
 #nav-icon {
   margin-top: -4px;
-  width: 30px;
+  width: 25px;
   height: 30px;
   position: relative;
   -webkit-transform: rotate(0deg);
@@ -166,7 +166,7 @@ h6 {
   position: absolute;
   border-radius: 2px;
   height: 4px;
-  width: 100%;
+  width: 25px;
   background: #ffffff;
   opacity: 1;
   left: 0;
@@ -185,6 +185,7 @@ h6 {
 
 #nav-icon span:nth-child(2) {
   top: 10px;
+  background-color: #68d372;
 }
 
 #nav-icon span:nth-child(3) {
@@ -193,6 +194,7 @@ h6 {
 
 #nav-icon.open span:nth-child(1) {
   top: 10px;
+  width: 30px;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
   -o-transform: rotate(135deg);
@@ -206,6 +208,7 @@ h6 {
 
 #nav-icon.open span:nth-child(3) {
   top: 10px;
+  width: 30px;
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
