@@ -1,3 +1,15 @@
+$(document).ready(function () {
+  $("#nav-icon").click(function () {
+    $(this).toggleClass("open");
+  });
+});
+
+$(document).ready(function () {
+  $(".js-scroll-trigger").click(function () {
+    $("#nav-icon").toggleClass("open");
+  });
+});
+
 const scrollUp = document.querySelector(".to-top");
 
 window.addEventListener("scroll", () => {

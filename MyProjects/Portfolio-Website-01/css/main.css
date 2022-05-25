@@ -100,9 +100,7 @@ h6 {
   box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.8);
   background-color: #222222;
 }
-.navbar-toggler {
-  min-width: 50px !important;
-}
+
 .navbar .navbar-brand {
   position: absolute;
   top: 0;
@@ -146,9 +144,72 @@ h6 {
 }
 
 .navbar .navbar-toggler {
-  color: white !important;
-  margin-top: -5px !important;
   margin-left: auto;
+}
+#nav-icon {
+  margin-top: -4px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+#nav-icon span {
+  display: inline-block;
+  position: absolute;
+  border-radius: 2px;
+  height: 4px;
+  width: 100%;
+  background: #ffffff;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+#nav-icon span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon span:nth-child(2) {
+  top: 10px;
+}
+
+#nav-icon span:nth-child(3) {
+  top: 20px;
+}
+
+#nav-icon.open span:nth-child(1) {
+  top: 10px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon.open span:nth-child(3) {
+  top: 10px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 
 .navbar .navbar-toggler,
@@ -163,7 +224,7 @@ h6 {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 40px 0px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  margin-top: 31px;
+  margin-top: 21px;
   text-align: center;
   line-height: 32px;
   overflow: hidden;
@@ -540,28 +601,26 @@ h6 {
   color: black;
   font-weight: 600;
 }
-.Duties-Res{
+.Duties-Res {
   margin-top: -10px;
   margin-bottom: 20px !important;
   padding: 10px 0px;
   color: #68d372;
 }
-.duties-coll{
+.duties-coll {
   margin: 0 auto;
 }
-.jobs li{
+.jobs li {
   list-style: none;
   padding: 5px 0px;
   margin-left: -30px;
-
 }
-.jobs li::before{
+.jobs li::before {
   content: "\f138";
   position: relative;
   margin-right: 10px;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-
 }
 #experience .jobs .job-item .date {
   padding-bottom: 20px;
@@ -606,8 +665,8 @@ h6 {
 #experience .jobs .first {
   padding-top: 60px;
 }
-.first .duties-coll li{
-text-align: left;
+.first .duties-coll li {
+  text-align: left;
 }
 #experience .jobs .first .date::before {
   top: 70px;
@@ -758,9 +817,9 @@ footer .copyright p a:hover {
     background-position-x: center;
     border-radius: 8px;
   }
-  .duties-coll{
+  .duties-coll {
     width: 100% !important;
-    margin-left: 0px!important;
+    margin-left: 0px !important;
   }
 }
 @media (min-width: 768px) {
@@ -1026,17 +1085,10 @@ footer .copyright p a:hover {
   }
 
   .navbar .navbar-toggler {
-    color: white !important;
     margin-right: -110px;
     margin-left: auto;
   }
 
-  .navbar .navbar-toggler:focus {
-    border: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    outline: none;
-  }
   h1,
   .typing-text {
     font-size: 4rem;
