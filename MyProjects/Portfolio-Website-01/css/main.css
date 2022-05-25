@@ -403,7 +403,7 @@ h6 {
   position: absolute;
   font-size: 0.9rem;
   width: 100%;
-  bottom: -60px;
+  bottom: -40px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -511,8 +511,8 @@ h6 {
 }
 
 #skills .skills-progress .skill-wrapper.progress-85 .progress .left-side {
-  -webkit-transform: rotate(306deg);
-  transform: rotate(306deg);
+  -webkit-transform: rotate(252deg);
+  transform: rotate(252deg);
 }
 
 #experience {
@@ -540,7 +540,29 @@ h6 {
   color: black;
   font-weight: 600;
 }
+.Duties-Res{
+  margin-top: -10px;
+  margin-bottom: 20px !important;
+  padding: 10px 0px;
+  color: #68d372;
+}
+.duties-coll{
+  margin: 0 auto;
+}
+.jobs li{
+  list-style: none;
+  padding: 5px 0px;
+  margin-left: -30px;
 
+}
+.jobs li::before{
+  content: "\f138";
+  position: relative;
+  margin-right: 10px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+
+}
 #experience .jobs .job-item .date {
   padding-bottom: 20px;
 }
@@ -584,7 +606,9 @@ h6 {
 #experience .jobs .first {
   padding-top: 60px;
 }
-
+.first .duties-coll li{
+text-align: left;
+}
 #experience .jobs .first .date::before {
   top: 70px;
 }
@@ -614,6 +638,7 @@ h6 {
 
 #contact #contact-form button {
   margin-top: 40px;
+  border-radius: 4px;
 }
 
 #contact #contact-form input,
@@ -733,6 +758,10 @@ footer .copyright p a:hover {
     background-position-x: center;
     border-radius: 8px;
   }
+  .duties-coll{
+    width: 100% !important;
+    margin-left: 0px!important;
+  }
 }
 @media (min-width: 768px) {
   h1,
@@ -777,7 +806,6 @@ footer .copyright p a:hover {
     height: 425px;
     width: 80%;
     margin: 0px auto;
-    background-color: red;
     background-image: url("../img/photo-bio.jpg");
     background-repeat: no-repeat;
     box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px;
