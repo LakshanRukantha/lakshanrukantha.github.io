@@ -262,26 +262,26 @@ h6 {
   cursor: default;
   z-index: 10;
   opacity: 1;
-  background-color: #222222; 
+  background-color: #222222;
   animation: loader 1s ease-in 2.5s forwards;
   animation-fill-mode: forwards;
 }
-.loading-svg{
+.loading-svg {
   width: 80px;
   animation: loader-disp 1s ease-out 2.5s forwards;
 }
-.loading-text{
+.loading-text {
   color: rgb(255, 255, 255);
   position: absolute;
   font-weight: 100;
-  font-family: 'Averia Libre', cursive;
+  font-family: "Averia Libre", cursive;
   font-size: 15px;
   width: 100%;
   animation: loader-disp 1s ease-out 2.5s forwards;
-text-align: center;
+  text-align: center;
   margin-top: 120px;
 }
-.page-content{
+.page-content {
   animation: contentVisible 3.8s ease-in;
 }
 .section-title {
@@ -294,6 +294,7 @@ text-align: center;
 
 #intro {
   background-color: #222222;
+  box-shadow: 0px 0px 10px 10px rgba(34, 34, 34, 1);
   padding: 150px 0px 50px;
 }
 #intro .text {
@@ -465,6 +466,7 @@ text-align: center;
 
 #skills {
   background-color: #222222;
+  box-shadow: 0px 0px 10px 10px rgba(34, 34, 34, 1);
   padding: 80px 0px;
 }
 
@@ -716,6 +718,7 @@ text-align: center;
 
 #contact {
   background-color: #222222;
+  box-shadow: 0px 0px 10px 10px rgba(34, 34, 34, 1);
   padding: 50px 0px;
 }
 
@@ -831,7 +834,7 @@ footer .copyright p a:hover {
   }
 }
 @keyframes contentVisible {
-  0%{
+  0% {
     max-height: 0px;
     overflow: hidden;
   }
