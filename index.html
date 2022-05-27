@@ -1,137 +1,645 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Lakshan Rukantha" />
-    <meta
-      name="keywords"
-      content="lakshanrukantha, lakshan rukantha, lakshan, web developer, best web developer"
-    />
-    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-
-    <!-- HTML Meta Tags -->
     <title>Lakshan Rukantha</title>
-    <meta
-      name="description"
-      content="I am a Web Developer and this is my official website. You can hire me for make your dream website."
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://lakshanrukantha.github.io/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Lakshan Rukantha | Web Developer" />
-    <meta
-      property="og:description"
-      content="I am a Web Developer and this is my official website. You can hire me for make your dream website."
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&display=swap"
+      rel="stylesheet"
     />
-    <meta
-      property="og:image"
-      content="https://lakshanrukantha.github.io/images/og-image-social.png"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content="" />
-    <meta property="twitter:url" content="https://lakshanrukantha.github.io/" />
-    <meta name="twitter:title" content="Lakshan Rukantha | Web Developer" />
-    <meta
-      name="twitter:description"
-      content="I am a Web Developer and this is my official website. You can hire me for make your dream website."
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
     />
-    <meta
-      name="twitter:image"
-      content="https://lakshanrukantha.github.io/images/og-image-social.png"
-    />
-
-    <link rel="stylesheet" href="./styles/main.css" />
-    <title>Lakshan Rukantha</title>
+    <link rel="stylesheet" href="https://use.typekit.net/rrg4put.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
-    <div class="main-container">
-      <header class="header">
-        <nav class="navbar">
-          <a href="index.html" class="nav-logo">Lakshan Rukantha</a>
-          <ul class="nav-menu">
-            <div class="nav-item-sec">
-              <a href="index.html" class="nav-link">
-                <li class="nav-item">Home</li>
-              </a>
-            </div>
-            <div class="nav-item-sec">
-              <a href="./about.html" class="nav-link">
-                <li class="nav-item">About</li>
-              </a>
-            </div>
-            <div class="nav-item-sec">
-              <a href="./projects.html" class="nav-link">
-                <li class="nav-item">Projects</li>
-              </a>
-            </div>
-            <div class="nav-item-sec">
-              <a href="./blog.html" class="nav-link">
-                <li class="nav-item">Blog</li>
-              </a>
-            </div>
-            <div class="nav-item-sec">
-              <a href="contact.html" class="nav-link">
-                <li class="nav-item">Contact</li>
-              </a>
-            </div>
-          </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </nav>
-      </header>
+  <body id="to-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
-        <div class="heading">
-          <h1>Lakshan Rukantha</h1>
-        </div>
-        <!-- My Image Section -->
-        <div class="my-des-sec">
-          <div class="my-img"></div>
-          <p class="whoami fp">
-            Hello, I am a Front-End Developer. I can make attractive, modern and
-            user friendly web site for you.<br />
-          </p>
-          <div class="about-me-sec">
-            <a href="./about.html"
-              ><input type="button" value="About Me" id="about-btn"
-            /></a>
+        <a class="navbar-brand" href="index.html">LR</a>
+        <button class="navbar-toggler" type="button">
+          <div
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            id="nav-icon"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-          <div class="hire-me-sec">
-            <a href="mailto:rukanthalakshan@gmail.com">
-              <input type="button" value="Hire Me" id="hire-btn" />
-            </a>
-          </div>
+        </button>
+        <div class="collapse navbar-collapse collapse-bg" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-card-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About me</a>
+            </li>
+            <li class="nav-card-item">
+              <a class="nav-link js-scroll-trigger" href="#bio">My bio</a>
+            </li>
+            <li class="nav-card-item">
+              <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            </li>
+            <li class="nav-card-item">
+              <a class="nav-link js-scroll-trigger" href="#experience"
+                >Experience</a
+              >
+            </li>
+            <li class="nav-card-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <a
+              class="btn cv-download btn-success py-2 px-4 text-nowrap"
+              href=""
+              download="proposed_file_name"
+              >Download CV</a
+            >
+          </ul>
         </div>
       </div>
-      <div class="particles-main" id="particles"></div>
+    </nav>
+    <div class="loader"><svg class="loading-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: #22222200; display: block;" width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+      <path fill="none" stroke="#68d372" stroke-width="8" stroke-dasharray="128.29446411132812 128.29446411132812" d="M24.3 30C11.4 30 5 43.3 5 50s6.4 20 19.3 20c19.3 0 32.1-40 51.4-40 C88.6 30 95 43.3 95 50s-6.4 20-19.3 20C56.4 70 43.6 30 24.3 30z" stroke-linecap="round" style="transform:scale(0.8);transform-origin:50px 50px">
+        <animate attributeName="stroke-dashoffset" repeatCount="indefinite" dur="1s" keyTimes="0;1" values="0;256.58892822265625"></animate>
+      </path>
+      </svg>
+    <h6 class="loading-text">Lakshan Is Thinking...
+    </h6></div>
+    <div class="page-content">
+      <main>
+        <!-- Intro -->
+        <section id="intro">
+          <div
+            class="container"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            <div class="text">
+              <h1>
+                Hi, I am<br />
+                <h1 class="intro-animation">
+                  <span class="green my-name">Lakshan,</span>
+                </h1>
+                <br />
+              </h1>
+              <div class="typing">
+                <h1><span class="typing-text"></span></h1>
+              </div>
+              <p>
+                My name is <span id="intro-p">Lakshan Rukantha.</span> I'm a
+                <span id="intro-p">Student</span> &
+                <span id="intro-p">Multi-Talented Person</span> in
+                <a
+                  class="intro-p-url"
+                  href="https://www.google.com/maps/place/Sri+Lanka/"
+                  target="_blank"
+                  >Sri Lanka.</a
+                >
+                I like working on the <span id="intro-p">Front-End</span> of the
+                web.
+              </p>
+              <div class="intro-btns">
+                <a class="btn btn-success py-2" href="#"
+                  ><img
+                    style="
+                      width: 20px;
+                      filter: invert(100%) sepia(100%) saturate(0%)
+                        hue-rotate(288deg) brightness(102%) contrast(102%);
+                    "
+                    src="img/icon/download-solid.svg"
+                    alt=""
+                  />Download CV</a
+                >
+                <a class="btn btn-outline-success py-2" href="#contact"
+                  ><img style="width: 20px" src="img/icon/email.svg" alt="" />
+                  <span>Contact Me</span></a
+                >
+              </div>
+              <a class="scroll" href="#about">Scroll Down</a>
+            </div>
+            <div class="img">
+              <img
+                onContextMenu="return false;"
+                class="intro-img"
+                src="img/photo-intro.jpg"
+                alt="intro-image"
+              />
+            </div>
+          </div>
+        </section>
+        <svg
+          width="100%"
+          height="100%"
+          id="svg"
+          viewBox="0 0 1440 400"
+          xmlns="http://www.w3.org/2000/svg"
+          class="transition duration-300 ease-in-out delay-150"
+        >
+          <style>
+            .path-0 {
+              animation: pathAnim-0 4s;
+              animation-timing-function: linear;
+              animation-iteration-count: infinite;
+            }
+            @keyframes pathAnim-0 {
+              0% {
+                d: path(
+                  "M 0,400 C 0,400 0,200 0,200 C 62.43333333333334,168.3025641025641 124.86666666666667,136.6051282051282 219,129 C 313.1333333333333,121.3948717948718 438.9666666666666,137.88205128205126 522,143 C 605.0333333333334,148.11794871794874 645.2666666666668,141.86666666666665 718,158 C 790.7333333333332,174.13333333333335 895.9666666666667,212.65128205128207 974,232 C 1052.0333333333333,251.34871794871793 1102.8666666666666,251.52820512820512 1176,243 C 1249.1333333333334,234.47179487179488 1344.5666666666666,217.23589743589744 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+              }
+              25% {
+                d: path(
+                  "M 0,400 C 0,400 0,200 0,200 C 70.93846153846152,195.9897435897436 141.87692307692305,191.9794871794872 233,204 C 324.12307692307695,216.0205128205128 435.4307692307692,244.07179487179485 515,256 C 594.5692307692308,267.92820512820515 642.4,263.73333333333335 713,261 C 783.6,258.26666666666665 876.9692307692308,256.99487179487176 956,252 C 1035.0307692307692,247.00512820512822 1099.7230769230769,238.2871794871795 1178,229 C 1256.2769230769231,219.7128205128205 1348.1384615384616,209.85641025641024 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+              }
+              50% {
+                d: path(
+                  "M 0,400 C 0,400 0,200 0,200 C 79.91025641025641,201.23076923076923 159.82051282051282,202.46153846153848 249,214 C 338.1794871794872,225.53846153846152 436.6282051282052,247.38461538461536 516,262 C 595.3717948717948,276.61538461538464 655.6666666666667,284 722,263 C 788.3333333333333,242.00000000000003 860.7051282051282,192.6153846153846 948,171 C 1035.2948717948718,149.3846153846154 1137.5128205128203,155.53846153846152 1222,165 C 1306.4871794871797,174.46153846153848 1373.2435897435898,187.23076923076923 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+              }
+              75% {
+                d: path(
+                  "M 0,400 C 0,400 0,200 0,200 C 60.45384615384617,191.85897435897436 120.90769230769234,183.71794871794873 202,180 C 283.09230769230766,176.28205128205127 384.8230769230769,176.9871794871795 481,186 C 577.1769230769231,195.0128205128205 667.8,212.33333333333331 757,221 C 846.2,229.66666666666669 933.9769230769232,229.67948717948718 997,234 C 1060.0230769230768,238.32051282051282 1098.2923076923075,246.94871794871796 1168,242 C 1237.7076923076925,237.05128205128204 1338.8538461538462,218.52564102564102 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+              }
+              100% {
+                d: path(
+                  "M 0,400 C 0,400 0,200 0,200 C 62.43333333333334,168.3025641025641 124.86666666666667,136.6051282051282 219,129 C 313.1333333333333,121.3948717948718 438.9666666666666,137.88205128205126 522,143 C 605.0333333333334,148.11794871794874 645.2666666666668,141.86666666666665 718,158 C 790.7333333333332,174.13333333333335 895.9666666666667,212.65128205128207 974,232 C 1052.0333333333333,251.34871794871793 1102.8666666666666,251.52820512820512 1176,243 C 1249.1333333333334,234.47179487179488 1344.5666666666666,217.23589743589744 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+              }
+            }
+          </style>
+          <path
+            d="M 0,400 C 0,400 0,200 0,200 C 62.43333333333334,168.3025641025641 124.86666666666667,136.6051282051282 219,129 C 313.1333333333333,121.3948717948718 438.9666666666666,137.88205128205126 522,143 C 605.0333333333334,148.11794871794874 645.2666666666668,141.86666666666665 718,158 C 790.7333333333332,174.13333333333335 895.9666666666667,212.65128205128207 974,232 C 1052.0333333333333,251.34871794871793 1102.8666666666666,251.52820512820512 1176,243 C 1249.1333333333334,234.47179487179488 1344.5666666666666,217.23589743589744 1440,200 C 1440,200 1440,400 1440,400 Z"
+            stroke="none"
+            stroke-width="0"
+            fill="#222222ff"
+            class="transition-all duration-300 ease-in-out delay-150 path-0"
+            transform="rotate(-180 720 200)"
+          ></path>
+        </svg>
+        <!-- About me -->
+        <section id="about">
+          <div
+            class="about container"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <h6 class="section-title">About Me</h6>
+            <div class="about-wrapper">
+              <div class="left">
+                <div>
+                  <img src="img/icon/woman-icon.svg" alt="" />
+                  <h2><span class="green">2 Years</span> Job Experience</h2>
+                </div>
+                <div>
+                  <img src="img/icon/projects-icon.svg" alt="" />
+                  <h2><span class="green">08+</span> Projects Completed</h2>
+                </div>
+              </div>
+              <div class="right">
+                <h1>
+                  What are my strongest sides
+                  <span class="green">and skills?</span>
+                </h1>
+                <p>
+                  I’m an empathetic person who’s skilled at relating to people and
+                  making them feel heard. As well as I’m very collaborative and
+                  have always preferred to work in groups. I have a solid work
+                  ethic. When I'm working on a project, I don't just want to meet
+                  deadlines. Rather, I prefer to complete the project well ahead
+                  of schedule. I pride myself on my problem-solving skills and my
+                  ability to resolve potentially difficult situations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- My bio -->
+        <section id="bio">
+          <div
+            class="bio container"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <div class="img">
+              <div class="bio-img"></div>
+            </div>
+            <div class="text">
+              <h6 class="section-title">My Bio</h6>
+              <h1>
+                <span class="green">Biography,<br /></span> a few words
+              </h1>
+              <p>
+                Hi, I’m Lakshan Rukantha based in Sri Lanka. I am a Freelance
+                Front-End Developer. I love Programming Languages & learn about
+                New Technologies. I look forward to learning something new in my
+                free time.
+              </p>
+            </div>
+          </div>
+        </section>
+        <svg
+          width="100%"
+          height="100%"
+          id="svg"
+          viewBox="0 0 1440 400"
+          xmlns="http://www.w3.org/2000/svg"
+          class="transition duration-300 ease-in-out delay-150"
+        >
+          <style>
+            .path-0 {
+              animation: pathAnim-0 4s;
+              animation-timing-function: linear;
+              animation-iteration-count: infinite;
+            }
+            @keyframes pathAnim-0 {
+              0% {
+                d: path(
+                  "M 0,500 C 0,500 0,250 0,250 C 53.5,275.4589743589744 107,300.9179487179487 202,290 C 297,279.0820512820513 433.5,231.7871794871795 519,219 C 604.5,206.2128205128205 638.9999999999999,227.93333333333334 710,242 C 781.0000000000001,256.06666666666666 888.5,262.4794871794872 968,272 C 1047.5,281.5205128205128 1099,294.14871794871794 1173,291 C 1247,287.85128205128206 1343.5,268.925641025641 1440,250 C 1440,250 1440,500 1440,500 Z"
+                );
+              }
+              25% {
+                d: path(
+                  "M 0,500 C 0,500 0,250 0,250 C 77.53846153846152,284.94615384615383 155.07692307692304,319.8923076923077 236,310 C 316.92307692307696,300.1076923076923 401.2307692307693,245.3769230769231 486,248 C 570.7692307692307,250.6230769230769 656.0000000000002,310.6 738,328 C 819.9999999999998,345.4 898.7692307692305,320.22307692307686 971,304 C 1043.2307692307695,287.77692307692314 1108.923076923077,280.5076923076923 1186,273 C 1263.076923076923,265.4923076923077 1351.5384615384614,257.74615384615385 1440,250 C 1440,250 1440,500 1440,500 Z"
+                );
+              }
+              50% {
+                d: path(
+                  "M 0,500 C 0,500 0,250 0,250 C 77.8153846153846,299.1128205128205 155.6307692307692,348.22564102564104 236,343 C 316.3692307692308,337.77435897435896 399.29230769230776,278.21025641025636 475,277 C 550.7076923076922,275.78974358974364 619.2,332.93333333333334 702,310 C 784.8,287.06666666666666 881.9076923076923,184.0564102564103 964,184 C 1046.0923076923077,183.9435897435897 1113.1692307692308,286.8410256410257 1190,315 C 1266.8307692307692,343.1589743589743 1353.4153846153845,296.57948717948716 1440,250 C 1440,250 1440,500 1440,500 Z"
+                );
+              }
+              75% {
+                d: path(
+                  "M 0,500 C 0,500 0,250 0,250 C 81.18717948717949,259.9846153846154 162.37435897435898,269.96923076923076 235,286 C 307.625641025641,302.03076923076924 371.68974358974356,324.1076923076924 455,326 C 538.3102564102564,327.8923076923076 640.8666666666667,309.6 725,267 C 809.1333333333333,224.4 874.8435897435897,157.4923076923077 948,162 C 1021.1564102564103,166.5076923076923 1101.7589743589745,242.43076923076922 1185,269 C 1268.2410256410255,295.5692307692308 1354.1205128205129,272.7846153846154 1440,250 C 1440,250 1440,500 1440,500 Z"
+                );
+              }
+              100% {
+                d: path(
+                  "M 0,500 C 0,500 0,250 0,250 C 53.5,275.4589743589744 107,300.9179487179487 202,290 C 297,279.0820512820513 433.5,231.7871794871795 519,219 C 604.5,206.2128205128205 638.9999999999999,227.93333333333334 710,242 C 781.0000000000001,256.06666666666666 888.5,262.4794871794872 968,272 C 1047.5,281.5205128205128 1099,294.14871794871794 1173,291 C 1247,287.85128205128206 1343.5,268.925641025641 1440,250 C 1440,250 1440,500 1440,500 Z"
+                );
+              }
+            }
+          </style>
+          <path
+            d="M 0,500 C 0,500 0,250 0,250 C 53.5,275.4589743589744 107,300.9179487179487 202,290 C 297,279.0820512820513 433.5,231.7871794871795 519,219 C 604.5,206.2128205128205 638.9999999999999,227.93333333333334 710,242 C 781.0000000000001,256.06666666666666 888.5,262.4794871794872 968,272 C 1047.5,281.5205128205128 1099,294.14871794871794 1173,291 C 1247,287.85128205128206 1343.5,268.925641025641 1440,250 C 1440,250 1440,500 1440,500 Z"
+            stroke="none"
+            stroke-width="0"
+            fill="#222222ff"
+            class="transition-all duration-300 ease-in-out delay-150 path-0"
+          ></path>
+        </svg>
+        <!-- Skills -->
+        <section id="skills" class="text-center">
+          <div
+            class="container"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <h6 class="section-title">Skills</h6>
+            <h1>My skill <span class="green">levels</span></h1>
+            <div class="skills-progress">
+              <div class="skill-wrapper progress-95">
+                <span class="label">95<span class="smaller">%</span></span>
+                <div class="progress">
+                  <div class="left-side half-circle"></div>
+                  <div class="right-side half-circle"></div>
+                </div>
+                <div class="shadow"></div>
+                <span class="skill-name">Web Development</span>
+              </div>
+              <div class="skill-wrapper progress-75">
+                <span class="label">75<span class="smaller">%</span></span>
+                <div class="progress">
+                  <div class="left-side half-circle"></div>
+                  <div class="right-side half-circle"></div>
+                </div>
+                <div class="shadow"></div>
+                <span class="skill-name">UI/UX Design</span>
+              </div>
+              <div class="skill-wrapper progress-64">
+                <span class="label">64<span class="smaller">%</span></span>
+                <div class="progress">
+                  <div class="left-side half-circle"></div>
+                  <div class="right-side half-circle"></div>
+                </div>
+                <div class="shadow"></div>
+                <span class="skill-name">Sound Designing</span>
+              </div>
+              <div class="skill-wrapper progress-85">
+                <span class="label">70<span class="smaller">%</span></span>
+                <div class="progress">
+                  <div class="left-side half-circle"></div>
+                  <div class="right-side half-circle"></div>
+                </div>
+                <div class="shadow"></div>
+                <span class="skill-name">Photography</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <svg
+          width="100%"
+          height="100%"
+          id="svg"
+          viewBox="0 0 1440 400"
+          xmlns="http://www.w3.org/2000/svg"
+          class="transition duration-300 ease-in-out delay-150"
+        >
+          <style>
+            .path-0 {
+              animation: pathAnim-0 4s;
+              animation-timing-function: linear;
+              animation-iteration-count: infinite;
+            }
+            @keyframes pathAnim-0 {
+              0% {
+                d: path(
+                  "M 0,400 C 0,400 0,200 0,200 C 75.28461538461539,167.45897435897436 150.56923076923078,134.91794871794872 239,134 C 327.4307692307692,133.08205128205128 429.0076923076923,163.7871794871795 513,172 C 596.9923076923077,180.2128205128205 663.4000000000001,165.93333333333337 741,183 C 818.5999999999999,200.06666666666663 907.3923076923077,248.47948717948714 977,269 C 1046.6076923076923,289.52051282051286 1097.0307692307692,282.14871794871794 1171,266 C 1244.9692307692308,249.85128205128206 1342.4846153846154,224.92564102564103 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+              }
+              25% {
+                d: path(
+                  "M 0,400 C 0,400 0,200 0,200 C 62.7923076923077,160.5179487179487 125.5846153846154,121.03589743589743 199,126 C 272.4153846153846,130.96410256410257 356.45384615384614,180.37435897435896 443,215 C 529.5461538461539,249.62564102564104 618.6000000000001,269.4666666666667 713,246 C 807.3999999999999,222.53333333333333 907.1461538461538,155.75897435897434 987,144 C 1066.8538461538462,132.24102564102566 1126.8153846153846,175.4974358974359 1199,194 C 1271.1846153846154,212.5025641025641 1355.5923076923077,206.25128205128203 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+              }
+              50% {
+                d: path(
+                  "M 0,400 C 0,400 0,200 0,200 C 76.36666666666665,193.56923076923078 152.7333333333333,187.13846153846154 230,176 C 307.2666666666667,164.86153846153846 385.4333333333334,149.0153846153846 470,151 C 554.5666666666666,152.9846153846154 645.5333333333333,172.80000000000004 720,174 C 794.4666666666667,175.19999999999996 852.4333333333333,157.7846153846154 922,150 C 991.5666666666667,142.2153846153846 1072.7333333333333,144.06153846153848 1161,154 C 1249.2666666666667,163.93846153846152 1344.6333333333332,181.96923076923076 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+              }
+              75% {
+                d: path(
+                  "M 0,400 C 0,400 0,200 0,200 C 65.16666666666669,221.14102564102564 130.33333333333337,242.28205128205127 223,244 C 315.66666666666663,245.71794871794873 435.83333333333326,228.01282051282053 521,214 C 606.1666666666667,199.98717948717947 656.3333333333334,189.66666666666666 728,206 C 799.6666666666666,222.33333333333334 892.8333333333333,265.3205128205128 974,265 C 1055.1666666666667,264.6794871794872 1124.3333333333335,221.05128205128204 1200,203 C 1275.6666666666665,184.94871794871796 1357.8333333333333,192.47435897435898 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+              }
+              100% {
+                d: path(
+                  "M 0,400 C 0,400 0,200 0,200 C 75.28461538461539,167.45897435897436 150.56923076923078,134.91794871794872 239,134 C 327.4307692307692,133.08205128205128 429.0076923076923,163.7871794871795 513,172 C 596.9923076923077,180.2128205128205 663.4000000000001,165.93333333333337 741,183 C 818.5999999999999,200.06666666666663 907.3923076923077,248.47948717948714 977,269 C 1046.6076923076923,289.52051282051286 1097.0307692307692,282.14871794871794 1171,266 C 1244.9692307692308,249.85128205128206 1342.4846153846154,224.92564102564103 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+              }
+            }
+          </style>
+          <path
+            d="M 0,400 C 0,400 0,200 0,200 C 75.28461538461539,167.45897435897436 150.56923076923078,134.91794871794872 239,134 C 327.4307692307692,133.08205128205128 429.0076923076923,163.7871794871795 513,172 C 596.9923076923077,180.2128205128205 663.4000000000001,165.93333333333337 741,183 C 818.5999999999999,200.06666666666663 907.3923076923077,248.47948717948714 977,269 C 1046.6076923076923,289.52051282051286 1097.0307692307692,282.14871794871794 1171,266 C 1244.9692307692308,249.85128205128206 1342.4846153846154,224.92564102564103 1440,200 C 1440,200 1440,400 1440,400 Z"
+            stroke="none"
+            stroke-width="0"
+            fill="#222222ff"
+            class="transition-all duration-300 ease-in-out delay-150 path-0"
+            transform="rotate(-180 720 200)"
+          ></path>
+        </svg>
+        <!-- Experience -->
+        <section id="experience" class="text-center">
+          <div
+            class="container"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <h6 class="section-title">My previous jobs</h6>
+            <h1>My <span class="green">Experience</span></h1>
+            <div class="jobs">
+              <div class="job-item first">
+                <p class="date">October 2021 - January 2022</p>
+                <p class="position">Retail Cashier</p>
+                <p class="company">John Keells Holdings (PLC)</p>
+                <p class="Duties-Res">Duties & Responsibilities</p>
+                <div class="duties-coll">
+                  <ul>
+                    <li>Process sales transactions.</li>
+                    <li>
+                      Calculate the cost of products or services & Accept
+                      payments.
+                    </li>
+                    <li>
+                      Calculate and return change when required by the payment
+                      method.
+                    </li>
+                    <li>
+                      Maintain adequate change denominations in the cash drawer
+                      and request additional change.
+                    </li>
+                    <li>Answer customer questions about products or services.</li>
+                    <li>Reconcile cash drawers and sales receipts.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <svg
+          width="100%"
+          height="100%"
+          id="svg"
+          viewBox="0 0 1440 400"
+          xmlns="http://www.w3.org/2000/svg"
+          class="transition duration-300 ease-in-out delay-150"
+        >
+          <style>
+            .path-0 {
+              animation: pathAnim-0 4s;
+              animation-timing-function: linear;
+              animation-iteration-count: infinite;
+            }
+            @keyframes pathAnim-0 {
+              0% {
+                d: path(
+                  "M 0,400 C 0,400 0,200 0,200 C 63.06410256410257,245.6948717948718 126.12820512820514,291.3897435897436 219,265 C 311.87179487179486,238.6102564102564 434.551282051282,140.1358974358974 510,145 C 585.448717948718,149.8641025641026 613.6666666666666,258.0666666666667 679,266 C 744.3333333333334,273.9333333333333 846.7820512820515,181.59743589743587 939,167 C 1031.2179487179485,152.40256410256413 1113.2051282051282,215.54358974358976 1195,234 C 1276.7948717948718,252.45641025641024 1358.397435897436,226.2282051282051 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+              }
+              25% {
+                d: path(
+                  "M 0,400 C 0,400 0,200 0,200 C 59.02307692307693,174.23846153846154 118.04615384615386,148.4769230769231 197,161 C 275.95384615384614,173.5230769230769 374.8384615384615,224.33076923076922 469,222 C 563.1615384615385,219.66923076923078 652.6000000000001,164.2 732,162 C 811.3999999999999,159.8 880.7615384615383,210.86923076923077 963,231 C 1045.2384615384617,251.13076923076923 1140.3538461538462,240.3230769230769 1222,230 C 1303.6461538461538,219.6769230769231 1371.8230769230768,209.83846153846156 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+              }
+              50% {
+                d: path(
+                  "M 0,400 C 0,400 0,200 0,200 C 61.72564102564101,174.16153846153847 123.45128205128202,148.32307692307694 203,148 C 282.548717948718,147.67692307692306 379.92051282051284,172.86923076923074 473,205 C 566.0794871794872,237.13076923076926 654.8666666666667,276.20000000000005 733,270 C 811.1333333333333,263.79999999999995 878.6128205128206,212.33076923076922 944,189 C 1009.3871794871794,165.66923076923078 1072.6820512820511,170.4769230769231 1155,177 C 1237.3179487179489,183.5230769230769 1338.6589743589743,191.76153846153846 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+              }
+              75% {
+                d: path(
+                  "M 0,400 C 0,400 0,200 0,200 C 88.1820512820513,194.46923076923076 176.3641025641026,188.93846153846152 255,196 C 333.6358974358974,203.06153846153848 402.7256410256409,222.7153846153846 491,232 C 579.2743589743591,241.2846153846154 686.7333333333333,240.20000000000002 754,231 C 821.2666666666667,221.79999999999998 848.3410256410258,204.48461538461538 918,189 C 987.6589743589742,173.51538461538462 1099.902564102564,159.86153846153846 1194,162 C 1288.097435897436,164.13846153846154 1364.0487179487181,182.06923076923078 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+              }
+              100% {
+                d: path(
+                  "M 0,400 C 0,400 0,200 0,200 C 63.06410256410257,245.6948717948718 126.12820512820514,291.3897435897436 219,265 C 311.87179487179486,238.6102564102564 434.551282051282,140.1358974358974 510,145 C 585.448717948718,149.8641025641026 613.6666666666666,258.0666666666667 679,266 C 744.3333333333334,273.9333333333333 846.7820512820515,181.59743589743587 939,167 C 1031.2179487179485,152.40256410256413 1113.2051282051282,215.54358974358976 1195,234 C 1276.7948717948718,252.45641025641024 1358.397435897436,226.2282051282051 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+              }
+            }
+          </style>
+          <path
+            d="M 0,400 C 0,400 0,200 0,200 C 63.06410256410257,245.6948717948718 126.12820512820514,291.3897435897436 219,265 C 311.87179487179486,238.6102564102564 434.551282051282,140.1358974358974 510,145 C 585.448717948718,149.8641025641026 613.6666666666666,258.0666666666667 679,266 C 744.3333333333334,273.9333333333333 846.7820512820515,181.59743589743587 939,167 C 1031.2179487179485,152.40256410256413 1113.2051282051282,215.54358974358976 1195,234 C 1276.7948717948718,252.45641025641024 1358.397435897436,226.2282051282051 1440,200 C 1440,200 1440,400 1440,400 Z"
+            stroke="none"
+            stroke-width="0"
+            fill="#222222ff"
+            class="transition-all duration-300 ease-in-out delay-150 path-0"
+          ></path>
+        </svg>
+        <!-- Contact -->
+        <section id="contact" class="text-center">
+          <div
+            class="container"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <h6 class="section-title">Contact</h6>
+            <h1>Call or write <span class="green">anytime</span></h1>
+            <div class="row">
+              <div class="form col-md-7 col-lg-8">
+                <form id="contact-form" action="" method="post">
+                  <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">E-mail Address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="Message"
+                      placeholder=""
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-success py-2 px-">
+                    Send Message
+                  </button>
+                </form>
+              </div>
+              <div class="img col-md-5 col-lg-4">
+                <img class="contact-img" src="img/photo-contact.jpg" alt="" />
+              </div>
+              <div
+                class="contacts img col-xl-8"
+                data-aos="zoom-in"
+                data-aos-duration="5000"
+                data-aos-delay="250"
+              >
+                <div class="social-media">
+                  <p>Social Media</p>
+                  <a href="" class="me-2 text-reset"
+                    ><img src="img/icon/instagram-icon.svg" alt=""
+                  /></a>
+                  <a href="" class="me-2 text-reset"
+                    ><img src="img/icon/facebook-icon.svg" alt=""
+                  /></a>
+                  <a href="" class="me-2 text-reset"
+                    ><img src="img/icon/twitter-icon.svg" alt=""
+                  /></a>
+                  <a href="" class="me-2 text-reset"
+                    ><img src="img/icon/linkedin-icon.svg" alt=""
+                  /></a>
+                </div>
+                <div class="email">
+                  <p>E-Mail :</p>
+                  <p class="white">rukanthalakshan@gmail.com</p>
+                </div>
+                <div class="phone">
+                  <p>Phone Number :</p>
+                  <p class="white">+94 76 372 1373</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <a href="#to-top">
+        <div class="to-top"><i class="fa-solid fa-angles-up"></i></div>
+      </a>
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="copyright">
+            <p>
+              &copy; 2022
+              <a
+                href="https://lakshanrukantha.github.io"
+                title="Official Website"
+                target="_blank"
+                >Lakshan Rukantha</a
+              >
+              <span id="heart-icon">&#10084;</span> | All rights reserved.
+            </p>
+            <!--
+                    This website is licenced by Lakshan Rukantha),
+                    You are free to: Share and Adapt. You must give appropriate credit, you may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+                    -->
+          </div>
+        </div>
+      </footer>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="js/tilt.js"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"
+        target="_blank"
+      ></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script
+        src="https://kit.fontawesome.com/0e035b9984.js"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://kit.fontawesome.com/0e035b9984.js"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"
+      ></script>
+      <script src="js/main.js"></script>
+      <script>
+        AOS.init();
+      </script>
     </div>
-
-    <footer>
-      <h6 class="footer">© 2021 Lakshan Rukantha. All rights reserved.</h6>
-    </footer>
-    <script src="./js/particles.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/app.js"></script>
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-      var Tawk_API = Tawk_API || {},
-        Tawk_LoadStart = new Date();
-      (function () {
-        var s1 = document.createElement("script"),
-          s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = "https://embed.tawk.to/6228c3561ffac05b1d7dc498/1ftnjm2p1";
-        s1.charset = "UTF-8";
-        s1.setAttribute("crossorigin", "*");
-        s0.parentNode.insertBefore(s1, s0);
-      })();
-    </script>
-    <!--End of Tawk.to Script-->
   </body>
 </html>
