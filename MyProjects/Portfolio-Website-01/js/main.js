@@ -696,16 +696,20 @@ $(document).ready(function () {
   })();
 });
 
-new Typewriter(".typing-text", {
-  strings: [
-    "Front-End Developer",
-    "UI/UX Designer",
-    "Sound Designer",
-    "Photographer",
-  ],
-  autoStart: true,
-  loop: true,
-});
+setTimeout(() => {
+  new Typewriter(".typing-text", {
+    strings: [
+      "Front-End Developer",
+      "UI/UX Designer",
+      "Sound Designer",
+      "Photographer",
+    ],
+    autoStart: true,
+    loop: true,
+    deleteSpeed: 50,
+    delay: 100,
+  });
+}, 2800);
 
 // Scroll to top button
 

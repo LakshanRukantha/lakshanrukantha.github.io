@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Press+Start&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Averia+Libre&display=swap");
 *,
 *::after,
 *::before {
@@ -275,7 +275,7 @@ h6 {
   color: rgb(255, 255, 255);
   position: absolute;
   font-weight: 100;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Averia Libre', cursive;
   font-size: 15px;
   width: 100%;
   animation: loader-disp 1s ease-out 2.5s forwards;
