@@ -308,7 +308,7 @@ h6 {
   justify-content: center;
 }
 #intro p {
-  margin-top: 0px !important;
+  margin-top: -10px !important;
   margin-bottom: 20px;
 }
 .intro-p-url {
@@ -797,6 +797,10 @@ footer .copyright p a:hover {
   }
 }
 @media (max-width: 400px) {
+  #intro p {
+    margin-top: -10px !important;
+    margin-bottom: 20px;
+  }
   #intro .btn {
     width: 100%;
     margin-bottom: 20px;
@@ -1127,7 +1131,7 @@ footer .copyright p a:hover {
     position: relative;
   }
   #intro p {
-    margin-top: 40px;
+    margin-top: 40px !important;
     margin-bottom: 20px;
   }
   #intro .my-name::before {
@@ -1229,7 +1233,7 @@ footer .copyright p a:hover {
     padding-left: 20% !important;
   }
   #intro p {
-    margin-top: 40px;
+    margin-top: 30px !important;
     margin-bottom: 20px;
   }
   .typing {
