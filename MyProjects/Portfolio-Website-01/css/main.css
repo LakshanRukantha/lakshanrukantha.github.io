@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Press+Start&display=swap");
 *,
 *::after,
 *::before {
@@ -259,22 +259,26 @@ h6 {
   justify-content: center;
   height: 100vh;
   width: 100%;
+  cursor: default;
   z-index: 10;
   opacity: 1;
+  transition: all 1s;
   background-color: #222222; 
-  animation: loader 0s ease-in 2.5s forwards;
+  animation: loader 1s ease-in 2.5s forwards;
   animation-fill-mode: forwards;
 }
 .loading-svg{
   width: 80px;
+  animation: loader-disp 1s ease-out 2.5s forwards;
 }
 .loading-text{
   color: rgb(255, 255, 255);
   position: absolute;
   font-weight: 100;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Press Start 2P', cursive;
   font-size: 15px;
   width: 100%;
+  animation: loader-disp 1s ease-out 2.5s forwards;
 text-align: center;
   margin-top: 120px;
 }
@@ -818,11 +822,13 @@ footer .copyright p a:hover {
 }
 @keyframes loader {
   to {
-    width: 0;
-    height: 0;
     opacity: 0;
-    transition: all 1s;
-    overflow: hidden;
+    visibility: hidden;
+  }
+}
+@keyframes loader-disp {
+  to {
+    opacity: 0;
   }
 }
 @keyframes contentVisible {
