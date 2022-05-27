@@ -709,7 +709,7 @@ setTimeout(() => {
     deleteSpeed: 50,
     delay: 100,
   });
-}, 2500);
+}, 2400);
 
 // Scroll to top button
 
