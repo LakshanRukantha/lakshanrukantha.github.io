@@ -262,7 +262,7 @@ h6 {
   z-index: 10;
   opacity: 1;
   background-color: #222222; 
-  animation: loader 0s ease-in 1.5s forwards;
+  animation: loader 0s ease-in 2.5s forwards;
   animation-fill-mode: forwards;
 }
 .loading-svg{
@@ -279,7 +279,7 @@ text-align: center;
   margin-top: 120px;
 }
 .page-content{
-  animation: contentVisible 2.2s ease-in;
+  animation: contentVisible 3.8s ease-in;
 }
 .section-title {
   color: #68d372;
@@ -312,7 +312,7 @@ text-align: center;
 .intro-animation {
   animation: zoomInDown;
   animation-duration: 2s;
-  animation-delay: 1.5s;
+  animation-delay: 2s;
 }
 #intro h1 .my-name {
   font-size: 1.8em;
