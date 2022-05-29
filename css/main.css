@@ -223,7 +223,8 @@ h6 {
   outline: none;
 }
 .navbar-collapse {
-  backdrop-filter: blur(10px);
+  background-color: #222222a5;
+  backdrop-filter: blur(5px);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 40px 0px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -340,7 +341,7 @@ h6 {
   justify-content: center;
 }
 #intro p {
-  margin-top: -10px !important;
+  margin-top: 0px;
   margin-bottom: 20px;
 }
 .intro-p-url {

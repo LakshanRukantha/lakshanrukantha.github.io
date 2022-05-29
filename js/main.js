@@ -711,6 +711,19 @@ setTimeout(() => {
   });
 }, 2400);
 
+//Loading text handling
+
+new Typewriter(".loading-text", {
+  strings: ["Lakshan Is Thinking..."],
+  autoStart: true,
+  delay: 60,
+  cursor: "",
+});
+setTimeout(() => {
+  let loadingText = document.querySelector(".loader");
+  loadingText.style.display = "none";
+}, 4000);
+
 // Scroll to top button
 
 const scrollUp = document.querySelector(".to-top");
