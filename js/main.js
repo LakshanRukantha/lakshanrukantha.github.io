@@ -748,3 +748,35 @@ VanillaTilt.init(document.querySelector(".bio-img"), {
   startY: 0,
   glare: true,
 });
+
+var form = document.getElementById("contact-form");
+
+async function handleSubmit(event) {
+  event.preventDefault();
+  var status = document.getElementById("status");
+  var data = new FormData(event.target);
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+      Accept: "application/json",
+    },
+  })
+    .then((response) => {
+      swal({
+        title: "Thank You!",
+        text: "Your message sent successfully. I will get back to you soon!",
+        icon: "success",
+      });
+      form.reset();
+    })
+    .catch((error) => {
+      swal({
+        title: "Oops!",
+        text: "There was an problem with sending message. Try refreshing the page.",
+        icon: "error",
+      });
+      form.reset();
+    });
+}
+form.addEventListener("submit", handleSubmit);

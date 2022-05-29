@@ -778,7 +778,31 @@ h6 {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
-
+.swal-modal {
+  background-color: #ffffffd0;
+  backdrop-filter: blur(2px);
+}
+.swal-icon--success__ring {
+  border: 4px solid #68d372;
+}
+.swal-icon--success__line--long,
+.swal-icon--success__line--tip {
+  background-color: #68d372;
+}
+.swal-icon--success::before,
+.swal-icon--success::after,
+.swal-icon--success__hide-corners {
+  background-color: #ffffff00;
+}
+.swal-button {
+  padding: 8px;
+  width: 80px;
+  background-color: #68d372;
+}
+.swal-button:hover,
+.swal-button:active {
+  background-color: #68d372 !important;
+}
 footer {
   background-color: #222222;
   padding-bottom: 1px;
