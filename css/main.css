@@ -873,7 +873,6 @@ footer .copyright p a:hover {
 }
 @media (max-width: 400px) {
   #intro p {
-    margin-top: -10px !important;
     margin-bottom: 20px;
   }
   #intro .btn {
