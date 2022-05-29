@@ -751,6 +751,8 @@ VanillaTilt.init(document.querySelector(".bio-img"), {
 
 var form = document.getElementById("contact-form");
 
+// Contact form status handling
+
 async function handleSubmit(event) {
   event.preventDefault();
   var status = document.getElementById("status");
@@ -765,7 +767,7 @@ async function handleSubmit(event) {
     .then((response) => {
       swal({
         title: "Thank You!",
-        text: "Your message sent successfully. I will get back to you soon!",
+        text: "Your message sent successfully. I'll get back to you soon!",
         icon: "success",
       });
       form.reset();
@@ -773,7 +775,7 @@ async function handleSubmit(event) {
     .catch((error) => {
       swal({
         title: "Oops!",
-        text: "There was an problem with sending message. Try refreshing the page.",
+        text: "There was a problem with sending the message. Please refresh the page and try again later.",
         icon: "error",
       });
       form.reset();

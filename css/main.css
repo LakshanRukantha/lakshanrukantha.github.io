@@ -779,7 +779,7 @@ h6 {
   transform: scale(1.3);
 }
 .swal-modal {
-  background-color: #ffffffd0;
+  background-color: #ffffffde;
   backdrop-filter: blur(2px);
 }
 .swal-icon--success__ring {
