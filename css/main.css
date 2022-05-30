@@ -9,13 +9,38 @@
 }
 
 html {
-  scroll-padding-top: 80px;
+  overflow: auto;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Lato", sans-serif;
   color: #6e6e6e;
   min-width: 320px;
+  scrollbar-gutter: auto;
+}
+
+::-webkit-scrollbar {
+  position: absolute;
+  transform: rotate(90deg);
+  width: 8px;
+  background: #6e6e6e;
+  transition: border-radius 1s;
+  margin-top: 40px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #68d372;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  border-radius: 4px;
+  box-shadow: 0px 10px 50px 20px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff00;
 }
 
 .fb2022-copy {
