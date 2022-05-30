@@ -272,9 +272,10 @@ h6 {
   background-color: transparent;
 }
 
-.scroll-progress-thumb {
+#progress-bar {
   height: 5px;
   background-color: #68d372;
+  width: 0%;
 }
 
 .collapse-bg {
