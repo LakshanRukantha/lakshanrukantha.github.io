@@ -12,6 +12,68 @@ $(document).ready(function () {
   });
 });
 
+//Scroll To Sections
+
+function toAbout() {
+  var element = document.getElementById("about");
+  var headerOffset = 85;
+  var elementPosition = element.getBoundingClientRect().top;
+  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth",
+  });
+}
+
+function toBio() {
+  var element = document.getElementById("bio");
+  var headerOffset = 85;
+  var elementPosition = element.getBoundingClientRect().top;
+  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth",
+  });
+}
+
+function toSkills() {
+  var element = document.getElementById("skills");
+  var headerOffset = 85;
+  var elementPosition = element.getBoundingClientRect().top;
+  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth",
+  });
+}
+
+function toExperience() {
+  var element = document.getElementById("experience");
+  var headerOffset = 85;
+  var elementPosition = element.getBoundingClientRect().top;
+  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth",
+  });
+}
+
+function toContact() {
+  var element = document.getElementById("contact");
+  var headerOffset = 85;
+  var elementPosition = element.getBoundingClientRect().top;
+  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth",
+  });
+}
+
 //Scrolling Progress Bar
 
 window.onscroll = function () {
