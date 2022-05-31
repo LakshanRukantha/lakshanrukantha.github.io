@@ -58,7 +58,8 @@ a:hover {
 input,
 textarea {
   border-radius: 0px;
-  color: #6e6e6e !important;
+  padding-left: 0px !important;
+  color: #b1b1b1 !important;
 }
 
 input:focus,
@@ -786,12 +787,24 @@ h6 {
   border-bottom: 1px solid #6e6e6e;
 }
 
-#contact .img {
-  margin-top: 30px;
+.contact-bg {
+  width: 100%;
+  position: relative;
 }
 
-#contact .img img {
-  width: 100%;
+.contact-img {
+  position: relative;
+  display: block;
+  margin-top: 30px !important;
+  bottom: 0px !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/contact.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 350px;
+  height: 350px;
 }
 
 #contact h1 {
@@ -1391,9 +1404,7 @@ footer .copyright p a:hover {
     padding-bottom: 0px;
     padding-top: 40px;
   }
-  #contact .img {
-    margin-top: 120px;
-  }
+
   #contact .contacts {
     text-align: left;
     display: -webkit-box;
@@ -1409,10 +1420,7 @@ footer .copyright p a:hover {
   .contacts {
     padding-top: 80px;
   }
-  .contact-img {
-    display: flex;
-    margin-top: -80px;
-  }
+
   .to-top {
     position: fixed;
     display: inline-block;
