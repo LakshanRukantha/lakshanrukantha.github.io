@@ -56,7 +56,7 @@
           </div>
         </button>
         <div class="collapse navbar-collapse collapse-bg" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
+          <ul class="navbar-links">
             <li class="nav-card-item">
               <a class="nav-link js-scroll-trigger" onclick="toAbout()"
                 >About me</a
@@ -81,13 +81,9 @@
               >
             </li>
           </ul>
-          <ul class="navbar-nav ms-auto">
-            <a
-              class="btn cv-download btn-success py-2 px-4 text-nowrap"
-              href="#"
-              >Download CV</a
-            >
-          </ul>
+          <a href="#"
+            ><button class="button cv-download">Download CV</button></a
+          >
         </div>
       </div>
       <div class="scroll-progress-track">
@@ -160,7 +156,7 @@
                 web.
               </p>
               <div class="intro-btns">
-                <a class="btn btn-success py-2" href="#"
+                <a class="button btn-cv-download" href="#"
                   ><img
                     style="
                       width: 20px;
@@ -171,7 +167,7 @@
                     alt=""
                   />Download CV</a
                 >
-                <a class="btn btn-outline-success py-2" onclick="toContact()"
+                <a class="button btn-contact" onclick="toContact()"
                   ><img style="width: 20px" src="img/icon/email.svg" alt="" />
                   <span>Contact Me</span></a
                 >
@@ -594,7 +590,7 @@
                       required
                     ></textarea>
                   </div>
-                  <button type="submit" class="btn btn-success py-2 px-">
+                  <button type="submit" class="button btn-send-message">
                     Send Message
                   </button>
                 </form>

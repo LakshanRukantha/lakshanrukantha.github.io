@@ -69,22 +69,6 @@ textarea:focus {
   box-shadow: none !important;
 }
 
-.cv-download {
-  margin-top: -15px !important;
-  margin-right: 85px !important;
-}
-
-.btn-success {
-  background-color: #68d372;
-  border-color: #68d372;
-  border-radius: 0px;
-  font-weight: 600;
-}
-
-.btn-success:hover {
-  background-color: #4ea156;
-}
-
 .btn-outline-success {
   border-radius: 0px;
   color: white;
@@ -146,8 +130,13 @@ h6 {
   display: inline-block;
   color: white;
   padding: 0px 30px !important;
+  cursor: pointer;
   margin: 5px auto;
   margin-right: 20px;
+}
+
+.nav-card-item {
+  list-style: none;
 }
 
 .navbar li .nav-link:hover {
@@ -158,7 +147,7 @@ h6 {
   color: #68d372;
 }
 
-.navbar .btn {
+.navbar .button {
   position: relative;
   float: right;
   color: white;
@@ -259,10 +248,9 @@ h6 {
   line-height: 32px;
   overflow: hidden;
 }
-.navbar-collapse .cv-download {
+
+.cv-download {
   display: none;
-  font-size: 15px;
-  color: white !important;
 }
 
 .scroll-progress-track {
@@ -285,6 +273,11 @@ h6 {
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
+
+.navbar-links {
+  height: 196px;
+}
+
 .navbar-collapse .nav-link {
   font-size: 20px;
   font-family: "Koulen", cursive;
@@ -370,10 +363,18 @@ h6 {
   animation-duration: 1s;
   transition: color 0.4s ease-in-out;
 }
-#intro .btn {
+#intro .button {
   width: 45%;
   margin-bottom: 20px;
   border-radius: 4px;
+}
+.btn-contact {
+  background-color: #68d37200 !important;
+  border: 2px solid #68d372;
+  transition: background-color 0.2s ease-in-out;
+}
+.btn-contact:hover {
+  background-color: #68d372 !important;
 }
 .intro-btns {
   position: relative;
@@ -827,7 +828,12 @@ h6 {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
+.button {
+  color: white;
+  background-color: #68d372;
+  border: 2px solid #68d372;
+  padding: 8px 20px;
+}
 #contact .social-media a img:hover {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
@@ -929,7 +935,7 @@ footer .copyright p a:hover {
   #intro p {
     margin-bottom: 20px;
   }
-  #intro .btn {
+  #intro .button {
     width: 100%;
     margin-bottom: 20px;
     border-radius: 4px;
@@ -1135,6 +1141,26 @@ footer .copyright p a:hover {
     padding: 30px 0;
     background-color: #222222;
   }
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 85px;
+    justify-content: space-around;
+    background-color: #222222;
+  }
+
+  .navbar-links li {
+    display: inline-block;
+  }
+
+  .collapse button {
+    display: inline-block;
+    padding: 14px !important;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 4px;
+  }
 
   .scroll-progress-track {
     display: none;
@@ -1152,15 +1178,8 @@ footer .copyright p a:hover {
   .collapse-bg {
     background-color: #222222;
     background-image: none;
-    cursor: pointer;
   }
-  .navbar-collapse .cv-download {
-    display: inline-block;
-    background-color: #68d372 !important;
-    padding-top: 10px !important;
-    margin-right: 50px !important;
-    border-radius: 4px;
-  }
+
   .navbar-collapse .nav-link {
     font-size: 18px;
     color: white !important;
@@ -1191,6 +1210,7 @@ footer .copyright p a:hover {
   .navbar li .nav-link:hover {
     color: #68d372 !important;
   }
+
   .js-scroll-trigger:hover {
     background-color: #68d37210 !important;
     border-radius: 4px;
@@ -1208,20 +1228,6 @@ footer .copyright p a:hover {
   }
   .navbar li .active {
     color: #68d372;
-  }
-
-  .navbar .btn {
-    color: white;
-    position: absolute;
-    margin-right: 10px;
-    right: 20px;
-    top: 35px;
-    margin: 0px;
-    width: 150px;
-  }
-
-  .navbar .btn:hover {
-    color: white;
   }
 
   .navbar .navbar-toggler {
