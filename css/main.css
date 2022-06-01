@@ -1145,6 +1145,7 @@ footer .copyright p a:hover {
     display: flex;
     align-items: center;
     margin: 0 auto;
+    margin-right: 50px;
     height: 85px;
     justify-content: space-around;
     background-color: #222222;
@@ -1371,6 +1372,17 @@ footer .copyright p a:hover {
   .navbar-nav {
     padding-left: 20% !important;
   }
+
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-right: auto;
+    height: 85px;
+    justify-content: space-around;
+    background-color: #222222;
+  }
+
   #intro p {
     margin-top: 30px !important;
     margin-bottom: 20px;
