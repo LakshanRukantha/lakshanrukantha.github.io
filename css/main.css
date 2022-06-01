@@ -152,6 +152,12 @@ h6 {
   float: right;
   color: white;
   width: 150px;
+  cursor: pointer;
+}
+
+.navbar .button:active,
+.btn-send-message:active {
+  transform: scale(98%);
 }
 
 .navbar .btn:hover {
@@ -368,11 +374,18 @@ h6 {
   margin-bottom: 20px;
   border-radius: 4px;
 }
+
+#intro .button:active {
+  transform: scale(98%);
+}
+
 .btn-contact {
   background-color: #68d37200 !important;
   border: 2px solid #68d372;
   transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
 }
+
 .btn-contact:hover {
   background-color: #68d372 !important;
 }
@@ -780,6 +793,19 @@ h6 {
   border-radius: 4px;
 }
 
+.btn-send-message {
+  color: #ffffff;
+  background-color: #68d372;
+  pointer-events: auto !important;
+  padding: 8px 20px;
+  cursor: pointer !important;
+  z-index: 50;
+}
+
+.btn-send-message:active {
+  transform: scale(98%);
+}
+
 #contact #contact-form input,
 #contact #contact-form textarea {
   background-color: transparent;
@@ -828,7 +854,8 @@ h6 {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.button {
+#intro .button,
+.navbar .button {
   color: white;
   background-color: #68d372;
   border: 2px solid #68d372;
@@ -961,6 +988,9 @@ footer .copyright p a:hover {
   .duties-coll {
     width: 100% !important;
     margin-left: 0px !important;
+  }
+  .btn-send-message {
+    width: 100%;
   }
 }
 @media (min-width: 768px) {
@@ -1360,7 +1390,10 @@ footer .copyright p a:hover {
   }
   .contacts {
     max-width: 750px;
-    margin: 0 auto;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
   }
   footer {
     text-align: center;
