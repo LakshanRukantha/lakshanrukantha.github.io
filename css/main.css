@@ -362,6 +362,11 @@ h6 {
 #intro h1 .my-name {
   font-size: 1.8em;
 }
+
+#intro-p {
+  font-weight: bold;
+}
+
 #intro-p:hover {
   color: #68d372;
   display: inline-block;
@@ -389,6 +394,7 @@ h6 {
 .btn-contact:hover {
   background-color: #68d372 !important;
 }
+
 .intro-btns {
   position: relative;
   display: flex;
@@ -400,7 +406,7 @@ h6 {
   margin-bottom: 20px;
 }
 .intro-p-url {
-  text-decoration: none;
+  text-decoration: underline;
   display: inline-block !important;
   color: #6e6e6e;
 }
@@ -1304,6 +1310,38 @@ footer .copyright p a:hover {
     margin-top: 40px !important;
     margin-bottom: 20px;
   }
+  .btn-contact:hover {
+    background-color: #68d37200 !important;
+  }
+  .hbtn {
+    position: relative;
+  }
+
+  .hb-fill-right-bg::before {
+    position: absolute;
+    content: "";
+    left: -1.5px !important;
+    top: -1px !important;
+    background: #68d372;
+    transition-duration: 0.3s;
+    z-index: -1;
+    inset: 0px auto auto 0px;
+    border-radius: 2px;
+    width: 0px;
+    height: 104%;
+    opacity: 1;
+  }
+
+  .hb-fill-right-bg:hover::before {
+    width: 101%;
+    opacity: 1;
+  }
+
+  .hb-fill-right-bg:hover {
+    background: #68d372;
+    transition: all 0.3s ease 0s;
+  }
+
   #intro .my-name::before {
     content: "";
     width: 122px;
