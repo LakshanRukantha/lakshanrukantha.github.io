@@ -799,7 +799,7 @@ h6 {
   pointer-events: auto !important;
   padding: 8px 20px;
   cursor: pointer !important;
-  z-index: 50;
+  border: none;
 }
 
 .btn-send-message:active {
