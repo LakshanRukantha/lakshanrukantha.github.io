@@ -679,106 +679,54 @@ h6 {
   padding: 50px 0px;
 }
 
-#experience .jobs {
-  text-align: left;
-  margin-top: 40px;
+.jobs {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+.timeline {
+  width: 90%;
+  height: auto;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
 }
 
-#experience .jobs p {
+.timeline ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.timeline ul li {
+  padding: 10px;
+  background-color: #68d372;
+  text-align: justify;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
   margin-bottom: 0;
 }
-
-#experience .jobs .job-item {
-  border-left: 2px solid #68d372;
-  padding: 0px 40px 0px;
-  padding-bottom: 20px;
-  position: relative;
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
 }
-
-#experience .jobs .job-item .date,
-#experience .jobs .job-item .company {
-  color: black;
-  font-weight: 600;
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
 }
-.Duties-Res {
-  margin-top: -10px;
-  margin-bottom: 20px !important;
-  padding: 10px 0px;
-  color: #68d372;
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
 }
-.duties-coll {
-  margin: 0 auto;
-}
-.jobs li {
-  list-style: none;
-  padding: 5px 0px;
-  margin-left: -30px;
-}
-.jobs li::before {
-  content: "\f138";
-  position: relative;
-  margin-right: 10px;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-}
-#experience .jobs .job-item .date {
-  padding-bottom: 20px;
-}
-
-#experience .jobs .job-item .date::before {
-  content: "";
-  width: 30px;
-  height: 2px;
-  background-color: #68d372;
-  display: block;
-  position: absolute;
-  left: 0px;
-  top: 0.6rem;
-}
-
-#experience .jobs .job-item .date::after {
-  content: "";
-  width: 15px;
-  height: 15px;
-  background-color: white;
-  border: 2px solid #68d372;
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  left: 0px;
-  top: 0rem;
-  -webkit-transform: translate(-50%, 25%);
-  transform: translate(-50%, 25%);
-}
-
-#experience .jobs .job-item .position {
-  font-weight: 600;
-  color: #68d372;
-  font-size: 1.3rem;
-}
-
-#experience .jobs .job-item .company {
-  padding-bottom: 20px;
-}
-
-#experience .jobs .first {
-  padding-top: 60px;
-}
-.first .duties-coll li {
-  text-align: left;
-}
-#experience .jobs .first .date::before {
-  top: 70px;
-}
-
-#experience .jobs .first .date::after {
-  top: 60px;
-}
-
-#experience .jobs .fourth {
-  padding-bottom: 60px;
-}
-
 #contact {
   background-color: #222222;
   box-shadow: 0px 0px 10px 10px rgba(34, 34, 34, 1);
@@ -1102,40 +1050,57 @@ footer .copyright p a:hover {
     padding-bottom: 0px;
     margin-bottom: -50px;
   }
-  #experience .jobs .job-item {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #68d372;
+  }
+  .timeline ul li {
     width: 50%;
-    padding: 0px 70px;
+    position: relative;
+    margin-bottom: 50px;
   }
-  #experience .jobs .job-item .date::before {
-    width: 50px;
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
   }
-  #experience .jobs .second,
-  #experience .jobs .fourth {
-    margin-left: auto;
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
   }
-  #experience .jobs .first {
-    padding-top: 60px;
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid #68d372;
+    background-color: #ffffff;
+    top: 0px;
   }
-  #experience .jobs .first,
-  #experience .jobs .third {
-    margin-left: 2px;
-    text-align: right;
-    padding-left: 0;
-    border-left: 0px;
-    border-right: 2px solid #68d372;
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
   }
-  #experience .jobs .first .date::before,
-  #experience .jobs .third .date::before {
-    left: 100%;
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
   }
-  #experience .jobs .first .date::after,
-  #experience .jobs .third .date::after {
-    left: 100%;
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
   }
-  #experience .jobs .fourth {
-    padding-bottom: 150px;
+  .timeline ul li:hover::before {
+    background-color: #68d372;
   }
   #contact {
     margin-top: 0px;
@@ -1423,6 +1388,7 @@ footer .copyright p a:hover {
   #skills .section-title::before {
     height: 150px;
   }
+
   #contact {
     padding-bottom: 0px;
     padding-top: 30px;
