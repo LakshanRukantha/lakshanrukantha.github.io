@@ -701,30 +701,76 @@ h6 {
 .timeline ul li {
   padding: 10px;
   background-color: #68d372;
-  text-align: justify;
+  text-align: left;
   color: white;
   border-radius: 10px;
   margin-bottom: 20px;
 }
+
 .timeline ul li:last-child {
   margin-bottom: 0;
 }
-.timeline-content h1 {
+
+.timeline-content .title {
   font-weight: 500;
   font-size: 25px;
   line-height: 30px;
+  margin-bottom: 5px;
+}
+.timeline-content .birth::before {
+  content: "\f1fd";
+  position: relative;
+  margin-right: 5px;
+  -webkit-text-stroke: 1px #68d372;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+}
+.timeline-content .education::before {
+  content: "\f19d";
+  position: relative;
+  margin-right: 5px;
+  -webkit-text-stroke: 1px #68d372;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+}
+.timeline-content .school::before {
+  content: "\e56b";
+  position: relative;
+  margin-right: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+}
+.timeline-content .sub-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222222;
   margin-bottom: 10px;
+}
+.timeline-content .globe::before {
+  content: "\f57e";
+  position: relative;
+  margin-right: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
 }
 .timeline-content p {
   font-size: 16px;
-  line-height: 30px;
+  font-family: "Lato", sans-serif;
+  text-align: justify;
   font-weight: 300;
 }
 .timeline-content .date {
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 600;
   margin-bottom: 10px;
   letter-spacing: 2px;
+}
+.timeline-content .date::before {
+  content: "\f783";
+  position: relative;
+  margin-right: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
 }
 #contact {
   background-color: #222222;
@@ -1097,7 +1143,9 @@ footer .copyright p a:hover {
   .timeline-content .date {
     position: absolute;
     top: -30px;
+    left: 0px;
   }
+
   .timeline ul li:hover::before {
     background-color: #68d372;
   }
