@@ -713,7 +713,7 @@ h6 {
 
 .timeline-content .title {
   font-weight: 500;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 30px;
   margin-bottom: 5px;
 }
@@ -742,7 +742,7 @@ h6 {
 }
 .timeline-content .sub-title {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: normal;
   color: #222222;
   margin-bottom: 10px;
 }
