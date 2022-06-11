@@ -872,3 +872,5 @@ async function handleSubmit(event) {
     });
 }
 form.addEventListener("submit", handleSubmit);
+
+// Skills Section Animation On Hover

@@ -545,7 +545,6 @@ h6 {
 
 #skills .container .div-card {
   position: relative;
-  padding: 10px;
   width: 80px;
   height: 80px;
   background-color: #222222;
@@ -556,18 +555,41 @@ h6 {
   filter: grayscale(0%);
 }
 #skills .container .div-card-item {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
   border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-#skills .container .div-card span {
-  color: #b1b1b1;
+#skills .container .div-card .skill-level {
+  position: absolute;
+  display: table;
+  transition: opacity 0.4s;
+  opacity: 0%;
   font-size: 15px;
-  display: block;
-  margin-top: 15px;
+  z-index: 2;
+  color: #ffffff;
+  backdrop-filter: blur(2px);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#skills .container .div-card span {
+  position: relative;
+  display: table;
+  font-size: 15px;
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #skills .container .div-card .html {
@@ -1011,6 +1033,25 @@ footer .copyright p a:hover {
     width: 100px;
     height: 100px;
     border-radius: 4px;
+  }
+  #skills .container .div-card-item {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  #skills .container .div-card span {
+    position: relative;
+    display: table;
+    margin-top: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right !important;
   }
   #experience {
     padding-bottom: 0px;
