@@ -95,6 +95,8 @@ h6 {
 
 .green {
   color: #68d372;
+  font-size: 35px;
+  font-weight: 900;
 }
 
 .white {
@@ -245,7 +247,7 @@ h6 {
 }
 .navbar-collapse {
   background-color: #222222a5;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 40px 0px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -290,7 +292,7 @@ h6 {
   letter-spacing: 1px;
   color: #68d372 !important;
   border-radius: 20px;
-  background: linear-gradient(145deg, #1f1f1f80, #24242480);
+  background-color: #222222;
   box-shadow: 10px 10px 30px #1d1d1d50, -10px -10px 30px #27272750;
 }
 .loader {
@@ -443,6 +445,7 @@ h6 {
 #intro .scroll {
   position: relative;
   display: flex;
+  cursor: pointer;
   width: 130px;
   align-items: center;
   justify-content: center;
