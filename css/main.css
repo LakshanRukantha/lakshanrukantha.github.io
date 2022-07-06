@@ -246,8 +246,8 @@ h6 {
   outline: none;
 }
 .navbar-collapse {
-  background-color: #222222a5;
-  backdrop-filter: blur(10px);
+  background-color: #222222cc;
+  backdrop-filter: blur(1px);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 40px 0px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -966,6 +966,7 @@ footer .copyright p a:hover {
     margin-top: 40px;
     margin-bottom: 20px;
   }
+
   #intro .img {
     width: 100%;
     height: fit-content;
