@@ -934,9 +934,8 @@ footer .copyright p a:hover {
   }
 }
 @media (min-width: 768px) {
-
   .navbar-collapse .nav-link {
-   border: none;
+    border: none;
   }
 
   h1,

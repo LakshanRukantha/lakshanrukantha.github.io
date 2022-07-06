@@ -821,7 +821,6 @@ $(".js-scroll-trigger").click(function () {
 
 $(window).resize(function () {
   if (document.body.offsetWidth >= 768) {
-    
     VanillaTilt.init(document.querySelector(".img"), {
       max: 10,
       speed: 400,
