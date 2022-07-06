@@ -819,29 +819,34 @@ $(".js-scroll-trigger").click(function () {
 
 // Image hover effect
 
-VanillaTilt.init(document.querySelector(".img"), {
-  max: 10,
-  speed: 400,
-  easing: "cubic-bezier(.03,.98,.52,.99)",
-  "max-glare": 0.4,
-  startX: 0,
-  startY: 0,
-  glare: true,
-});
+$(window).resize(function () {
+  if (document.body.offsetWidth >= 768) {
+    
+    VanillaTilt.init(document.querySelector(".img"), {
+      max: 10,
+      speed: 400,
+      easing: "cubic-bezier(.03,.98,.52,.99)",
+      "max-glare": 0.4,
+      startX: 0,
+      startY: 0,
+      glare: true,
+    });
 
-VanillaTilt.init(document.querySelector(".bio-img"), {
-  max: 10,
-  speed: 400,
-  easing: "cubic-bezier(.03,.98,.52,.99)",
-  "max-glare": 0.4,
-  startX: 0,
-  startY: 0,
-  glare: true,
+    VanillaTilt.init(document.querySelector(".bio-img"), {
+      max: 10,
+      speed: 400,
+      easing: "cubic-bezier(.03,.98,.52,.99)",
+      "max-glare": 0.4,
+      startX: 0,
+      startY: 0,
+      glare: true,
+    });
+  }
 });
-
-var form = document.getElementById("contact-form");
 
 // Contact form status handling
+
+var form = document.getElementById("contact-form");
 
 async function handleSubmit(event) {
   event.preventDefault();

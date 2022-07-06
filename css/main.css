@@ -246,8 +246,7 @@ h6 {
   outline: none;
 }
 .navbar-collapse {
-  background-color: #222222cc;
-  backdrop-filter: blur(1px);
+  background-color: #222222;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 40px 0px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -283,7 +282,7 @@ h6 {
 }
 
 .navbar-links {
-  height: 196px;
+  height: 218px;
 }
 
 .navbar-collapse .nav-link {
@@ -291,6 +290,7 @@ h6 {
   font-family: "Koulen", cursive;
   letter-spacing: 1px;
   color: #68d372 !important;
+  border: 2px solid #68d372;
   border-radius: 20px;
   background-color: #222222;
   box-shadow: 10px 10px 30px #1d1d1d50, -10px -10px 30px #27272750;
@@ -934,6 +934,11 @@ footer .copyright p a:hover {
   }
 }
 @media (min-width: 768px) {
+
+  .navbar-collapse .nav-link {
+   border: none;
+  }
+
   h1,
   .typing-text {
     font-size: 3rem;
