@@ -540,16 +540,25 @@ h6 {
   padding: 10px 0px;
   display: flex;
   gap: 40px;
+  margin-bottom: 80px;
   margin-top: 30px;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
+.skill-label {
+  color: #6e6e6e;
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 2.5%;
+}
+
 #skills .container .div-card {
   position: relative;
   width: 80px;
   height: 80px;
+  margin-bottom: 10px;
   background-color: #222222;
   box-shadow: 5px 5px 15px #181818, -5px -5px 15px #2c2c2c;
   transition: filter 0.2s ease-in-out;
@@ -589,11 +598,14 @@ h6 {
 #skills .container .div-card span {
   position: relative;
   display: table;
+  color: #6e6e6e;
   font-size: 15px;
   margin-top: 90px;
   margin-left: auto;
   margin-right: auto;
 }
+
+/*Icons - Programming Languages & Frameworks */
 
 #skills .container .div-card .html {
   background-image: url("../img/icon/html-5.png");
@@ -610,7 +622,35 @@ h6 {
 #skills .container .div-card .php {
   background-image: url("../img/icon/php.png");
 }
-#experience {
+#skills .container .div-card .react-js {
+  background-image: url("../img/icon/react-js.png");
+}
+
+/*Icons - Tools & Other Skills */
+
+#skills .container .div-card .git {
+  background-image: url("../img/icon/git.png");
+}
+#skills .container .div-card .ux-ui {
+  background-image: url("../img/icon/ui-ux.png");
+}
+#skills .container .div-card .audio-eng {
+  background-image: url("../img/icon/audio-eng.png");
+}
+
+/*Icons - Languages */
+
+#skills .container .div-card .sinhala {
+  background-image: url("../img/icon/lang-si.png");
+}
+#skills .container .div-card .english {
+  background-image: url("../img/icon/lang-en.png");
+}
+#skills .container .div-card .tamil {
+  background-image: url("../img/icon/lang-ta.png");
+}
+
+#milestones {
   padding: 50px 0px;
 }
 
@@ -1049,6 +1089,7 @@ footer .copyright p a:hover {
     border-radius: 4px;
     top: 50%;
     left: 50%;
+    background-position: center;
     transform: translateX(-50%) translateY(-50%);
     background-repeat: no-repeat;
     background-size: contain;
@@ -1059,9 +1100,9 @@ footer .copyright p a:hover {
     margin-top: 110px;
     margin-left: auto;
     margin-right: auto;
-    text-align: right !important;
+    text-align: center !important;
   }
-  #experience {
+  #milestones {
     padding-bottom: 0px;
   }
   .timeline:before {

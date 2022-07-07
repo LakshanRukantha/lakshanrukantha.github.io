@@ -50,8 +50,8 @@ function toSkills() {
   });
 }
 
-function toExperience() {
-  var element = document.getElementById("experience");
+function toMilestones() {
+  var element = document.getElementById("milestones");
   var headerOffset = 85;
   var elementPosition = element.getBoundingClientRect().top;
   var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
@@ -819,28 +819,24 @@ $(".js-scroll-trigger").click(function () {
 
 // Image hover effect
 
-$(window).resize(function () {
-  if (document.body.offsetWidth >= 768) {
-    VanillaTilt.init(document.querySelector(".img"), {
-      max: 10,
-      speed: 400,
-      easing: "cubic-bezier(.03,.98,.52,.99)",
-      "max-glare": 0.4,
-      startX: 0,
-      startY: 0,
-      glare: true,
-    });
+VanillaTilt.init(document.querySelector(".img"), {
+  max: 5,
+  speed: 400,
+  easing: "cubic-bezier(.03,.98,.52,.99)",
+  "max-glare": 0.4,
+  startX: 0,
+  startY: 0,
+  glare: true,
+});
 
-    VanillaTilt.init(document.querySelector(".bio-img"), {
-      max: 10,
-      speed: 400,
-      easing: "cubic-bezier(.03,.98,.52,.99)",
-      "max-glare": 0.4,
-      startX: 0,
-      startY: 0,
-      glare: true,
-    });
-  }
+VanillaTilt.init(document.querySelector(".bio-img"), {
+  max: 5,
+  speed: 400,
+  easing: "cubic-bezier(.03,.98,.52,.99)",
+  "max-glare": 0.4,
+  startX: 0,
+  startY: 0,
+  glare: true,
 });
 
 // Contact form status handling
