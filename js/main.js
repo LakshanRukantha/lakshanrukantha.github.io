@@ -773,6 +773,8 @@ function progressIndicator() {
   })();
 });
 
+//Intro text handling
+
 setTimeout(() => {
   new Typewriter(".typing-text", {
     strings: [
@@ -794,6 +796,7 @@ new Typewriter(".loading-text", {
   strings: ["Lakshan Is Thinking..."],
   autoStart: true,
   delay: 60,
+  deleteSpeed: 10000,
   cursor: "",
 });
 setTimeout(() => {
