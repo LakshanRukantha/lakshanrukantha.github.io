@@ -788,13 +788,27 @@ setTimeout(() => {
   });
 }, 2400);
 
+$("body").append(
+  '<div id="loadingDiv" class="loader-box"><span class="rotating-box"></span><span class="rotating-box"></span><span class="rotating-box"></span><span class="rotating-box"></span></div>'
+);
+$(window).on("load", function () {
+  setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+});
+function removeLoader() {
+  $("#loadingDiv").fadeOut(500, function () {
+    // fadeOut complete. Remove the loading div
+    $("#loadingDiv").remove(); //makes page more lightweight
+  });
+}
+
 //Loading text handling
 
 new Typewriter(".loading-text", {
   strings: ["Lakshan Is Thinking..."],
   autoStart: true,
   delay: 60,
-  cursor: "",
+  deleteSpeed: 100000,
+  cursor: "|",
 });
 setTimeout(() => {
   let loadingText = document.querySelector(".loader");
