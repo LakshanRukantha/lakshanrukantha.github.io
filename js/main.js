@@ -773,7 +773,11 @@ function progressIndicator() {
   })();
 });
 
+<<<<<<< HEAD
 // Intro typing text
+=======
+//Intro text handling
+>>>>>>> temp-branch
 
 setTimeout(() => {
   new Typewriter(".typing-text", {
@@ -811,8 +815,13 @@ new Typewriter(".loading-text", {
   strings: ["Lakshan Is Thinking..."],
   autoStart: true,
   delay: 60,
+<<<<<<< HEAD
   deleteSpeed: 100000,
   cursor: "|",
+=======
+  deleteSpeed: 10000,
+  cursor: "",
+>>>>>>> temp-branch
 });
 setTimeout(() => {
   let loadingText = document.querySelector(".loader");

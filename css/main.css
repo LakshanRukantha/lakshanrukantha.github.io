@@ -306,9 +306,15 @@ h6 {
   z-index: 10;
   opacity: 1;
   background-color: #222222;
+<<<<<<< HEAD
   animation-fill-mode: forwards;
 }
 
+=======
+  animation: loader 1s ease-in 4s forwards;
+  animation-fill-mode: forwards;
+}
+>>>>>>> temp-branch
 @keyframes loading-box {
   0%,
   10%,
@@ -389,11 +395,15 @@ h6 {
   font-family: "Averia Libre", cursive;
   font-size: 15px;
   width: 100%;
+<<<<<<< HEAD
+=======
+  animation: loader-disp 1s ease-out 4s forwards;
+>>>>>>> temp-branch
   text-align: center;
   margin-top: 180px;
 }
 .page-content {
-  animation: contentVisible 3.8s ease-in;
+  animation: contentVisible 6s ease-in;
 }
 .section-title {
   color: #68d372;
