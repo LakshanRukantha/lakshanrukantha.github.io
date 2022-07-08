@@ -306,15 +306,11 @@ h6 {
   z-index: 10;
   opacity: 1;
   background-color: #222222;
-<<<<<<< HEAD
   animation-fill-mode: forwards;
-}
-
-=======
   animation: loader 1s ease-in 4s forwards;
   animation-fill-mode: forwards;
 }
->>>>>>> temp-branch
+
 @keyframes loading-box {
   0%,
   10%,
