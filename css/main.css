@@ -391,7 +391,7 @@ h6 {
   width: 100%;
   animation: loader-disp 1s ease-out 4s forwards;
   text-align: center;
-  margin-top: 120px;
+  margin-top: 180px;
 }
 .page-content {
   animation: contentVisible 6s ease-in;
