@@ -773,6 +773,8 @@ function progressIndicator() {
   })();
 });
 
+// Intro typing text
+
 setTimeout(() => {
   new Typewriter(".typing-text", {
     strings: [
@@ -788,6 +790,8 @@ setTimeout(() => {
   });
 }, 2400);
 
+// Preloader animaton handling
+
 $("body").append(
   '<div id="loadingDiv" class="loader-box"><span class="rotating-box"></span><span class="rotating-box"></span><span class="rotating-box"></span><span class="rotating-box"></span></div>'
 );
@@ -801,7 +805,7 @@ function removeLoader() {
   });
 }
 
-//Loading text handling
+// Preloader text handling
 
 new Typewriter(".loading-text", {
   strings: ["Lakshan Is Thinking..."],
