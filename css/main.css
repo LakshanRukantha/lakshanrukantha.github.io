@@ -584,6 +584,10 @@ h6 {
 #bio .bio {
   padding: 50px 0px;
 }
+
+#bio h2 {
+  font-size: 30px;
+}
 #bio .img {
   padding: 0 50px;
 }
@@ -1606,6 +1610,9 @@ footer .copyright p a:hover {
     color: #68d372;
     font-size: 40px;
     font-weight: 900;
+  }
+  #bio h2 {
+    font-size: 3rem;
   }
   #contact {
     padding-bottom: 0px;
