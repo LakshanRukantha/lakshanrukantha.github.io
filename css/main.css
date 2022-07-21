@@ -971,16 +971,16 @@ footer .copyright p a:hover {
   opacity: 0;
   pointer-events: none;
   right: 10px;
-  transition: opacity 1s;
+  transition: opacity 400ms;
   font-size: 30px;
 }
 .active-top {
   pointer-events: all;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .active-top:hover {
-  animation: scrollbtn 1s infinite;
+  opacity: 1;
 }
 .active-top:active {
   transform: scale(95%);
@@ -1004,14 +1004,6 @@ footer .copyright p a:hover {
   0% {
     max-height: 0px;
     overflow: hidden;
-  }
-}
-@keyframes scrollbtn {
-  0% {
-    bottom: 10px;
-  }
-  100% {
-    bottom: 15px;
   }
 }
 @media (max-width: 400px) {
@@ -1642,12 +1634,12 @@ footer .copyright p a:hover {
     opacity: 0;
     pointer-events: none;
     right: 20px;
-    transition: opacity 1s;
+    transition: opacity 400ms;
     font-size: 30px;
   }
   .active-top {
     pointer-events: all;
-    opacity: 1;
+    opacity: 0.5;
   }
 
   .active-top:hover {
@@ -1659,14 +1651,6 @@ footer .copyright p a:hover {
   }
   .to-top i {
     color: #68d372;
-  }
-  @keyframes scrollbtn {
-    0% {
-      bottom: 10px;
-    }
-    100% {
-      bottom: 15px;
-    }
   }
 }
 /*# sourceMappingURL=main.css.map */
