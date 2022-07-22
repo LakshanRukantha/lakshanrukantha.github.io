@@ -37,10 +37,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body id="to-top">
+  <body id="to-top" class="noselect">
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html">LR</a>
+        <a class="navbar-brand noselect" href="index.html">LR</a>
         <button class="navbar-toggler" type="button">
           <div
             data-bs-toggle="collapse"
@@ -58,31 +58,39 @@
         <div class="collapse navbar-collapse collapse-bg" id="navbarNav">
           <ul class="navbar-links">
             <li class="nav-card-item">
-              <a class="nav-link js-scroll-trigger" onclick="toAbout()"
+              <a class="nav-link js-scroll-trigger noselect" onclick="toAbout()"
                 >About me</a
               >
             </li>
             <li class="nav-card-item">
-              <a class="nav-link js-scroll-trigger" onclick="toBio()">My bio</a>
+              <a class="nav-link js-scroll-trigger noselect" onclick="toBio()"
+                >My bio</a
+              >
             </li>
             <li class="nav-card-item">
-              <a class="nav-link js-scroll-trigger" onclick="toSkills()"
+              <a
+                class="nav-link js-scroll-trigger noselect"
+                onclick="toSkills()"
                 >Skills</a
               >
             </li>
             <li class="nav-card-item">
-              <a class="nav-link js-scroll-trigger" onclick="toMilestones()"
+              <a
+                class="nav-link js-scroll-trigger noselect"
+                onclick="toMilestones()"
                 >Milestones</a
               >
             </li>
             <li class="nav-card-item">
-              <a class="nav-link js-scroll-trigger" onclick="toContact()"
+              <a
+                class="nav-link js-scroll-trigger noselect"
+                onclick="toContact()"
                 >Contact</a
               >
             </li>
           </ul>
           <a href="#"
-            ><button class="button cv-download">Download CV</button></a
+            ><button class="button cv-download noselect">Download CV</button></a
           >
         </div>
       </div>
@@ -118,7 +126,7 @@
                 <br />
               </h1>
               <div class="typing">
-                <h1><span class="typing-text"></span></h1>
+                <h1><span class="typing-text noselect"></span></h1>
               </div>
               <p>
                 My name is <span id="intro-p">Lakshan Rukantha.</span> I'm a
@@ -136,7 +144,7 @@
                 web.
               </p>
               <div class="intro-btns">
-                <a class="button btn-cv-download" href="#"
+                <a class="button btn-cv-download noselect" href="#"
                   ><img
                     style="
                       width: 20px;
@@ -148,13 +156,13 @@
                   />Download CV</a
                 >
                 <a
-                  class="button btn-contact hbtn hb-fill-right-bg"
+                  class="button btn-contact contact-btn hb-fill-right-bg noselect"
                   onclick="toContact()"
                   ><img style="width: 20px" src="img/icon/email.svg" alt="" />
                   <span>Contact Me</span></a
                 >
               </div>
-              <a class="scroll" onclick="toAbout()">Scroll Down</a>
+              <a class="scroll noselect" onclick="toAbout()">Scroll Down</a>
             </div>
             <div class="img">
               <img
@@ -340,7 +348,7 @@
             data-aos-delay="200"
           >
             <h6 class="section-title">Skills</h6>
-            <h3 class="skill-label">Programming Languages & Frameworks</h3>
+            <h3 class="skill-label">Programming Skills</h3>
             <div class="skill-cards-container">
               <div class="div-card">
                 <div class="div-card-item html" title="Level : Expert"></div>
@@ -400,7 +408,7 @@
                 <span>Sound Designing</span>
               </div>
             </div>
-            <h3 class="skill-label">Languages</h3>
+            <h3 class="skill-label">Language Skills</h3>
             <div class="skill-cards-container">
               <div class="div-card">
                 <div
@@ -601,7 +609,9 @@
             data-aos-delay="200"
           >
             <h6 class="section-title">Contact</h6>
-            <h1>Call or write <span class="green">anytime</span></h1>
+            <h2 class="contact-title">
+              Call or write <span class="green">anytime</span>
+            </h2>
             <div class="row">
               <div class="form col-md-7 col-lg-8">
                 <form
@@ -621,7 +631,7 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="email">E-mail Address</label>
+                    <label for="email">E-Mail Address</label>
                     <input
                       type="email"
                       name="email"
@@ -641,7 +651,10 @@
                       required
                     ></textarea>
                   </div>
-                  <button type="submit" class="button btn-send-message">
+                  <button
+                    type="submit"
+                    class="button btn-send-message noselect"
+                  >
                     Send Message
                   </button>
                 </form>
@@ -657,18 +670,33 @@
               >
                 <div class="social-media">
                   <p>Social Media</p>
-                  <a href="" class="me-2 text-reset"
-                    ><img src="img/icon/instagram-icon.svg" alt=""
-                  /></a>
-                  <a href="" class="me-2 text-reset"
-                    ><img src="img/icon/facebook-icon.svg" alt=""
-                  /></a>
-                  <a href="" class="me-2 text-reset"
-                    ><img src="img/icon/twitter-icon.svg" alt=""
-                  /></a>
-                  <a href="" class="me-2 text-reset"
-                    ><img src="img/icon/linkedin-icon.svg" alt=""
-                  /></a>
+                  <div class="social-media-set">
+                    <a
+                      href="https://github.com/LakshanRukantha"
+                      target="_blank"
+                      class="me-2 text-reset"
+                    >
+                      <div class="img github"></div
+                    ></a>
+                    <a
+                      href="https://lk.linkedin.com/in/lakshanrukantha"
+                      class="me-2 text-reset"
+                    >
+                      <div class="img linkedin"></div
+                    ></a>
+                    <a
+                      href="https://twitter.com/LakshanRukantha"
+                      class="me-2 text-reset"
+                    >
+                      <div class="img twitter"></div
+                    ></a>
+                    <a
+                      href="https://facebook.com/LakshanRukantha.LaKi"
+                      class="me-2 text-reset"
+                    >
+                      <div class="img facebook"></div
+                    ></a>
+                  </div>
                 </div>
                 <div class="email">
                   <p>E-Mail :</p>
@@ -691,14 +719,15 @@
         <div class="container">
           <div class="copyright">
             <p>
-              &copy; 2022
+              Copyright &copy; 2020-2022 | All rights reserved. Made with
+
+              <span id="heart-icon">&#10084;</span> by
               <a
                 href="https://lakshanrukantha.github.io"
                 title="Official Website"
                 target="_blank"
                 >Lakshan Rukantha</a
               >
-              <span id="heart-icon">&#10084;</span> | All rights reserved.
             </p>
             <!--
                     This website is licenced by Lakshan Rukantha),

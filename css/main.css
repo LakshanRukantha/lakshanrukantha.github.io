@@ -19,7 +19,14 @@ body {
   min-width: 320px;
   scrollbar-gutter: auto;
 }
-
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
 ::-webkit-scrollbar {
   position: absolute;
   transform: rotate(90deg);
@@ -83,16 +90,21 @@ textarea:focus {
   background-color: #4ea156;
 }
 
-h1,
-h2,
+h1 {
+  font-weight: 900;
+}
+h2 {
+  font-weight: 800;
+  color: #222222;
+}
+
 h3,
 h4,
 h5,
 h6 {
   color: #222222;
-  font-weight: 900;
+  font-weight: 600;
 }
-
 .green {
   color: #68d372;
   font-size: 30px;
@@ -100,7 +112,7 @@ h6 {
 }
 
 .white {
-  color: white;
+  color: rgba(177, 177, 177, 0.878);
 }
 
 .navbar {
@@ -629,7 +641,8 @@ h6 {
 }
 
 .skill-label {
-  color: #6e6e6e;
+  color: rgb(200, 200, 200);
+  font-weight: 600;
   text-align: left;
   margin-top: 30px;
   margin-left: 2.5%;
@@ -833,7 +846,10 @@ h6 {
   box-shadow: 0px 0px 10px 10px rgba(34, 34, 34, 1);
   padding: 50px 0px;
 }
-
+.contact-title {
+  font-size: 3rem;
+  color: #fff;
+}
 #contact #contact-form {
   text-align: right;
   padding: 50px 0px;
@@ -904,12 +920,37 @@ h6 {
 #contact .phone p {
   margin-bottom: 0.5rem !important;
 }
-
-#contact .social-media img {
-  width: 30px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+.social-media-set {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
 }
+#contact .social-media .img {
+  filter: invert(96%) sepia(75%) saturate(913%) hue-rotate(53deg)
+    brightness(89%) contrast(83%);
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-size: cover;
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+}
+
+#contact .contacts .social-media .github {
+  background-image: url("/img/icon/github.png");
+}
+#contact .contacts .social-media .linkedin {
+  background-image: url("/img/icon/linkedin.png");
+}
+#contact .contacts .social-media .twitter {
+  background-image: url("/img/icon/twitter.png");
+}
+#contact .contacts .social-media .facebook {
+  background-image: url("/img/icon/facebook.png");
+}
+
 #intro .button,
 .navbar .button {
   color: white;
@@ -917,9 +958,9 @@ h6 {
   border: 2px solid #68d372;
   padding: 8px 20px;
 }
-#contact .social-media a img:hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
+#contact .social-media a .img:hover {
+  -webkit-transform: scale(125%);
+  transform: scale(125%);
 }
 .swal-modal {
   background-color: #ffffffde;
@@ -953,13 +994,23 @@ footer {
   text-align: center;
   font-size: 0.9em;
 }
-
+footer .copyright p {
+  position: relative;
+  font-size: 15px;
+  bottom: -10px;
+  width: 100%;
+}
 footer .copyright p a {
   color: rgba(255, 255, 255, 0.63);
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.4s ease;
 }
 
 footer .copyright p a:hover {
   color: #68d372;
+  text-decoration-line: underline;
+  text-decoration-color: #68d372;
+  text-decoration-style: wavy;
 }
 #heart-icon {
   color: red;
@@ -1047,10 +1098,6 @@ footer .copyright p a:hover {
   }
 }
 @media (min-width: 768px) {
-  .navbar-collapse .nav-link {
-    border: none;
-  }
-
   h1,
   .typing-text {
     font-size: 3rem;
@@ -1258,8 +1305,12 @@ footer .copyright p a:hover {
   #contact .contacts .social-media p {
     margin-bottom: 0.5rem;
   }
-  #contact .contacts .social-media img {
-    width: 20px;
+  #contact .contacts .social-media .img {
+    filter: invert(96%) sepia(75%) saturate(913%) hue-rotate(53deg)
+      brightness(89%) contrast(83%);
+    width: 30px;
+    height: 30px;
+    background-size: cover;
   }
   .contact-img {
     margin-top: 50px;
@@ -1267,6 +1318,9 @@ footer .copyright p a:hover {
 }
 
 @media (min-width: 992px) {
+  .navbar-collapse .nav-link {
+    border: none;
+  }
   .navbar {
     position: fixed;
     z-index: 20;
@@ -1410,7 +1464,7 @@ footer .copyright p a:hover {
   .btn-contact:hover {
     background-color: #68d37200 !important;
   }
-  .hbtn {
+  .contact-btn {
     position: relative;
   }
 
@@ -1600,7 +1654,7 @@ footer .copyright p a:hover {
   }
   .green {
     color: #68d372;
-    font-size: 40px;
+    font-size: 3rem;
     font-weight: 900;
   }
   #bio h2 {
