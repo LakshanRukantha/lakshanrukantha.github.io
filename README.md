@@ -7,3 +7,40 @@
   <hr/>
   
 <p align="center">
+
+_Social buttons_
+
+[![lakshanrukantha - lakshanrukantha.github.io](https://img.shields.io/static/v1?label=lakshanrukantha&message=lakshanrukantha.github.io&color=blue&logo=github)](https://github.com/lakshanrukantha/lakshanrukantha.github.io "Go to GitHub repo")
+[![stars - lakshanrukantha.github.io](https://img.shields.io/github/stars/lakshanrukantha/lakshanrukantha.github.io?style=social)](https://github.com/lakshanrukantha/lakshanrukantha.github.io)
+[![forks - lakshanrukantha.github.io](https://img.shields.io/github/forks/lakshanrukantha/lakshanrukantha.github.io?style=social)](https://github.com/lakshanrukantha/lakshanrukantha.github.io)
+
+
+_Repo metadata_
+
+
+[![GitHub release](https://img.shields.io/github/release/lakshanrukantha/lakshanrukantha.github.io?include_prereleases=&sort=semver&color=blue)](https://github.com/lakshanrukantha/lakshanrukantha.github.io/releases/)
+[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
+[![issues - lakshanrukantha.github.io](https://img.shields.io/github/issues/lakshanrukantha/lakshanrukantha.github.io)](https://github.com/lakshanrukantha/lakshanrukantha.github.io/issues)
+
+_Call-to-Action buttons_
+
+<div align="center">
+
+[![Use this template](https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge)](https://github.com/lakshanrukantha/lakshanrukantha.github.io/generate)
+
+[![View site - GH Pages](https://img.shields.io/badge/View_site-GH_Pages-2ea44f?style=for-the-badge)](https://lakshanrukantha.github.io)
+
+</div>
+
+## Documentation
+
+<div align="center">
+
+[![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](/docs/ "Go to project documentation")
+
+</div>
+
+
+## License
+
+Released under [MIT](/LICENSE) by [@lakshanrukantha](https://github.com/lakshanrukantha).
