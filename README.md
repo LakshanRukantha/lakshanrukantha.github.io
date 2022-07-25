@@ -14,13 +14,13 @@ _Social buttons_
 [![stars - lakshanrukantha.github.io](https://img.shields.io/github/stars/lakshanrukantha/lakshanrukantha.github.io?style=social)](https://github.com/lakshanrukantha/lakshanrukantha.github.io)
 [![forks - lakshanrukantha.github.io](https://img.shields.io/github/forks/lakshanrukantha/lakshanrukantha.github.io?style=social)](https://github.com/lakshanrukantha/lakshanrukantha.github.io)
 
-
 _Repo metadata_
 
-
-[![GitHub release](https://img.shields.io/github/release/lakshanrukantha/lakshanrukantha.github.io?include_prereleases=&sort=semver&color=blue)](https://github.com/lakshanrukantha/lakshanrukantha.github.io/releases/)
-[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 [![issues - lakshanrukantha.github.io](https://img.shields.io/github/issues/lakshanrukantha/lakshanrukantha.github.io)](https://github.com/lakshanrukantha/lakshanrukantha.github.io/issues)
+![maintained - yes](https://img.shields.io/badge/maintained-yes-blue)
+[![Hosted with GH Pages](https://img.shields.io/badge/Hosted_with-GitHub_Pages-blue?logo=github&logoColor=white)](https://pages.github.com/ "Go to GitHub Pages homepage")
+
+<hr/>
 
 _Call-to-Action buttons_
 
@@ -29,8 +29,15 @@ _Call-to-Action buttons_
 [![Use this template](https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge)](https://github.com/lakshanrukantha/lakshanrukantha.github.io/generate)
 
 [![View site - GH Pages](https://img.shields.io/badge/View_site-GH_Pages-2ea44f?style=for-the-badge)](https://lakshanrukantha.github.io)
-
+<hr/>
 </div>
+
+_Repo info_
+
+![GitHub top language](https://img.shields.io/github/languages/top/lakshanrukantha/lakshanrukantha.github.io)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/lakshanrukantha/lakshanrukantha.github.io)
+![GitHub last commit](https://img.shields.io/github/last-commit/lakshanrukantha/lakshanrukantha.github.io)
+[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
 ## Documentation
 
@@ -40,6 +47,7 @@ _Call-to-Action buttons_
 
 </div>
 
+[![contributions - welcome](https://img.shields.io/badge/contributions-welcome-blue)](/CONTRIBUTING.md "Go to contributions doc")
 
 ## License
 
