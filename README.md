@@ -1,9 +1,9 @@
-# My First WebSite
+<p align="center">
 
-### lakshanrukantha.github.io
-
-==> Click <a href="https://lakshanrukantha.github.io">here</a> to browse it.
-
-Last edit on 14/07/2022
-
-<!-- Developed by Lakshan Rukantha -->
+  <h1 align="center">Personal Website</h1>
+  <h5 align="center">HTML5 + CSS3 + JavaScript</h5>
+  <hr/>
+  <img src="https://lakshanrukantha.github.io/img/website_preview.png" alt="webpage preview"/>
+  <hr/>
+  
+<p align="center">
