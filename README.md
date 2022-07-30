@@ -26,8 +26,6 @@ _Call-to-Action buttons_
 
 <div align="center">
 
-[![Use this template](https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge)](https://github.com/lakshanrukantha/lakshanrukantha.github.io/generate)
-
 [![View site - GH Pages](https://img.shields.io/badge/View_site-GH_Pages-2ea44f?style=for-the-badge)](https://lakshanrukantha.github.io)
 <hr/>
 </div>
@@ -46,8 +44,6 @@ _Repo info_
 [![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](/docs/ "Go to project documentation")
 
 </div>
-
-[![contributions - welcome](https://img.shields.io/badge/contributions-welcome-blue)](/CONTRIBUTING.md "Go to contributions doc")
 
 ## License
 
