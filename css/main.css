@@ -660,7 +660,7 @@ h6 {
   position: relative;
   width: 80px;
   height: 80px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   background-color: #222222;
   box-shadow: 5px 5px 15px #181818, -5px -5px 15px #2c2c2c;
   transition: filter 0.2s ease-in-out;
@@ -726,6 +726,9 @@ h6 {
 }
 #skills .container .div-card .react-js {
   background-image: url("../img/icon/react-js.png");
+}
+#skills .container .div-card .c {
+  background-image: url("../img/icon/c.png");
 }
 
 /*Icons - Tools & Other Skills */
