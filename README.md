@@ -8,7 +8,7 @@
   
 <p align="center">
 
-_Social buttons_
+## Social buttons
 
 [![lakshanrukantha - lakshanrukantha.github.io](https://img.shields.io/static/v1?label=lakshanrukantha&message=lakshanrukantha.github.io&color=blue&logo=github)](https://github.com/lakshanrukantha/lakshanrukantha.github.io "Go to GitHub repo")
 [![stars - lakshanrukantha.github.io](https://img.shields.io/github/stars/lakshanrukantha/lakshanrukantha.github.io?style=social)](https://github.com/lakshanrukantha/lakshanrukantha.github.io)
