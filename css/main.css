@@ -124,6 +124,7 @@ h6 {
   padding: 30px 0;
   height: 85px;
   background-color: #222222;
+  box-shadow: 0 0px 4px 0px rgba(0, 0, 0, 0.8);
 }
 
 .navbar .navbar-brand {
