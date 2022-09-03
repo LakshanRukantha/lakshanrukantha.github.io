@@ -1038,6 +1038,7 @@ footer .copyright p a:hover {
   right: 10px;
   transition: opacity 400ms;
   font-size: 30px;
+  z-index: 20;
 }
 .active-top {
   pointer-events: all;
