@@ -937,16 +937,39 @@ h6 {
 .social-media-set {
   position: relative;
   align-items: center;
+  height: 65px;
   justify-content: space-evenly;
   display: flex;
   flex-direction: row;
 }
+
 .col3 .img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   filter: invert(96%) sepia(75%) saturate(913%) hue-rotate(53deg)
     brightness(89%) contrast(83%);
+  border-radius: 50%;
   width: 30px;
   height: 30px;
   background-size: cover;
+}
+.social-icon {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  overflow: hidden;
+  max-width: 30px;
+  height: 30px;
+  transition-duration: 0.4s;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+.social-icon .img-title {
+  color: #b1b1b1;
+  font-size: 14px;
+  padding-top: 5px;
+  position: relative;
 }
 
 .col3 .github {
@@ -1012,6 +1035,11 @@ footer ul li,
 .footer-nav ul li a,
 footer .support ul li a {
   color: #6e6e6e;
+}
+footer ul li:hover,
+.footer-nav ul li a:hover,
+footer .support ul li a:hover {
+  color: #b1b1b1;
 }
 .main {
   width: 100%;
@@ -1691,6 +1719,14 @@ footer .support ul li a {
     margin-left: auto;
     margin-right: auto;
     display: flex;
+  }
+  .social-icon:hover {
+    transition: 0.4s;
+    max-width: 200px;
+    height: 65px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #4ea15650;
   }
   .footer-rights {
     text-align: center;
