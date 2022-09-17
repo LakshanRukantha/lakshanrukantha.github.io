@@ -1008,6 +1008,11 @@ footer ul {
 .col2 ul {
   list-style: none;
 }
+footer ul li,
+.footer-nav ul li a,
+footer .support ul li a {
+  color: #6e6e6e;
+}
 .main {
   width: 100%;
   display: flex;
