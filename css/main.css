@@ -759,7 +759,7 @@ h6 {
   padding: 50px 0px;
 }
 
-.jobs {
+.milestones {
   width: 100%;
   display: flex;
   align-items: center;
@@ -780,7 +780,8 @@ h6 {
 }
 .timeline ul li {
   padding: 10px;
-  background-color: #68d372;
+  background-color: #222222;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
   text-align: left;
   color: white;
   border-radius: 10px;
@@ -793,6 +794,7 @@ h6 {
 
 .timeline-content .title {
   font-weight: 500;
+  color: #b1b1b1;
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 5px;
@@ -800,22 +802,26 @@ h6 {
 .timeline-content .birth::before {
   content: "\f1fd";
   position: relative;
+  color: #222222;
   margin-right: 5px;
-  -webkit-text-stroke: 1px #68d372;
+  -webkit-text-stroke: 1px #b1b1b1;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
 }
 .timeline-content .education::before {
   content: "\f19d";
   position: relative;
+  color: #222222;
   margin-right: 5px;
-  -webkit-text-stroke: 1px #68d372;
+  -webkit-text-stroke: 1px #b1b1b1;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
 }
 .timeline-content .school::before {
   content: "\e56b";
   position: relative;
+  color: #222222;
+  -webkit-text-stroke: 1px #b1b1b1;
   margin-right: 5px;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
@@ -823,12 +829,18 @@ h6 {
 .timeline-content .sub-title {
   font-size: 16px;
   font-weight: normal;
-  color: #222222;
+  color: #b1b1b1;
   margin-bottom: 10px;
+}
+
+.timeline-content .description {
+  color: #6e6e6e;
 }
 .timeline-content .globe::before {
   content: "\f57e";
   position: relative;
+  color: #222222;
+  -webkit-text-stroke: 1px #b1b1b1;
   margin-right: 5px;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
@@ -841,6 +853,7 @@ h6 {
 }
 .timeline-content .date {
   font-size: 12px;
+  color: #6e6e6e;
   font-weight: 600;
   margin-bottom: 10px;
   letter-spacing: 2px;
@@ -848,6 +861,8 @@ h6 {
 .timeline-content .date::before {
   content: "\f783";
   position: relative;
+  color: #222222;
+  -webkit-text-stroke: 1px #b1b1b1;
   margin-right: 5px;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
@@ -1355,7 +1370,7 @@ footer .support ul li a:hover {
     transform: translateX(-50%);
     width: 2px;
     height: 106%;
-    background-color: #68d372;
+    background-color: #222222;
   }
   .timeline ul li {
     width: 50%;
@@ -1365,13 +1380,15 @@ footer .support ul li a:hover {
   .timeline ul li:nth-child(odd) {
     float: left;
     clear: right;
-    transform: translateX(-30px);
+    margin-left: 20px;
+    transform: translateX(-40px);
     border-radius: 8px 0px 8px 8px;
   }
   .timeline ul li:nth-child(even) {
     float: right;
     clear: left;
-    transform: translateX(30px);
+    margin-right: 20px;
+    transform: translateX(40px);
     border-radius: 0px 8px 8px 8px;
   }
   .timeline ul li::before {
@@ -1379,8 +1396,9 @@ footer .support ul li a:hover {
     position: absolute;
     height: 20px;
     width: 20px;
+    margin: 0px 10px;
     border-radius: 50%;
-    border: 2px solid #68d372;
+    border: 2px solid #222222;
     background-color: #ffffff;
     top: 0px;
     transition: background-color 0.4s;
@@ -1395,12 +1413,15 @@ footer .support ul li a:hover {
   }
   .timeline-content .date {
     position: absolute;
+    color: #222222;
     top: -30px;
     left: 0px;
   }
-
+  .timeline-content .date::before {
+    -webkit-text-stroke: transparent;
+  }
   .timeline ul li:hover::before {
-    background-color: #68d372;
+    background-color: #222222;
   }
   #contact {
     margin-top: 0px;
