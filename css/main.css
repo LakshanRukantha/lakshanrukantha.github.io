@@ -781,6 +781,7 @@ h6 {
 .timeline ul li {
   padding: 10px;
   background-color: #222222;
+  border: 2px solid #68d372;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
   text-align: left;
   color: white;
@@ -804,7 +805,7 @@ h6 {
   position: relative;
   color: #222222;
   margin-right: 5px;
-  -webkit-text-stroke: 1px #b1b1b1;
+  -webkit-text-stroke: 1px #68d372;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
 }
@@ -813,7 +814,7 @@ h6 {
   position: relative;
   color: #222222;
   margin-right: 5px;
-  -webkit-text-stroke: 1px #b1b1b1;
+  -webkit-text-stroke: 1px #68d372;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
 }
@@ -821,7 +822,7 @@ h6 {
   content: "\e56b";
   position: relative;
   color: #222222;
-  -webkit-text-stroke: 1px #b1b1b1;
+  -webkit-text-stroke: 1px #68d372;
   margin-right: 5px;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
@@ -840,7 +841,7 @@ h6 {
   content: "\f57e";
   position: relative;
   color: #222222;
-  -webkit-text-stroke: 1px #b1b1b1;
+  -webkit-text-stroke: 1px #68d372;
   margin-right: 5px;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
@@ -862,7 +863,7 @@ h6 {
   content: "\f783";
   position: relative;
   color: #222222;
-  -webkit-text-stroke: 1px #b1b1b1;
+  -webkit-text-stroke: 1px #68d372;
   margin-right: 5px;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
@@ -1370,7 +1371,7 @@ footer .support ul li a:hover {
     transform: translateX(-50%);
     width: 2px;
     height: 106%;
-    background-color: #222222;
+    background-color: #68d372;
   }
   .timeline ul li {
     width: 50%;
@@ -1381,14 +1382,14 @@ footer .support ul li a:hover {
     float: left;
     clear: right;
     margin-left: 20px;
-    transform: translateX(-40px);
+    transform: translateX(-38px);
     border-radius: 8px 0px 8px 8px;
   }
   .timeline ul li:nth-child(even) {
     float: right;
     clear: left;
     margin-right: 20px;
-    transform: translateX(40px);
+    transform: translateX(38px);
     border-radius: 0px 8px 8px 8px;
   }
   .timeline ul li::before {
@@ -1398,7 +1399,7 @@ footer .support ul li a:hover {
     width: 20px;
     margin: 0px 10px;
     border-radius: 50%;
-    border: 2px solid #222222;
+    border: 2px solid #68d372;
     background-color: #ffffff;
     top: 0px;
     transition: background-color 0.4s;
