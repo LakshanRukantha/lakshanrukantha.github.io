@@ -1366,7 +1366,7 @@ footer .support ul li a:hover {
   .timeline:before {
     content: "";
     position: absolute;
-    top: -6%;
+    top: -4%;
     left: 50%;
     transform: translateX(-50%);
     width: 2px;
