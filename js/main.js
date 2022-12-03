@@ -844,7 +844,7 @@ VanillaTilt.init(document.querySelector(".img"), {
   max: 5,
   speed: 400,
   easing: "cubic-bezier(.03,.98,.52,.99)",
-  "max-glare": 0.4,
+  "max-glare": 0,
   startX: 0,
   startY: 0,
   glare: true,
