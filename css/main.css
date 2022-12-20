@@ -597,8 +597,11 @@ h6 {
   width: 100%;
   position: relative;
   -webkit-mask: url(../img/clip.png);
+  mask: url(../img/clip.png);
   -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
   -webkit-mask-size: contain;
+  mask-size: contain;
   border-radius: 4px;
   cursor: grab;
 }
@@ -2055,4 +2058,3 @@ footer .support ul li a:hover {
     color: #68d372;
   }
 }
-/*# sourceMappingURL=main.css.map */
