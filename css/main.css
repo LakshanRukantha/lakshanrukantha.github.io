@@ -466,6 +466,7 @@ h6 {
 
 #intro h1 {
   color: white;
+  margin-bottom: 0px;
 }
 
 .intro-animation {
@@ -475,7 +476,7 @@ h6 {
 }
 
 #intro h1 .my-name {
-  font-size: 1.8em;
+  font-size: 1.7em;
 }
 
 #intro-p {
@@ -663,15 +664,8 @@ h6 {
 
 #bio .img .bio-img {
   position: relative;
-  height: 425px;
-  width: auto;
+  width: 100%;
   cursor: grab;
-  background-image: url("../img/photo-bio.jpg");
-  background-repeat: no-repeat;
-  box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px;
-  background-size: cover;
-  background-position-y: center;
-  background-position-x: center;
   border-radius: 8px;
 }
 
@@ -1310,14 +1304,7 @@ footer .support ul li a:hover {
 
   #bio .img .bio-img {
     position: relative;
-    height: 280px;
-    width: auto;
-    background-image: url("../img/photo-bio.jpg");
-    background-repeat: no-repeat;
-    box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px;
-    background-size: cover;
-    background-position-y: center;
-    background-position-x: center;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
   }
 
@@ -1382,15 +1369,8 @@ footer .support ul li a:hover {
 
   #bio .img .bio-img {
     position: relative;
-    height: 425px;
-    width: 80%;
+    width: 100%;
     margin: 0px auto;
-    background-image: url("../img/photo-bio.jpg");
-    background-repeat: no-repeat;
-    box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px;
-    background-size: cover;
-    background-position-y: center;
-    background-position-x: center;
     border-radius: 8px;
   }
 
@@ -1868,13 +1848,8 @@ footer .support ul li a:hover {
 
   #bio .img .bio-img {
     position: relative;
-    height: 480px;
-    width: auto;
-    background-image: url("../img/photo-bio.jpg");
-    background-repeat: no-repeat;
-    box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px;
-    background-size: cover;
-    background-position-y: center;
+    margin-top: 80px;
+    width: 100%;
     border-radius: 8px;
   }
 
@@ -1946,7 +1921,7 @@ footer .support ul li a:hover {
   }
 
   #intro p {
-    margin-top: 30px !important;
+    margin-top: 10px !important;
     margin-bottom: 20px;
   }
 
@@ -1959,7 +1934,7 @@ footer .support ul li a:hover {
 
   h1,
   .typing-text {
-    font-size: 4.4rem;
+    font-size: 4rem;
   }
 
   #about .section-title::before {
