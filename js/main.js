@@ -990,7 +990,7 @@ function loadContent(projectData) {
     }
     return template;
   };
-  const ChatBubble = function (data) {
+  const ProjectCard = function (data) {
     const elem = document.createElement("div");
     elem.classList.add("project-card");
     elem.style.setProperty("--rotation", data.rotation + "deg");
@@ -1044,7 +1044,7 @@ function loadContent(projectData) {
 
   projectData.forEach((project, i) => {
     projectsElem.appendChild(
-      ChatBubble({
+      ProjectCard({
         ...project,
         rotation: i * rotationAmt,
       })
@@ -1058,34 +1058,40 @@ function loadContent(projectData) {
     navElem.appendChild(navBtn);
   });
 
-  let xPos, dragStartPos;
-  Draggable.create(tElem, {
-    onDragStart: (e) => {
-      if (e.touches) e.clientX = e.touches[0].clientX;
-      xPos = dragStartPos = Math.round(e.clientX);
-    },
+  function checkWidth() {
+    if (window.innerWidth >= 992) {
+      let xPos, dragStartPos;
+      Draggable.create(tElem, {
+        onDragStart: (e) => {
+          if (e.touches) e.clientX = e.touches[0].clientX;
+          xPos = dragStartPos = Math.round(e.clientX);
+        },
 
-    onDrag: (e) => {
-      if (e.touches) e.clientX = e.touches[0].clientX;
+        onDrag: (e) => {
+          if (e.touches) e.clientX = e.touches[0].clientX;
 
-      gsap.to(projectsElem, {
-        rotationY: "+=" + ((Math.round(e.clientX) - xPos) % 360),
+          gsap.to(projectsElem, {
+            rotationY: "+=" + ((Math.round(e.clientX) - xPos) % 360),
+          });
+
+          xPos = Math.round(e.clientX);
+        },
+
+        onDragEnd: () => {
+          const currentRotation =
+            gsap.getProperty(projectsElem, "rotationY") * -1;
+          const index = mod(
+            Math.round(currentRotation / rotationAmt),
+            projectData.length
+          );
+          select(index, xPos < dragStartPos ? 1 : -1);
+          gsap.set(tElem, { x: 0, y: 0 });
+        },
       });
+    }
+  }
 
-      xPos = Math.round(e.clientX);
-    },
-
-    onDragEnd: () => {
-      const currentRotation = gsap.getProperty(projectsElem, "rotationY") * -1;
-      const index = mod(
-        Math.round(currentRotation / rotationAmt),
-        projectData.length
-      );
-      console.log(xPos, dragStartPos);
-      select(index, xPos < dragStartPos ? 1 : -1);
-      gsap.set(tElem, { x: 0, y: 0 });
-    },
-  });
+  window.addEventListener("resize", checkWidth);
 
   let timeout;
   function update() {

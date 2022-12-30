@@ -913,7 +913,7 @@ h6 {
 .timeline-content .date::before {
   content: "\f783";
   position: relative;
-  color: #222222;
+  color: #68d37250;
   -webkit-text-stroke: 1px #68d372;
   margin-right: 5px;
   font-family: "Font Awesome 5 Free";
@@ -1527,7 +1527,7 @@ footer .support ul li a:hover {
 
   .timeline-content .date {
     position: absolute;
-    color: #222222;
+    color: #6e6e6e;
     top: -30px;
     left: 0px;
   }

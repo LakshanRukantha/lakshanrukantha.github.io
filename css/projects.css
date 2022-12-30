@@ -43,10 +43,12 @@
 }
 .project-data-wrapper .arrow-left {
   left: 0px;
+  padding-right: 30px;
   margin-right: 10px;
 }
 .project-data-wrapper .arrow-right {
   right: 0px;
+  padding-left: 30px;
   margin-left: 10px;
 }
 .project-data-wrapper .navigation {
