@@ -26,8 +26,8 @@ function toAbout() {
   });
 }
 
-function toBio() {
-  var element = document.getElementById("bio");
+function toProjects() {
+  var element = document.getElementById("projects");
   var headerOffset = 85;
   var elementPosition = element.getBoundingClientRect().top;
   var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
@@ -893,3 +893,278 @@ async function handleSubmit(event) {
     });
 }
 form.addEventListener("submit", handleSubmit);
+
+// projects section
+
+const projectData = [
+  {
+    title: "PassGen",
+    subTitle:
+      "You can easily generate secure and random passwords using this simple tool.",
+    thumbnail: "../img/projects-default.jpg",
+    description:
+      "PassGen is a Python CLI tool for generating secure, random passwords from the command line. It allows you to easily create strong and unique passwords for your accounts, with a variety of customization options. Simply enter a few commands and PassGen will do the rest, providing you with a secure password to use with confidence. Fast and efficient, PassGen is the perfect tool for anyone who needs to generate passwords on the fly.",
+    techStack: "Python",
+    srcURL: "https://github.com/LakshanRukantha/PassGen",
+  },
+  {
+    title: "Project Title",
+    subTitle:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
+    thumbnail: "../img/projects-default.jpg",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi placeat magnam eveniet accusamus tenetur maxime aspernatur deleniti rerum praesentium ducimus minima facilis consectetur expedita, mollitia molestias qui dolorem quam laudantium. Repellendus sunt harum fugiat natus. dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
+    techStack: "Stack",
+    srcURL: "",
+  },
+  {
+    title: "Project Title",
+    subTitle:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
+    thumbnail: "../img/projects-default.jpg",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi placeat magnam eveniet accusamus tenetur maxime aspernatur deleniti rerum praesentium ducimus minima facilis consectetur expedita, mollitia molestias qui dolorem quam laudantium. Repellendus sunt harum fugiat natus. dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
+    techStack: "Stack",
+    srcURL: "",
+  },
+  {
+    title: "Project Title",
+    subTitle:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
+    thumbnail: "../img/projects-default.jpg",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi placeat magnam eveniet accusamus tenetur maxime aspernatur deleniti rerum praesentium ducimus minima facilis consectetur expedita, mollitia molestias qui dolorem quam laudantium. Repellendus sunt harum fugiat natus. dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
+    techStack: "Stack",
+    srcURL: "",
+  },
+  {
+    title: "Project Title",
+    subTitle:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
+    thumbnail: "../img/projects-default.jpg",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi placeat magnam eveniet accusamus tenetur maxime aspernatur deleniti rerum praesentium ducimus minima facilis consectetur expedita, mollitia molestias qui dolorem quam laudantium. Repellendus sunt harum fugiat natus. dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
+    techStack: "Stack",
+    srcURL: "",
+  },
+  {
+    title: "Project Title",
+    subTitle:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
+    thumbnail: "../img/projects-default.jpg",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi placeat magnam eveniet accusamus tenetur maxime aspernatur deleniti rerum praesentium ducimus minima facilis consectetur expedita, mollitia molestias qui dolorem quam laudantium. Repellendus sunt harum fugiat natus. dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
+    techStack: "Stack",
+    srcURL: "",
+  },
+  {
+    title: "Project Title",
+    subTitle:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
+    thumbnail: "../img/projects-default.jpg",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi placeat magnam eveniet accusamus tenetur maxime aspernatur deleniti rerum praesentium ducimus minima facilis consectetur expedita, mollitia molestias qui dolorem quam laudantium. Repellendus sunt harum fugiat natus. dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
+    techStack: "Stack",
+    srcURL: "",
+  },
+  {
+    title: "Project Title",
+    subTitle:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
+    thumbnail: "../img/projects-default.jpg",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi placeat magnam eveniet accusamus tenetur maxime aspernatur deleniti rerum praesentium ducimus minima facilis consectetur expedita, mollitia molestias qui dolorem quam laudantium. Repellendus sunt harum fugiat natus. dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
+    techStack: "Stack",
+    srcURL: "",
+  },
+  // Add more objects for additional projectData here
+];
+
+loadContent(projectData);
+
+function loadContent(projectData) {
+  const buildTemplate = (template, data) => {
+    for (const key in data) {
+      const reg = new RegExp(`{${key}}`, "ig");
+      template = template.replace(reg, data[key]);
+    }
+    return template;
+  };
+  const ChatBubble = function (data) {
+    const elem = document.createElement("div");
+    elem.classList.add("project-card");
+    elem.style.setProperty("--rotation", data.rotation + "deg");
+    elem.innerHTML = buildTemplate(
+      `<div class='projects-header'>
+          <img class="card-img-top img-fluid" style="height: 200px; object-fit: cover;" src={thumbnail} alt="Card image cap">
+       </div>
+       <h5 class="card-title mt-4">{title}</h5>
+       <div class='content'>{description}</div>
+       <div class='technologies'>Tech Stack: {techStack}</div>
+       <div class="">
+          <a href="{srcURL}" class="btn" style="float: right; color: #fff; background-color: #68d372; padding: .375rem .75rem; border-radius: .25rem;">View Demo</a>
+      </div>`,
+      data
+    );
+    setTimeout(() => {
+      if (elem.children[2].scrollHeight > elem.children[2].clientHeight) {
+        elem.classList.add("truncated");
+      }
+    }, 100);
+    return elem;
+  };
+
+  const rotationAmt = 360 / projectData.length;
+  let focused = 0;
+  const tElem = document.querySelector(".project-data-wrapper");
+  const projectsElem = document.querySelector(".project-data");
+  const navElem = document.querySelector(".navigation");
+
+  let paused = false;
+  projectsElem.addEventListener("mouseenter", () => {
+    paused = true;
+  });
+
+  projectsElem.addEventListener("mouseleave", () => (paused = false));
+
+  window.onblur = () => {
+    paused = true;
+  };
+  window.onfocus = () => {
+    paused = false;
+  };
+
+  function getFocusedIndex() {
+    return mod(focused, projectData.length);
+  }
+
+  const radius = 400 / (2 * Math.sin(Math.PI / projectData.length));
+  const distToEdge = Math.round(Math.sqrt(radius ** 2 - 200 ** 2) + 30);
+  projectsElem.style.setProperty("--distance", distToEdge + "px");
+
+  projectData.forEach((project, i) => {
+    projectsElem.appendChild(
+      ChatBubble({
+        ...project,
+        rotation: i * rotationAmt,
+      })
+    );
+
+    const navBtn = document.createElement("div");
+    navBtn.classList.add("nav-dot");
+    navBtn.addEventListener("click", () => {
+      select(i);
+    });
+    navElem.appendChild(navBtn);
+  });
+
+  let xPos, dragStartPos;
+  Draggable.create(tElem, {
+    onDragStart: (e) => {
+      if (e.touches) e.clientX = e.touches[0].clientX;
+      xPos = dragStartPos = Math.round(e.clientX);
+    },
+
+    onDrag: (e) => {
+      if (e.touches) e.clientX = e.touches[0].clientX;
+
+      gsap.to(projectsElem, {
+        rotationY: "+=" + ((Math.round(e.clientX) - xPos) % 360),
+      });
+
+      xPos = Math.round(e.clientX);
+    },
+
+    onDragEnd: () => {
+      const currentRotation = gsap.getProperty(projectsElem, "rotationY") * -1;
+      const index = mod(
+        Math.round(currentRotation / rotationAmt),
+        projectData.length
+      );
+      console.log(xPos, dragStartPos);
+      select(index, xPos < dragStartPos ? 1 : -1);
+      gsap.set(tElem, { x: 0, y: 0 });
+    },
+  });
+
+  let timeout;
+  function update() {
+    gsap.to(projectsElem, {
+      rotationY: -focused * rotationAmt,
+      duration: 1,
+    });
+    const { children } = projectsElem;
+    for (var i = 0; i < children.length; i++) {
+      if (getFocusedIndex() === i) {
+        children[i].classList.add("focused");
+        navElem.children[i].classList.add("focused");
+      } else {
+        children[i].classList.remove("focused");
+        navElem.children[i].classList.remove("focused");
+      }
+    }
+    if (timeout) clearTimeout(timeout);
+    const nextTimeout = (cb) => {
+      timeout = setTimeout(() => {
+        cb();
+      }, 5000);
+    };
+    nextTimeout(() => {
+      if (paused) {
+        update();
+      } else {
+        focused++;
+        update();
+      }
+    });
+  }
+  function mod(a, b) {
+    return ((a % b) + b) % b;
+  }
+  function diff(a, b, c, d) {
+    return d === -1 ? mod(b - a, c) : mod(a - b, c);
+  }
+  function select(index, dir) {
+    index = mod(index, projectData.length);
+    // dir = null
+
+    if (dir) {
+      focused += diff(index, getFocusedIndex(), projectData.length, dir) * dir;
+    } else {
+      focused += index - getFocusedIndex();
+    }
+    update();
+  }
+  update();
+
+  document.querySelector(".arrow-right").addEventListener("click", () => {
+    focused++;
+    update();
+  });
+
+  document.querySelector(".arrow-left").addEventListener("click", () => {
+    focused--;
+    update();
+  });
+}
+
+// Github data display
+
+async function getRepoList() {
+  try {
+    const response = await fetch(
+      "https://api.github.com/users/LakshanRukantha/repos"
+    );
+    const data = await response.json();
+    return data;
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+// (async function() {
+//   const repoList = await getRepoList();
+//  for (let i = 1; i < repoList.length; i++) {
+// console.log(repoList[i].name);
+// }
+// })();

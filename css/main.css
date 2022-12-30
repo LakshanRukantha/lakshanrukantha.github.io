@@ -31,7 +31,6 @@ body {
 
 ::-webkit-scrollbar {
   position: absolute;
-  transform: rotate(90deg);
   width: 8px;
   background: #6e6e6e;
   transition: border-radius 1s;
@@ -45,7 +44,6 @@ body {
 
 ::-webkit-scrollbar-thumb:active {
   border-radius: 4px;
-  box-shadow: 0px 10px 50px 20px rgba(0, 0, 0, 0.5);
 }
 
 ::-webkit-scrollbar-track {
@@ -297,13 +295,6 @@ h6 {
   height: 5px;
   background-color: #68d372;
   width: 0%;
-}
-
-.collapse-bg {
-  background-image: url("../img/collapse-bg.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
 }
 
 .navbar-links {
@@ -806,6 +797,7 @@ h6 {
 
 #milestones {
   padding: 50px 0px;
+  background-color: #222222;
 }
 
 .milestones {
@@ -929,14 +921,11 @@ h6 {
 }
 
 #contact {
-  background-color: #222222;
-  box-shadow: 0px 0px 10px 10px rgba(34, 34, 34, 1);
   padding-top: 50px;
 }
 
 .contact-title {
   font-size: 30px;
-  color: rgb(200, 200, 200);
 }
 
 #contact #contact-form {
@@ -1042,16 +1031,10 @@ h6 {
   overflow: hidden;
   max-width: 30px;
   height: 30px;
-  transition-duration: 0.4s;
+  transition: all 0.2s ease;
+  scale: 100%;
   border-radius: 30px;
   margin-bottom: 10px;
-}
-
-.social-icon .img-title {
-  color: #b1b1b1;
-  font-size: 14px;
-  padding-top: 5px;
-  position: relative;
 }
 
 .col3 .github {
@@ -1130,7 +1113,8 @@ footer .support ul li a {
 footer ul li:hover,
 .footer-nav ul li a:hover,
 footer .support ul li a:hover {
-  color: #b1b1b1;
+  color: #222222;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
 }
 
 .main {
@@ -1149,7 +1133,6 @@ footer .support ul li a:hover {
 
 .heading {
   margin-bottom: 15px;
-  color: #b1b1b1;
   text-align: left;
   font-size: 18px;
 }
@@ -1201,7 +1184,6 @@ footer .support ul li a:hover {
 }
 
 .footer-rights {
-  background-color: #222222;
   padding-top: 50px;
   text-align: center;
   font-size: 0.9em;
@@ -1218,7 +1200,7 @@ footer .support ul li a:hover {
 }
 
 .footer-rights .copyright p a {
-  color: rgba(255, 255, 255, 0.63);
+  color: #222222;
   text-decoration-color: transparent;
   transition: text-decoration-color 0.4s ease;
 }
@@ -1504,8 +1486,22 @@ footer .support ul li a:hover {
     margin: 0px 10px;
     border-radius: 50%;
     border: 2px solid #68d372;
-    background-color: #ffffff;
+    background-color: #222222;
     top: 0px;
+    transition: background-color 0.4s;
+  }
+
+  .timeline ul .start::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    margin: 0px 10px;
+    border-radius: 50%;
+    border: 2px solid #68d372;
+    background-color: #68d372;
+    bottom: -20px;
+    right: -40px;
     transition: background-color 0.4s;
   }
 
@@ -1514,9 +1510,19 @@ footer .support ul li a:hover {
     right: -30px;
   }
 
+  .timeline ul li:nth-child(odd):hover::before {
+    top: 2px;
+    right: -28px;
+  }
+
   .timeline ul li:nth-child(even)::before {
     transform: translate(-50%, -50%);
     left: -30px;
+  }
+
+  .timeline ul li:nth-child(even):hover::before {
+    top: 2px;
+    left: -28px;
   }
 
   .timeline-content .date {
@@ -1531,7 +1537,13 @@ footer .support ul li a:hover {
   }
 
   .timeline ul li:hover::before {
-    background-color: #222222;
+    background-color: #68d372;
+    scale: 120%;
+  }
+
+  .timeline ul .start:not(:hover)::after {
+    pointer-events: none;
+    background-color: #68d372;
   }
 
   #contact {
@@ -1891,12 +1903,8 @@ footer .support ul li a:hover {
   }
 
   .social-icon:hover {
-    transition: 0.4s;
-    max-width: 200px;
-    height: 65px;
-    padding: 8px;
-    border-radius: 8px;
-    background-color: #4ea15650;
+    scale: 110%;
+    box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.08);
   }
 
   .footer-rights {
@@ -1979,7 +1987,6 @@ footer .support ul li a:hover {
 
   .contact-title {
     font-size: 3rem;
-    color: #fff;
   }
 
   #contact {
