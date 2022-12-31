@@ -638,7 +638,7 @@ h6 {
 }
 
 #about .left img {
-  width: 30px;
+  width: 50px;
 }
 
 #bio .bio {
@@ -972,16 +972,12 @@ h6 {
 .contact-img {
   position: relative;
   display: block;
-  margin-top: 30px !important;
-  bottom: 0px !important;
   top: 50%;
   left: 50%;
+  padding-bottom: 50px;
   transform: translate(-50%, -50%);
-  background-image: url("../img/contact.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  max-width: 350px;
-  height: 350px;
+  max-width: 400px;
+  height: auto;
 }
 
 #contact h1 {
@@ -1392,10 +1388,6 @@ footer .support ul li a:hover {
     transform: translateY(-100%);
   }
 
-  .about-wrapper .left img {
-    width: 40px !important;
-  }
-
   #bio .section-title::before {
     width: 200px;
     height: 2px;
@@ -1576,10 +1568,6 @@ footer .support ul li a:hover {
 
   .col3 p {
     margin-bottom: 0.5rem;
-  }
-
-  .contact-img {
-    margin-top: 50px;
   }
 
   .social-media-set {
@@ -1840,7 +1828,7 @@ footer .support ul li a:hover {
   }
 
   .about-wrapper .left img {
-    width: 40px !important;
+    width: 70px !important;
   }
 
   #bio {
