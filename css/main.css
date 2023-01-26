@@ -700,11 +700,12 @@ h6 {
   margin-bottom: 15px;
   background-color: #222222;
   box-shadow: 5px 5px 15px #181818, -5px -5px 15px #2c2c2c;
-  transition: filter 0.2s ease-in-out;
+  transition: background-color 0.2s ease, border-radius 0.2s ease;
 }
 
 #skills .container .div-card:hover {
-  filter: grayscale(0%);
+  border-radius: 50%;
+  background-color: rgb(200, 200, 200);
 }
 
 #skills .container .div-card-item {
@@ -717,6 +718,10 @@ h6 {
   transform: translateX(-50%) translateY(-50%);
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+#skills .container .div-card-item:hover #skills .container .div-card span {
+  color: #68d372;
 }
 
 #skills .container .div-card .skill-level {
@@ -749,6 +754,12 @@ h6 {
 
 /*Icons - Programming Languages & Frameworks */
 
+#skills .container .div-card .node-js {
+  background-image: url("../img/icon/node-js.png");
+}
+#skills .container .div-card .express-js {
+  background-image: url("../img/icon/express-js.png");
+}
 #skills .container .div-card .html {
   background-image: url("../img/icon/html-5.png");
 }
@@ -1993,6 +2004,11 @@ footer .support ul li a:hover {
     padding-right: 80px;
     position: relative;
     bottom: 100px;
+  }
+
+  #skills .container .div-card {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .contacts {
