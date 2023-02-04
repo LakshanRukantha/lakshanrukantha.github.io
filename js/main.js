@@ -779,7 +779,7 @@ function progressIndicator() {
 setTimeout(() => {
   new Typewriter(".typing-text", {
     strings: [
-      "Front-End Developer",
+      "Full-Stack Developer",
       "UI/UX Designer",
       "Sound Designer",
       "Photographer",
