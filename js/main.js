@@ -908,14 +908,13 @@ const projectData = [
     srcURL: "https://github.com/LakshanRukantha/PassGen",
   },
   {
-    title: "Project Title",
-    subTitle:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
-    thumbnail: "../img/projects-default.jpg",
+    title: "CutLink",
+    subTitle: "Here you have full control over your links.",
+    thumbnail: "../img/thumbnails/cutlink-thumbnail.png",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi placeat magnam eveniet accusamus tenetur maxime aspernatur deleniti rerum praesentium ducimus minima facilis consectetur expedita, mollitia molestias qui dolorem quam laudantium. Repellendus sunt harum fugiat natus. dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
-    techStack: "Stack",
-    srcURL: "",
+      "CutLink is a modern and user-friendly web application built with React and Material UI. Our platform offers a complete solution for link shortening. With CutLink, you can create short, branded links that are easy to share. Try CutLink today and experience the power of a smarter link shortning platform!",
+    techStack: "React, MUI",
+    srcURL: "https://cut-link.netlify.app/",
   },
   {
     title: "Project Title",
@@ -998,11 +997,11 @@ function loadContent(projectData) {
       `<div class='projects-header'>
           <img class="card-img-top img-fluid" style="height: 200px; object-fit: cover;" src={thumbnail} alt="Card image cap">
        </div>
-       <h5 class="card-title mt-4">{title}</h5>
+       <h5 class="card-title mt-3">{title}</h5>
        <div class='content'>{description}</div>
        <div class='technologies'>Tech Stack: {techStack}</div>
        <div class="">
-          <a href="{srcURL}" class="btn" style="float: right; color: #fff; background-color: #68d372; padding: .375rem .75rem; border-radius: .25rem;">View Demo</a>
+          <a href="{srcURL}" target="_blank" class="btn" style="float: right; color: #fff; background-color: #68d372; padding: .375rem .75rem; border-radius: .25rem;">View Demo</a>
       </div>`,
       data
     );

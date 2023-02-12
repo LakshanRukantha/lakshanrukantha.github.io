@@ -95,6 +95,11 @@
   pointer-events: auto;
 }
 
+.projects-header {
+  overflow: hidden;
+  border-radius: 0.25rem;
+}
+
 .project-card:hover {
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
 }
@@ -108,7 +113,8 @@
   display: grid;
   grid-template: auto auto/auto 1fr;
   grid-column-gap: 0.4em;
-  margin-top: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5rem;
 }
 
 .project-card .btn:hover {

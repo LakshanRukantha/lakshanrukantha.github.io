@@ -1887,6 +1887,15 @@ footer .support ul li a:hover {
     flex-wrap: wrap;
   }
 
+  .card-img-top {
+    transition: transform 0.4s ease;
+  }
+
+  .card-img-top:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+  }
+
   #contact {
     padding-bottom: 0px;
     padding-top: 30px;
