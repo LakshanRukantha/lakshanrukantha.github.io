@@ -917,14 +917,14 @@ const projectData = [
     srcURL: "https://cut-link.netlify.app/",
   },
   {
-    title: "Project Title",
+    title: "MindMate",
     subTitle:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
-    thumbnail: "../img/projects-default.jpg",
+      "Unlock the power of your mind with our AI-Driven mental health web application",
+    thumbnail: "../img/thumbnails/mindmate-thumbnail.png",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi placeat magnam eveniet accusamus tenetur maxime aspernatur deleniti rerum praesentium ducimus minima facilis consectetur expedita, mollitia molestias qui dolorem quam laudantium. Repellendus sunt harum fugiat natus. dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
-    techStack: "Stack",
-    srcURL: "",
+      "MindMate is a web application that provides mental health solutions using artificial intelligence powered by OpenAI. It is designed to help individuals struggling with mental health issues to improve their well-being and overall quality of life. The app provides personalized and confidential support to users by analyzing their symptoms, emotions, and behavior. MindMate uses advanced algorithms to identify patterns in user data and provide them with tailored recommendations for managing their mental health.",
+    techStack: "Next.js, React, Node.js",
+    srcURL: "https://mind-mate.vercel.app/",
   },
   {
     title: "Project Title",
