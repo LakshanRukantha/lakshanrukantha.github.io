@@ -163,7 +163,9 @@ h6 {
 }
 
 .nav-card-item {
+  position: relative;
   list-style: none;
+  left: -1rem;
 }
 
 .navbar li .nav-link:hover {
@@ -1294,7 +1296,8 @@ footer .support ul li a:hover {
 
 @media (max-width: 400px) {
   .navbar-collapse .nav-link {
-    background-color: #222222;
+    background-color: transparent;
+    width: 70%;
   }
 
   #intro p {
