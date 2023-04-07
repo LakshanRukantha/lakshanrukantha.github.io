@@ -1000,8 +1000,9 @@ function loadContent(projectData) {
        <h5 class="card-title mt-3">{title}</h5>
        <div class='content'>{description}</div>
        <div class='technologies'>Tech Stack: {techStack}</div>
-       <div class="">
-          <a href="{srcURL}" target="_blank" class="btn" style="float: right; color: #fff; background-color: #68d372; padding: .375rem .75rem; border-radius: .25rem;">View Demo</a>
+       <div class="card-buttons">
+          <a href="" target="_blank" class="card-btn" style="float: right; height: 2.35rem; color: #fff; background-color: #68d372; padding: .375rem .75rem; border-radius: .25rem;"><i class="fa-regular fa-file-code"></i>Source Code</a>
+          <a href="{srcURL}" target="_blank" class="card-btn" style="float: right; color: #fff; background-color: #68d372; padding: .375rem .75rem; border-radius: .25rem;"><i class="fa-solid fa-display"></i>View Demo</a>
       </div>`,
       data
     );

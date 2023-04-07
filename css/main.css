@@ -62,8 +62,16 @@ a:hover {
   color: #68d372;
 }
 
-button {
-  border: 2px solid #68d372;
+nav .cv-download {
+  color: #ffffff;
+  border: none;
+  background-color: #68d372;
+  padding: 15px 20px;
+  /* padding: 15px auto; */
+}
+
+.fa-cloud-arrow-down {
+  margin-right: 10px;
 }
 
 input,
@@ -131,7 +139,7 @@ h6 {
   box-shadow: 0 0px 4px 0px rgba(0, 0, 0, 0.8);
 }
 
-.navbar .navbar-brand {
+.navbar .nav-brand {
   position: absolute;
   top: 0;
   background-color: #68d372;
@@ -152,7 +160,6 @@ h6 {
   padding: 0px 30px !important;
   cursor: pointer;
   margin: 5px auto;
-  margin-right: 20px;
 }
 
 .nav-card-item {
@@ -308,7 +315,6 @@ h6 {
   color: #68d372 !important;
   border: 2px solid #68d372;
   border-radius: 20px;
-  background-color: #222222;
   box-shadow: 10px 10px 30px #1d1d1d50, -10px -10px 30px #27272750;
 }
 
@@ -488,6 +494,11 @@ h6 {
   border-radius: 4px;
 }
 
+#intro .button .fa-cloud-arrow-down,
+.fa-envelope {
+  margin-right: 10px;
+}
+
 #intro .button:active {
   transform: scale(98%);
 }
@@ -531,9 +542,8 @@ h6 {
 }
 
 #intro a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: center;
@@ -553,7 +563,6 @@ h6 {
   position: relative;
   display: flex;
   cursor: pointer;
-  width: 130px;
   align-items: center;
   justify-content: center;
   color: #6e6e6e;
@@ -598,18 +607,6 @@ h6 {
   cursor: grab;
 }
 
-.intro-btns i,
-.fa-paper-plane {
-  position: relative;
-  margin-right: 10px;
-  padding-top: 4px;
-  width: 20px;
-}
-
-.intro-btns .fa-cloud-arrow-down {
-  margin-right: 15px;
-}
-
 #about {
   padding-top: 50px;
   top: -60px;
@@ -626,7 +623,7 @@ h6 {
 
 #about .left,
 #about .right {
-  padding: 40px 40px;
+  padding: 40px 10px;
 }
 
 #about .left div {
@@ -646,10 +643,13 @@ h6 {
 }
 
 #bio h2 {
+  margin-top: 25px;
   font-size: 30px;
 }
 
 #bio .img {
+  position: relative;
+  top: 20px;
   padding: 0 50px;
 }
 
@@ -657,6 +657,8 @@ h6 {
   position: relative;
   width: 100%;
   cursor: grab;
+  margin-bottom: 25px;
+  border-left: 5px solid #68d372;
   border-radius: 8px;
 }
 
@@ -665,7 +667,7 @@ h6 {
 }
 
 #bio .text {
-  padding: 40px;
+  padding: 20px;
 }
 
 #skills {
@@ -804,6 +806,19 @@ h6 {
 }
 #skills .container .div-card .tamil {
   background-image: url("../img/icon/lang-ta.png");
+}
+
+.card-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.fa-file-code,
+.fa-display {
+  position: relative;
+  top: 2px;
 }
 
 #milestones {
@@ -1004,6 +1019,10 @@ h6 {
 #contact .email p,
 #contact .phone p {
   margin-bottom: 0.5rem !important;
+}
+
+#contact .fa-paper-plane {
+  margin-right: 10px;
 }
 
 .contacts {
@@ -1274,6 +1293,10 @@ footer .support ul li a:hover {
 }
 
 @media (max-width: 400px) {
+  .navbar-collapse .nav-link {
+    background-color: #222222;
+  }
+
   #intro p {
     margin-bottom: 20px;
   }
@@ -1291,6 +1314,10 @@ footer .support ul li a:hover {
     justify-content: center;
   }
 
+  #bio .img {
+    padding: 0 20px;
+  }
+
   #bio .img .bio-img {
     position: relative;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
@@ -1305,6 +1332,18 @@ footer .support ul li a:hover {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+  }
+
+  .card-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .card-buttons .card-btn {
+    width: 100%;
   }
 
   .btn-send-message {
@@ -1601,7 +1640,7 @@ footer .support ul li a:hover {
     z-index: 20;
     margin: 0 auto;
     padding: 30px 0;
-    background-color: #222222;
+
     box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.8);
   }
 
@@ -1609,10 +1648,8 @@ footer .support ul li a:hover {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    margin-right: 50px;
     height: 85px;
     justify-content: space-around;
-    background-color: #222222;
   }
 
   .navbar-links li {
@@ -1621,13 +1658,8 @@ footer .support ul li a:hover {
 
   .collapse button {
     display: inline-block;
-    padding: 10px 20px;
     font-size: 17px;
     border-radius: 4px;
-  }
-
-  .button .fa-cloud-arrow-down {
-    margin-right: 15px;
   }
 
   .scroll-progress-track {
@@ -1654,13 +1686,12 @@ footer .support ul li a:hover {
     color: white !important;
     text-shadow: none;
     border-radius: 0px;
-    background: #222222;
     box-shadow: none;
   }
 
-  .navbar .navbar-brand {
-    position: absolute;
-    top: 0;
+  .navbar .nav-brand {
+    position: relative;
+    top: -10px;
     background-color: #68d372;
     display: inline-block;
     padding: 20px 10px 0px 10px;
@@ -1927,10 +1958,11 @@ footer .support ul li a:hover {
   }
 
   .navbar-links {
+    position: relative;
+    left: 30px;
     display: flex;
     align-items: center;
     margin: 0 auto;
-    margin-right: auto;
     height: 85px;
     justify-content: space-around;
     background-color: #222222;

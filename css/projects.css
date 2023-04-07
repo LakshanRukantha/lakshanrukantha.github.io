@@ -105,10 +105,10 @@
 }
 
 .project-card i {
-  font-size: 30px;
-  color: #aaa;
-  margin-bottom: 0.5em;
+  font-size: 20px;
+  margin-right: 10px;
 }
+
 .project-card .technologies {
   display: grid;
   grid-template: auto auto/auto 1fr;
@@ -146,4 +146,16 @@
   background-image: black;
   top: 0;
   left: 0;
+}
+
+@media (max-width: 400px) {
+  .projects-section {
+    margin-top: -2rem;
+  }
+  .project-data-wrapper .navigation {
+    bottom: 0.5rem;
+  }
+  .project-card {
+    backface-visibility: hidden;
+  }
 }
