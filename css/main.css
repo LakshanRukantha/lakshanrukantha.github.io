@@ -447,10 +447,6 @@ h6 {
   padding: 150px 0px 50px;
 }
 
-#intro .text {
-  margin-top: -40px;
-}
-
 .typing-text {
   color: #ffffff;
   position: relative;
@@ -1765,7 +1761,6 @@ footer .support ul li a:hover {
   }
 
   #intro .text {
-    margin-top: -40px;
     width: 45%;
   }
 
