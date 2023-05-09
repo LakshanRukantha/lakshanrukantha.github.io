@@ -133,7 +133,7 @@ function progressIndicator() {
                   return new Date().getTime() - r;
                 }),
                 (r = new Date().getTime()));
-          }.call(this));
+          }).call(this);
         },
         4087: (e, t, n) => {
           for (
@@ -791,36 +791,19 @@ setTimeout(() => {
   });
 }, 2400);
 
-// Preloader animaton handling
-
-$("body").append(
-  '<div id="loadingDiv" class="loader-box"><span class="rotating-box"></span><span class="rotating-box"></span><span class="rotating-box"></span><span class="rotating-box"></span></div>'
-);
-$(window).on("load", function () {
-  setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
-});
-function removeLoader() {
-  $("#loadingDiv").fadeOut(500, function () {
-    // fadeOut complete. Remove the loading div
-    $("#loadingDiv").remove(); //makes page more lightweight
-  });
-}
-
 // Preloader text handling
 
 new Typewriter(".loading-text", {
   strings: ["Lakshan Is Thinking..."],
   autoStart: true,
-  delay: 60,
-  deleteSpeed: 100000,
+  delay: 80,
   cursor: "|",
-  deleteSpeed: 10000,
-  cursor: "",
+  deleteSpeed: 10,
 });
 setTimeout(() => {
   let loadingText = document.querySelector(".loader");
   loadingText.style.display = "none";
-}, 4000);
+}, 5000);
 
 // Scroll to top button
 
