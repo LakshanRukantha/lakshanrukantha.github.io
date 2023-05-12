@@ -668,6 +668,9 @@ h6 {
 
 /*Icons - Programming Languages & Frameworks */
 
+#skills .container .div-card .mongodb {
+  background-image: url("../img/icon/mongodb.png");
+}
 #skills .container .div-card .node-js {
   background-image: url("../img/icon/node-js.png");
 }
