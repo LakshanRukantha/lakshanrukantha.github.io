@@ -887,7 +887,7 @@ const projectData = [
     thumbnail: "../img/projects-default.jpg",
     description:
       "PassGen is a Python CLI tool for generating secure, random passwords from the command line. It allows you to easily create strong and unique passwords for your accounts, with a variety of customization options. Simply enter a few commands and PassGen will do the rest, providing you with a secure password to use with confidence. Fast and efficient, PassGen is the perfect tool for anyone who needs to generate passwords on the fly.",
-    techStack: "Python",
+    techStack: ["Python"],
     srcURL: "https://github.com/LakshanRukantha/PassGen",
   },
   {
@@ -896,7 +896,7 @@ const projectData = [
     thumbnail: "../img/thumbnails/cutlink-thumbnail.png",
     description:
       "CutLink is a modern and user-friendly web application built with React and Material UI. Our platform offers a complete solution for link shortening. With CutLink, you can create short, branded links that are easy to share. Try CutLink today and experience the power of a smarter link shortning platform!",
-    techStack: "React, MUI",
+    techStack: ["React", "MUI"],
     srcURL: "https://cut-link.netlify.app/",
   },
   {
@@ -906,17 +906,26 @@ const projectData = [
     thumbnail: "../img/thumbnails/mindmate-thumbnail.png",
     description:
       "MindMate is a web application that provides mental health solutions using artificial intelligence powered by OpenAI. It is designed to help individuals struggling with mental health issues to improve their well-being and overall quality of life. The app provides personalized and confidential support to users by analyzing their symptoms, emotions, and behavior. MindMate uses advanced algorithms to identify patterns in user data and provide them with tailored recommendations for managing their mental health.",
-    techStack: "Next.js, React, Node.js",
+    techStack: ["Next.js", "React", "Node.js"],
     srcURL: "https://mind-mate.vercel.app/",
   },
   {
+    title: "GitTrack",
+    subTitle: "Gain insights and strengthen your GitHub connections",
+    thumbnail: "../img/thumbnails/gittrack-thumbnail.png",
+    description:
+      "GitTrack - an innovative web application designed to empower GitHub users with powerful network analysis tools. With GitTrack, you can effortlessly track and analyze your followers, identifying those who are not reciprocating the follow. Take control of your GitHub presence, strengthen your connections, and optimize your network. Gain valuable insights and make informed decisions to build a strong and engaged community.",
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS"],
+    srcURL: "https://gittrack.vercel.app/",
+  },
+  {
     title: "Project Title",
     subTitle:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
     thumbnail: "../img/projects-default.jpg",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi placeat magnam eveniet accusamus tenetur maxime aspernatur deleniti rerum praesentium ducimus minima facilis consectetur expedita, mollitia molestias qui dolorem quam laudantium. Repellendus sunt harum fugiat natus. dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
-    techStack: "Stack",
+    techStack: ["Stack"],
     srcURL: "",
   },
   {
@@ -926,7 +935,7 @@ const projectData = [
     thumbnail: "../img/projects-default.jpg",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi placeat magnam eveniet accusamus tenetur maxime aspernatur deleniti rerum praesentium ducimus minima facilis consectetur expedita, mollitia molestias qui dolorem quam laudantium. Repellendus sunt harum fugiat natus. dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
-    techStack: "Stack",
+    techStack: ["Stack"],
     srcURL: "",
   },
   {
@@ -936,7 +945,7 @@ const projectData = [
     thumbnail: "../img/projects-default.jpg",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi placeat magnam eveniet accusamus tenetur maxime aspernatur deleniti rerum praesentium ducimus minima facilis consectetur expedita, mollitia molestias qui dolorem quam laudantium. Repellendus sunt harum fugiat natus. dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
-    techStack: "Stack",
+    techStack: ["Stack"],
     srcURL: "",
   },
   {
@@ -946,17 +955,7 @@ const projectData = [
     thumbnail: "../img/projects-default.jpg",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi placeat magnam eveniet accusamus tenetur maxime aspernatur deleniti rerum praesentium ducimus minima facilis consectetur expedita, mollitia molestias qui dolorem quam laudantium. Repellendus sunt harum fugiat natus. dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
-    techStack: "Stack",
-    srcURL: "",
-  },
-  {
-    title: "Project Title",
-    subTitle:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
-    thumbnail: "../img/projects-default.jpg",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi placeat magnam eveniet accusamus tenetur maxime aspernatur deleniti rerum praesentium ducimus minima facilis consectetur expedita, mollitia molestias qui dolorem quam laudantium. Repellendus sunt harum fugiat natus. dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
-    techStack: "Stack",
+    techStack: ["Stack"],
     srcURL: "",
   },
   // Add more objects for additional projectData here
@@ -973,6 +972,10 @@ function loadContent(projectData) {
     return template;
   };
   const ProjectCard = function (data) {
+    const techStackData = data.techStack
+      .map((tech) => `<span class="stack-badge">${tech}</span>`)
+      .join(" ");
+    console.log(techStackData);
     const elem = document.createElement("div");
     elem.classList.add("project-card");
     elem.style.setProperty("--rotation", data.rotation + "deg");
@@ -982,7 +985,7 @@ function loadContent(projectData) {
        </div>
        <h5 class="card-title mt-3">{title}</h5>
        <div class='content'>{description}</div>
-       <div class='technologies'>Tech Stack: {techStack}</div>
+       <div class='technologies'>Tech Stack: ${techStackData}</div>
        <div class="card-buttons">
           <a href="" target="_blank" class="card-btn" style="float: right; height: 2.35rem; color: #fff; background-color: #68d372; padding: .375rem .75rem; border-radius: .25rem;"><i class="fa-regular fa-file-code"></i>Source Code</a>
           <a href="{srcURL}" target="_blank" class="card-btn" style="float: right; color: #fff; background-color: #68d372; padding: .375rem .75rem; border-radius: .25rem;"><i class="fa-solid fa-display"></i>View Demo</a>

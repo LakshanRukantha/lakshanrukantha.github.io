@@ -110,11 +110,22 @@
 }
 
 .project-card .technologies {
-  display: grid;
-  grid-template: auto auto/auto 1fr;
-  grid-column-gap: 0.4em;
   margin-top: 0.5em;
   margin-bottom: 0.5rem;
+}
+
+.project-card .technologies .stack-badge {
+  background-color: grey;
+  color: aliceblue;
+  padding: 0.1rem 0.5rem;
+  font-size: 14px;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 0.2rem;
+  text-align: center;
+}
+
+.project-card .technologies .stack-badge:hover {
+  background-color: #68d372;
 }
 
 .project-card .btn:hover {
