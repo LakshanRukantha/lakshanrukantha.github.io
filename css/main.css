@@ -689,14 +689,14 @@ h6 {
 #skills .container .div-card .python {
   background-image: url("../img/icon/python.png");
 }
+#skills .container .div-card .next-js {
+  background-image: url("../img/icon/next-js.png");
+}
 #skills .container .div-card .typescript {
   background-image: url("../img/icon/typescript.png");
 }
 #skills .container .div-card .react-js {
   background-image: url("../img/icon/react-js.png");
-}
-#skills .container .div-card .c {
-  background-image: url("../img/icon/c.png");
 }
 
 /*Icons - Tools & Other Skills */
