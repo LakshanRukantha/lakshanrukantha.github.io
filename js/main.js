@@ -974,7 +974,6 @@ function loadContent(projectData) {
     const techStackData = data.techStack
       .map((tech) => `<span class="stack-badge">${tech}</span>`)
       .join(" ");
-    console.log(techStackData);
     const elem = document.createElement("div");
     elem.classList.add("project-card");
     elem.style.setProperty("--rotation", data.rotation + "deg");
