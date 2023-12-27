@@ -929,14 +929,13 @@ const projectData = [
     srcURL: "https://mybattery.vercel.app/",
   },
   {
-    title: "Project Title",
-    subTitle:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
-    thumbnail: "../img/projects-default.jpg",
+    title: "SysInfo",
+    subTitle: "Web based terminal emulator",
+    thumbnail: "../img/thumbnails/sys-info-thumbnail.png",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi placeat magnam eveniet accusamus tenetur maxime aspernatur deleniti rerum praesentium ducimus minima facilis consectetur expedita, mollitia molestias qui dolorem quam laudantium. Repellendus sunt harum fugiat natus. dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
-    techStack: ["Stack"],
-    srcURL: "",
+      "SysInfo is a web based terminal emulator which you can run basic commands like help, clear, battery, weather and etc.",
+    techStack: ["JavaScript", "HTML", "CSS", "Tailwind CSS"],
+    srcURL: "https://sys-info.vercel.app/",
   },
   {
     title: "Project Title",
@@ -987,7 +986,7 @@ function loadContent(projectData) {
        <div class='content'>{description}</div>
        <div class='technologies'>Tech Stack: ${techStackData}</div>
        <div class="card-buttons">
-          <a href="" target="_blank" class="card-btn" style="float: right; height: 2.35rem; color: #fff; background-color: #68d372; padding: .375rem .75rem; border-radius: .25rem;"><i class="fa-regular fa-file-code"></i>Source Code</a>
+          <a href="https://github.com/LakshanRukantha" target="_blank" class="card-btn" style="float: right; height: 2.35rem; color: #fff; background-color: #68d372; padding: .375rem .75rem; border-radius: .25rem;"><i class="fa-regular fa-file-code"></i>Source Code</a>
           <a href="{srcURL}" target="_blank" class="card-btn" style="float: right; color: #fff; background-color: #68d372; padding: .375rem .75rem; border-radius: .25rem;"><i class="fa-solid fa-display"></i>View Demo</a>
       </div>`,
       data
