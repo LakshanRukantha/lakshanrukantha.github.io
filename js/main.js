@@ -919,14 +919,14 @@ const projectData = [
     srcURL: "https://gittrack.vercel.app/",
   },
   {
-    title: "Project Title",
+    title: "My Battery",
     subTitle:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
-    thumbnail: "../img/projects-default.jpg",
+      "Simple website that display the battery status of your device and the charging status.",
+    thumbnail: "../img/thumbnails/my-battery-thumbnail.png",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi placeat magnam eveniet accusamus tenetur maxime aspernatur deleniti rerum praesentium ducimus minima facilis consectetur expedita, mollitia molestias qui dolorem quam laudantium. Repellendus sunt harum fugiat natus. dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
-    techStack: ["Stack"],
-    srcURL: "",
+      "My Battery is a simple and minimalistic web application that displays your battery percentage, charging status, and whether the battery is low or full. It's important to note that this is a website-based application.",
+    techStack: ["JavaScript", "HTML", "Tailwind CSS", "CSS"],
+    srcURL: "https://mybattery.vercel.app/",
   },
   {
     title: "Project Title",
