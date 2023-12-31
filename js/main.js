@@ -1000,7 +1000,6 @@ function loadContent(projectData) {
 
   const rotationAmt = 360 / projectData.length;
   let focused = 0;
-  const tElem = document.querySelector(".project-data-wrapper");
   const projectsElem = document.querySelector(".project-data");
   const navElem = document.querySelector(".navigation");
 
@@ -1041,41 +1040,6 @@ function loadContent(projectData) {
     });
     navElem.appendChild(navBtn);
   });
-
-  function checkWidth() {
-    if (window.innerWidth >= 992) {
-      let xPos, dragStartPos;
-      Draggable.create(tElem, {
-        onDragStart: (e) => {
-          if (e.touches) e.clientX = e.touches[0].clientX;
-          xPos = dragStartPos = Math.round(e.clientX);
-        },
-
-        onDrag: (e) => {
-          if (e.touches) e.clientX = e.touches[0].clientX;
-
-          gsap.to(projectsElem, {
-            rotationY: "+=" + ((Math.round(e.clientX) - xPos) % 360),
-          });
-
-          xPos = Math.round(e.clientX);
-        },
-
-        onDragEnd: () => {
-          const currentRotation =
-            gsap.getProperty(projectsElem, "rotationY") * -1;
-          const index = mod(
-            Math.round(currentRotation / rotationAmt),
-            projectData.length
-          );
-          select(index, xPos < dragStartPos ? 1 : -1);
-          gsap.set(tElem, { x: 0, y: 0 });
-        },
-      });
-    }
-  }
-
-  window.addEventListener("resize", checkWidth);
 
   let timeout;
   function update() {
