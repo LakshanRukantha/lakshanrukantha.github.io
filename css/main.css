@@ -363,19 +363,19 @@ h6 {
   z-index: 10;
   opacity: 1;
   background-color: #222222;
-  animation-fill-mode: forwards;
-  animation: loader 1s ease-in 4s forwards;
-  animation-fill-mode: forwards;
+  /* animation-fill-mode: forwards; */
+  /* animation: loader 1s ease-in 6s forwards; */
+  /* animation-fill-mode: forwards; */
 }
 
 .loading-text {
   color: rgb(255, 255, 255);
   position: absolute;
   font-weight: 100;
-  font-family: "Averia Libre";
+  font-family: 'Courier New', Courier, monospace;
   font-size: 15px;
   width: 100%;
-  animation: loader-disp 1s ease-out 4s forwards;
+  /* animation: loader-disp 1s ease-out 4s forwards; */
   text-align: center;
 }
 
@@ -402,18 +402,11 @@ h6 {
 .typing {
   position: relative;
   width: 100%;
-  top: -30px !important;
 }
 
 #intro h1 {
   color: white;
   margin-bottom: 0px;
-}
-
-.intro-animation {
-  animation: zoomInDown;
-  animation-duration: 2s;
-  animation-delay: 2s;
 }
 
 #intro h1 .my-name {
@@ -466,7 +459,7 @@ h6 {
 }
 
 #intro p {
-  margin-top: 0px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
@@ -1290,7 +1283,6 @@ footer .support ul li a:hover {
   .typing {
     position: relative;
     width: 100%;
-    top: -10px;
     height: 50px;
   }
 
@@ -1316,7 +1308,7 @@ footer .support ul li a:hover {
   }
 
   #intro p {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 20px;
   }
 
@@ -1672,13 +1664,12 @@ footer .support ul li a:hover {
 
   h1,
   .typing-text {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .typing {
     position: relative;
     width: 100%;
-    top: -20px;
     height: 120px;
   }
 
@@ -1712,7 +1703,7 @@ footer .support ul li a:hover {
   }
 
   #intro p {
-    margin-top: 40px !important;
+    margin-top: 40px;
     margin-bottom: 20px;
   }
 
@@ -1899,14 +1890,13 @@ footer .support ul li a:hover {
   }
 
   #intro p {
-    margin-top: 10px !important;
+    margin-top: 30px !important;
     margin-bottom: 20px;
   }
 
   .typing {
     position: relative;
     width: 100%;
-    top: -20px;
     height: 150px;
   }
 
