@@ -780,8 +780,8 @@ setTimeout(() => {
   new Typewriter(".typing-text", {
     strings: [
       "Full-Stack Developer",
+      "DevOps Enthusiast",
       "UI/UX Designer",
-      "Sound Designer",
       "Photographer",
     ],
     autoStart: true,
@@ -789,21 +789,21 @@ setTimeout(() => {
     deleteSpeed: 50,
     delay: 100,
   });
-}, 2400);
+}, 1400);
 
 // Preloader text handling
 
 new Typewriter(".loading-text", {
   strings: ["Lakshan Is Thinking..."],
   autoStart: true,
-  delay: 80,
+  delay: 50,
   cursor: "|",
   deleteSpeed: 10,
 });
 setTimeout(() => {
   let loadingText = document.querySelector(".loader");
   loadingText.style.display = "none";
-}, 5000);
+}, 4000);
 
 // Scroll to top button
 
