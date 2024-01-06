@@ -363,9 +363,6 @@ h6 {
   z-index: 10;
   opacity: 1;
   background-color: #222222;
-  /* animation-fill-mode: forwards; */
-  /* animation: loader 1s ease-in 6s forwards; */
-  /* animation-fill-mode: forwards; */
 }
 
 .loading-text {
@@ -375,7 +372,6 @@ h6 {
   font-family: "Courier New", Courier, monospace;
   font-size: 15px;
   width: 100%;
-  /* animation: loader-disp 1s ease-out 4s forwards; */
   text-align: center;
 }
 
@@ -1748,7 +1744,6 @@ footer .support ul li a:hover {
 
   #bio .img .bio-img {
     margin-top: 20px;
-    /* z-index: 5 !important; */
   }
 
   #bio h2 {
