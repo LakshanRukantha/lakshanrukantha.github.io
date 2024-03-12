@@ -839,6 +839,26 @@ h6 {
   font-weight: 800;
 }
 
+.timeline-content .job::before {
+  content: "\f0b1";
+  position: relative;
+  color: #222222;
+  margin-right: 5px;
+  -webkit-text-stroke: 1px #68d372;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+}
+
+.timeline-content .company::before {
+  content: "\f1ad";
+  position: relative;
+  color: #222222;
+  -webkit-text-stroke: 1px #68d372;
+  margin-right: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+}
+
 .timeline-content .sub-title {
   font-size: 16px;
   font-weight: normal;
