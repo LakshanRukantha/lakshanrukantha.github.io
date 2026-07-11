@@ -63,12 +63,8 @@
       referrerpolicy="no-referrer"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Koulen&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
@@ -76,7 +72,6 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://use.typekit.net/rrg4put.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/projects.css" />
@@ -147,35 +142,35 @@
         <div class="collapse navbar-collapse collapse-bg" id="navbarNav">
           <ul class="navbar-links">
             <li class="nav-card-item">
-              <a class="nav-link js-scroll-trigger noselect" onclick="toAbout()"
+              <a class="nav-link js-scroll-trigger noselect" onclick="scrollToSection('about')"
                 >About me</a
               >
             </li>
             <li class="nav-card-item">
               <a
                 class="nav-link js-scroll-trigger noselect"
-                onclick="toSkills()"
+                onclick="scrollToSection('skills')"
                 >Skills</a
               >
             </li>
             <li class="nav-card-item">
               <a
                 class="nav-link js-scroll-trigger noselect"
-                onclick="toProjects()"
+                onclick="scrollToSection('projects')"
                 >Projects</a
               >
             </li>
             <li class="nav-card-item">
               <a
                 class="nav-link js-scroll-trigger noselect"
-                onclick="toMilestones()"
+                onclick="scrollToSection('milestones')"
                 >Milestones</a
               >
             </li>
             <li class="nav-card-item">
               <a
                 class="nav-link js-scroll-trigger noselect"
-                onclick="toContact()"
+                onclick="scrollToSection('contact')"
                 >Contact</a
               >
             </li>
@@ -227,17 +222,17 @@
                 >
                 <a
                   class="button btn-contact contact-btn hb-fill-right-bg noselect"
-                  onclick="toContact()"
+                  onclick="scrollToSection('contact')"
                   ><i class="fa-regular fa-envelope fa-lg"></i>
                   <span>Contact Me</span></a
                 >
               </div>
-              <a class="scroll noselect" onclick="toAbout()">Scroll Down</a>
+              <a class="scroll noselect" onclick="scrollToSection('about')">Scroll Down</a>
             </div>
             <div class="img">
               <img
                 onContextMenu="return false;"
-                loading="lazy"
+                fetchpriority="high"
                 class="intro-img"
                 src="img/photo-intro.webp"
                 alt="intro-image"
@@ -573,6 +568,39 @@
                 <ul>
                   <li>
                     <div class="timeline-content">
+                      <h3 class="date">5th July, 2026</h3>
+                      <h2 class="title job">Associate DevOps Engineer</h2>
+                      <h3 class="sub-title company">
+                        Future Life Investments Ltd (FLi)
+                      </h3>
+                      <p class="description">
+                        Promoted to Associate DevOps Engineer at Future Life
+                        Investments Limited, transitioning from software
+                        development into building and maintaining CI/CD
+                        pipelines, automating infrastructure, and improving
+                        deployment reliability and delivery workflows across
+                        projects.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-content">
+                      <h3 class="date">5th January, 2026</h3>
+                      <h2 class="title job">Junior Software Engineer</h2>
+                      <h3 class="sub-title company">
+                        Future Life Investments Ltd (FLi)
+                      </h3>
+                      <p class="description">
+                        Joined Future Life Investments Ltd as a Junior
+                        Software Engineer, contributing to the design,
+                        development, and maintenance of software solutions for
+                        financial services while collaborating with
+                        cross-functional teams in a production environment.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-content">
                       <h3 class="date">13th February, 2024</h3>
                       <h2 class="title job">Full Stack Developer</h2>
                       <h3 class="sub-title company">HashX</h3>
@@ -735,7 +763,7 @@
               <div class="img-bg col-md-5 col-lg-4">
                 <div class="contact-img">
                   <lottie-player
-                    src="./img/contact-image-data.json"
+                    data-src="./img/contact-image-data.json"
                     mode="bounce"
                     background="transparent"
                     speed="0.8"
@@ -758,19 +786,19 @@
                           </a>
                         </li>
                         <li>
-                          <a onclick="toAbout()"> About </a>
+                          <a onclick="scrollToSection('about')"> About </a>
                         </li>
                         <li>
-                          <a onclick="toSkills()"> Skills </a>
+                          <a onclick="scrollToSection('skills')"> Skills </a>
                         </li>
                         <li>
-                          <a onclick="toprojects()"> Projects </a>
+                          <a onclick="scrollToSection('projects')"> Projects </a>
                         </li>
                         <li>
-                          <a onclick="toMilestones()"> Milestones </a>
+                          <a onclick="scrollToSection('milestones')"> Milestones </a>
                         </li>
                         <li>
-                          <a onclick="toContact()"> Contact </a>
+                          <a onclick="scrollToSection('contact')"> Contact </a>
                         </li>
                       </ul>
                     </div>
@@ -878,37 +906,22 @@
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"
-        target="_blank"
       ></script>
-      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-      <script
-        src="https://kit.fontawesome.com/0a73ff5289.js"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-        crossorigin="anonymous"
-      ></script>
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-      <script src="./js/counter.min.js"></script>
-      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-      <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+      <script src="https://unpkg.com/gsap@3.12.5/dist/gsap.min.js"></script>
       <script src="js/main.js"></script>
       <script>
         AOS.init();
       </script>
-      <!-- Snow Flakes in December -->
-      <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+      <!-- Snow Flakes in December (loaded only when needed) -->
       <script>
-        const d = new Date();
-        let month = d.getMonth();
-        if (month == 11) {
-          var snowflakes = new Snowflakes({ count: 20 });
-        } else {
-          null;
+        if (new Date().getMonth() === 11) {
+          var snowScript = document.createElement("script");
+          snowScript.src =
+            "https://unpkg.com/magic-snowflakes@6/dist/snowflakes.min.js";
+          snowScript.onload = function () {
+            new Snowflakes({ count: 20 });
+          };
+          document.body.appendChild(snowScript);
         }
       </script>
     </div>

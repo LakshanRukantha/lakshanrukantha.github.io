@@ -1,21 +1,24 @@
 // Nav Button
 
-$(document).ready(function () {
-  $("#nav-icon").click(function () {
-    $(this).toggleClass("open");
-  });
+var navIcon = document.getElementById("nav-icon");
+navIcon.addEventListener("click", function () {
+  navIcon.classList.toggle("open");
 });
 
-$(document).ready(function () {
-  $(".js-scroll-trigger").click(function () {
-    $("#nav-icon").toggleClass("open");
+document.querySelectorAll(".js-scroll-trigger").forEach(function (trigger) {
+  trigger.addEventListener("click", function () {
+    navIcon.classList.toggle("open");
+    var navCollapse = document.querySelector(".navbar-collapse");
+    if (navCollapse.classList.contains("show")) {
+      bootstrap.Collapse.getOrCreateInstance(navCollapse).hide();
+    }
   });
 });
 
 //Scroll To Sections
 
-function toAbout() {
-  var element = document.getElementById("about");
+function scrollToSection(id) {
+  var element = document.getElementById(id);
   var headerOffset = 85;
   var elementPosition = element.getBoundingClientRect().top;
   var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
@@ -26,68 +29,102 @@ function toAbout() {
   });
 }
 
-function toProjects() {
-  var element = document.getElementById("projects");
-  var headerOffset = 85;
-  var elementPosition = element.getBoundingClientRect().top;
-  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+//Scrolling Progress Bar + Scroll-to-top button (single rAF-throttled listener)
 
-  window.scrollTo({
-    top: offsetPosition,
-    behavior: "smooth",
-  });
-}
+var progressBar = document.getElementById("progress-bar");
+var scrollUp = document.querySelector(".to-top");
+var scrollTicking = false;
 
-function toSkills() {
-  var element = document.getElementById("skills");
-  var headerOffset = 85;
-  var elementPosition = element.getBoundingClientRect().top;
-  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-  window.scrollTo({
-    top: offsetPosition,
-    behavior: "smooth",
-  });
-}
-
-function toMilestones() {
-  var element = document.getElementById("milestones");
-  var headerOffset = 85;
-  var elementPosition = element.getBoundingClientRect().top;
-  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-  window.scrollTo({
-    top: offsetPosition,
-    behavior: "smooth",
-  });
-}
-
-function toContact() {
-  var element = document.getElementById("contact");
-  var headerOffset = 85;
-  var elementPosition = element.getBoundingClientRect().top;
-  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-  window.scrollTo({
-    top: offsetPosition,
-    behavior: "smooth",
-  });
-}
-
-//Scrolling Progress Bar
-
-window.onscroll = function () {
-  progressIndicator();
-};
-
-function progressIndicator() {
+function onScrollUpdate() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height =
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("progress-bar").style.width = scrolled + "%";
+  progressBar.style.width = (winScroll / height) * 100 + "%";
+  scrollUp.classList.toggle("active-top", window.pageYOffset > 880);
+  scrollTicking = false;
 }
+
+window.addEventListener(
+  "scroll",
+  function () {
+    if (!scrollTicking) {
+      scrollTicking = true;
+      window.requestAnimationFrame(onScrollUpdate);
+    }
+  },
+  { passive: true }
+);
+
+// Animated counters (replaces jQuery counterUp + waypoints)
+
+(function () {
+  function animateCounter(el) {
+    var target = parseInt(el.textContent, 10);
+    var padLength = el.textContent.trim().length;
+    if (isNaN(target)) return;
+    var duration = 1000;
+    var start = null;
+    function step(timestamp) {
+      if (!start) start = timestamp;
+      var progress = Math.min((timestamp - start) / duration, 1);
+      el.textContent = String(Math.round(progress * target)).padStart(
+        padLength,
+        "0"
+      );
+      if (progress < 1) window.requestAnimationFrame(step);
+    }
+    window.requestAnimationFrame(step);
+  }
+
+  var counters = document.querySelectorAll(".counter");
+  if ("IntersectionObserver" in window) {
+    var counterObserver = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            counterObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+    counters.forEach(function (el) {
+      counterObserver.observe(el);
+    });
+  }
+})();
+
+// Lazy-load the Lottie contact animation only when the contact section nears the viewport
+
+(function () {
+  var player = document.querySelector("lottie-player[data-src]");
+  if (!player) return;
+  function loadLottie() {
+    var script = document.createElement("script");
+    script.src =
+      "https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js";
+    script.onload = function () {
+      player.setAttribute("src", player.getAttribute("data-src"));
+    };
+    document.body.appendChild(script);
+  }
+  if ("IntersectionObserver" in window) {
+    var lottieObserver = new IntersectionObserver(
+      function (entries) {
+        if (entries[0].isIntersecting) {
+          loadLottie();
+          lottieObserver.disconnect();
+        }
+      },
+      { rootMargin: "400px" }
+    );
+    lottieObserver.observe(player);
+  } else {
+    loadLottie();
+  }
+})();
 
 // Typing effect
 
@@ -800,26 +837,15 @@ new Typewriter(".loading-text", {
   cursor: "|",
   deleteSpeed: 10,
 });
-setTimeout(() => {
-  let loadingText = document.querySelector(".loader");
-  loadingText.style.display = "none";
-}, 4000);
-
-// Scroll to top button
-
-const scrollUp = document.querySelector(".to-top");
-
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 880) {
-    scrollUp.classList.add("active-top");
-  } else {
-    scrollUp.classList.remove("active-top");
-  }
-});
-
-$(".js-scroll-trigger").click(function () {
-  $(".navbar-collapse").collapse("hide");
-});
+// Hide the preloader as soon as the page has actually loaded
+function hideLoader() {
+  document.querySelector(".loader").style.display = "none";
+}
+if (document.readyState === "complete") {
+  hideLoader();
+} else {
+  window.addEventListener("load", hideLoader);
+}
 
 // Image hover effect
 
@@ -937,26 +963,6 @@ const projectData = [
     techStack: ["JavaScript", "HTML", "CSS", "Tailwind CSS"],
     srcURL: "https://sys-info.vercel.app/",
   },
-  {
-    title: "Project Title",
-    subTitle:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
-    thumbnail: "../img/projects-default.jpg",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi placeat magnam eveniet accusamus tenetur maxime aspernatur deleniti rerum praesentium ducimus minima facilis consectetur expedita, mollitia molestias qui dolorem quam laudantium. Repellendus sunt harum fugiat natus. dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
-    techStack: ["Stack"],
-    srcURL: "",
-  },
-  {
-    title: "Project Title",
-    subTitle:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
-    thumbnail: "../img/projects-default.jpg",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi placeat magnam eveniet accusamus tenetur maxime aspernatur deleniti rerum praesentium ducimus minima facilis consectetur expedita, mollitia molestias qui dolorem quam laudantium. Repellendus sunt harum fugiat natus. dolor sit amet consectetur, adipisicing elit. Minima nobis quia et.",
-    techStack: ["Stack"],
-    srcURL: "",
-  },
   // Add more objects for additional projectData here
 ];
 
@@ -1003,19 +1009,30 @@ function loadContent(projectData) {
   const projectsElem = document.querySelector(".project-data");
   const navElem = document.querySelector(".navigation");
 
-  let paused = false;
+  let hoverPaused = false;
+  let blurPaused = false;
+  let offscreen = false;
+  const isPaused = () => hoverPaused || blurPaused || offscreen;
+
   projectsElem.addEventListener("mouseenter", () => {
-    paused = true;
+    hoverPaused = true;
   });
 
-  projectsElem.addEventListener("mouseleave", () => (paused = false));
+  projectsElem.addEventListener("mouseleave", () => (hoverPaused = false));
 
   window.onblur = () => {
-    paused = true;
+    blurPaused = true;
   };
   window.onfocus = () => {
-    paused = false;
+    blurPaused = false;
   };
+
+  // Don't rotate (or animate) the carousel while it is off-screen
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver((entries) => {
+      offscreen = !entries[0].isIntersecting;
+    }).observe(projectsElem);
+  }
 
   function getFocusedIndex() {
     return mod(focused, projectData.length);
@@ -1064,7 +1081,7 @@ function loadContent(projectData) {
       }, 5000);
     };
     nextTimeout(() => {
-      if (paused) {
+      if (isPaused()) {
         update();
       } else {
         focused++;
@@ -1101,24 +1118,3 @@ function loadContent(projectData) {
     update();
   });
 }
-
-// Github data display
-
-async function getRepoList() {
-  try {
-    const response = await fetch(
-      "https://api.github.com/users/LakshanRukantha/repos"
-    );
-    const data = await response.json();
-    return data;
-  } catch (err) {
-    console.log(err);
-  }
-}
-
-// (async function() {
-//   const repoList = await getRepoList();
-//  for (let i = 1; i < repoList.length; i++) {
-// console.log(repoList[i].name);
-// }
-// })();
